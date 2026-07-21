@@ -1,0 +1,70 @@
+#set document(title:"Tasks");#set text(font:"Inconsolata",size:14pt); 
+#set par(spacing:0.8em,leading:0.8em,first-line-indent:(amount:1em,all:false));
+#set page(margin:(top:1.5cm,bottom:1cm,left:1.5cm,right:2cm));
+#let task(title:"",description:[],additional:[],input:[],output:[],examples:(),lb:"")={
+  pagebreak(); let label=label(lb);align(center)[#text(size:22pt,weight:"bold",fill:rgb("2A523A"))[#title #label]];
+  line(length:100%,stroke:2pt+rgb("2A523A"));v(1em);
+  if description!=[]{set par(first-line-indent:(amount:1em,all:true));v(0.4em);block(width:100%)[#description];v(1em);}
+  if input!=[]{text(size:18pt,weight:"bold",fill:rgb("287A30"))[Input Format];
+    set par(first-line-indent:(amount:1em,all:true));v(0.4em);block(width:100%,input);v(1em);v(1em);}
+  if output!=[]{text(size:18pt,weight:"bold",fill:rgb("8F741E"))[Output Format];
+    set par(first-line-indent: (amount: 1em, all:true)); v(0.4em); block(width: 100%, output); v(1em); v(1em);}
+  if examples!=(){text(size:16pt,weight:"bold",fill:rgb("742EA6"))[Examples];v(0.4em);
+    for example in examples{
+      block(fill:rgb("#f5f5f5"),stroke:1pt,inset:10pt,width:100%)[#text(size:11pt)[#example.at(0)]];
+      block(fill:rgb("#FFFFBF"),stroke:1pt,inset:10pt,width:100%)[#text(size:11pt)[#example.at(1)]];linebreak();}}
+  set par(first-line-indent: (amount: 1em, all:true)); block(width: 100%, additional);
+}
+
+#let stdin = "Standard input"
+#let stdout = "Standard output"
+#let filein = "Input file: "
+#let fileout = "Output file: "
+// ============================================
+// Title and table of contents
+// ============================================
+#align(center)[#text(size:24pt,weight:"bold",fill:rgb("#2A523A"))[Basic Tasks]];#v(1cm);
+#{block(width: 100%)[#set par(first-line-indent: (amount: 1em, all:true)); #set text(size: 16pt);
+  This is a collection of basic tasks, you can complete all of them using only variables, conditional operators and loops.
+  
+]}
+#v(1cm);
+#align(center)[#text(size:20pt,weight:"bold",fill:rgb("#2A523A"))[Contents]];#v(0.5cm);
+#let task_list = (
+  ("Hello World", <task1>),
+)
+#for (name, label) in task_list{[+ #text(size:14pt,fill: rgb("#2E98F2"))[#link(label)[#name]]]};
+// ============================================
+// TASKS
+// ============================================
+
+#let task1 = task(
+  title: "Hello world", lb: "task1",
+  description: 
+  [
+    Just print Hello world phrase.
+
+  ],
+  output: 
+  [
+    String.
+    
+  ],
+  examples: 
+  (
+    (
+      "",
+      "Hello world"
+    ),
+  ),
+)
+
+// ============================================
+// Drawing tasks
+// ============================================
+#let task_order = (
+  task1,
+)
+#for item in task_order {
+  item
+}

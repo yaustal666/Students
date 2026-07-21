@@ -1,0 +1,85 @@
+#set document(
+  title: "Tasks",
+  author: "Yaustal666",
+  date: datetime.today(),
+)
+
+#set page(
+  paper: "a4",
+  margin: (top: 1.5cm, bottom: 1cm, left: 1.5cm, right: 2cm),
+  number-align: center,
+)
+
+// ============================================
+// TASKS
+// ============================================
+
+#task(
+  title: "Task 1 - Draw pyramid",
+  description: [
+    Нарисуйте изображение пирамиды по заданному N, согласно примерам.
+  ],
+  input: [
+    Integer N : N > 0.
+
+    Standard Input
+  ],
+  output: [
+    A pyramid ASCII picture.
+
+    Standard Output
+  ],
+  examples: (
+    ("Input: 3",
+"__x__
+_xxx_
+xxxxx
+",
+    ),
+    ("Input: 5",
+"____x____
+___xxx___
+__xxxxx__
+_xxxxxxx_
+xxxxxxxxx
+",
+    )
+  ),
+  additional: "После того как закончите, можете попробовать нарисовать вверх-ногами или разделить картинку пополам вертикально и нарисовать только правую или левую часть"
+)
+
+#pagebreak()
+
+#task(
+  title: "Task 2 - Draw \"X\"",
+  description: [
+    Напишите программу, которая рисует букву X согласно примерам по заданному значению N
+  ],
+  input: [
+    Integer N : N > 2. N is an odd number
+    
+    Standard Input
+  ],
+  output: [
+    A X-letter ASCII picture
+
+    Standard Output
+  ],
+  examples: (
+    ("Input: 3",
+"x_x
+_x_
+x_x
+",
+    ),
+    ("Input: 5",
+"x___x
+_x_x_
+__x__
+_x_x_
+x___x
+",
+    )
+  ),
+    additional: "После того как закончите, можете попробовать разделить картинку пополам вертикально и нарисовать только правую или левую часть"
+)

@@ -1,0 +1,496 @@
+// ============================================
+// Title and table of contents
+// ============================================
+#align(center)[#text(size:24pt,weight:"bold",fill:rgb("#2A523A"))[Lists in Python]];#v(1cm);
+#{block(width: 100%)[#set par(first-line-indent: (amount: 1em, all:true)); #set text(size: 16pt);
+  This is a collection of tasks to master list understanding and usage. A lot of them are about implementing list methods, so you shouldn't use them until you implement them. I mean, after you write for example a reverse list logic - use method in other cases.
+
+  This is considered as a good practice to understand how it exactly works, after that you will be given some arbitrary tasks on lists - feel free to use anything you know about lists.  
+]}
+#v(1cm);
+#align(center)[#text(size:20pt,weight:"bold",fill:rgb("#2A523A"))[Contents]];#v(0.5cm);
+#let task_list = (
+  ("Extend", <task1>),
+  ("Insert", <task2>),
+  ("Remove", <task3>),
+  ("Pop", <task4>),
+  ("Clear", <task5>),
+  ("Index", <task6>),
+  ("Reverse", <task7>),
+  ("Count", <task8>),
+  ("Sort", <task9>),
+  ("Poisoning Enemies", <task10>),
+  ("Higher dimension", <task11>),
+  ("Matrix Addition", <task12>),
+  ("Flatten", <task13>),
+)
+#for (name, label) in task_list{[+ #text(size:14pt,fill: rgb("#2E98F2"))[#link(label)[#name]]]};
+// ============================================
+// TASKS
+// ============================================
+
+#let task1 = task(
+  title: "Extend", lb: "task1",
+  description: 
+  [
+    Implement the logic of extend method. You are given two lists *a* and *b*. List *a* should be extended with list *b* content. You cant use a + b since that same as using extend method.
+
+  ],
+  input: [
+    *a* : list of values.
+
+    *b* : list of values.
+
+    #stdin
+  ],
+  output: 
+  [
+    list *a* extended with list *b*
+
+    #stdout
+  ],
+  examples: 
+  (
+    (
+      "1 2 3 4 5 \n6 7 8 9 10",
+      "1 2 3 4 5 6 7 8 9 10"
+    ),
+  ),
+)
+
+#let task2 = task(
+  title: "Insert", lb: "task2",
+  description: 
+  [
+    Implement the logic of insert method. You are given list *a*, value *b* and index *idx* . Value *b* should be inserted in list *a* on index *idx*. That means that index of value *b* inside the list will be equal to *idx*.
+
+  ],
+  input: [
+    *a* : list of values.
+
+    *b* : any value.
+
+    *idx* : integer value.
+    
+    #stdin
+  ],
+  output: 
+  [
+    list *a* with inserted value *b* on index *idx*.
+
+    #stdout
+  ],
+  examples: 
+  (
+    (
+      "8 1 2 1 43 \n6 \n2",
+      "8 1 6 2 1 43"
+    ),
+    (
+      "'Hello' 28 10 22 10 10 10 \n'What' \n7 ",
+      "'Hello' 28 10 22 10 10 10 'What'"
+    )
+  ),
+)
+
+#let task3 = task(
+  title: "Remove", lb: "task3",
+  description: 
+  [
+    Implement the logic of remove method. You are given list *a* and value *b*. The first occurrence of value *b* must be deleted from list.
+
+  ],
+  input: [
+    *a* : list of values.
+
+    *b* : any value.
+    
+    #stdin
+  ],
+  output: 
+  [
+    list *a* with deleted value *b*.
+
+    #stdout
+  ],
+  examples: 
+  (
+    (
+      "8 1 2 1 43 \n6",
+      "8 1 6 2 1 43"
+    ),
+    (
+      "'Hello' 28 10 22 10 10 10 \n10 ",
+      "'Hello' 28 22 10 10 10"
+    )
+  ),
+)
+
+#let task4 = task(
+  title: "Pop", lb: "task4",
+  description: 
+  [
+    Implement the logic of pop method. You are given list *a* and index *idx*. Element of list *a* on index *idx* must be removed. Also print the deleted value.
+
+  ],
+  input: [
+    *a* : list of values.
+
+    *idx* : integer value.
+    
+    #stdin
+  ],
+  output: 
+  [
+    list *a* with deleted element on index *idx*.
+
+    deleted value : any value or None if not exists.
+
+    #stdout
+  ],
+  examples: 
+  (
+    (
+      "8 1 2 1 43 \n6",
+      "8 1 6 2 1 43 \nNone"
+    ),
+    (
+      "'Hello' 28 10 22 10 10 10 \n0 ",
+      "28 22 10 10 10 10 \n'Hello'"
+    )
+  ),
+)
+
+#let task5 = task(
+  title: "Clear", lb: "task5",
+  description: 
+  [
+    Implement the logic of clear method. You are given list *a*. You should remove every element of this list.
+
+  ],
+  input: [
+    *a* : list of values.
+
+    #stdin
+  ],
+  output: 
+  [
+    empty list.
+
+    #stdout
+  ],
+  examples: 
+  (
+    (
+      "8 1 2 1 43",
+      "[]"
+    ),
+    (
+      "'Hello' 28 10 22 10 10 10",
+      "[]"
+    )
+  ),
+)
+
+#let task6 = task(
+  title: "Index", lb: "task6",
+  description: 
+  [
+    Implement the logic of index method. You are given list *a*, value *b*, and two indexes *start* and *end*. You should find index of value *b* inside list *a* between *start* and *end*.
+
+  ],
+  input: [
+    *a* : list of values.
+
+    *b* : any value.
+
+    *start* : integer value.
+
+    *end* : integer value.
+    
+    #stdin
+  ],
+  output: 
+  [
+    Index of value : any value or None if not exists.
+
+    #stdout
+  ],
+  examples: 
+  (
+    (
+      "8 1 2 1 43 \n2 \n1 \n3",
+      "2"
+    ),
+    (
+      "'Hello' 28 10 22 10 10 10 \n333 \n4 \n6",
+      "None"
+    )
+  ),
+)
+
+#let task7 = task(
+  title: "Reverse", lb: "task7",
+  description: 
+  [
+    Implement the logic of reverse method. You are given list *a*, it should be reversed in place - that means that there should not be any copy, the list a itself should become reversed.
+
+  ],
+  input: [
+    *a* : list of values.
+    
+    #stdin
+  ],
+  output: 
+  [
+    list.
+
+    #stdout
+  ],
+  examples: 
+  (
+    (
+      "8 1 2 1 43",
+      "43 1 2 1 8"
+    ),
+    (
+      "'Hello' 28 10 22 10 10 10",
+      "10 10 10 22 10 28 'Hello'"
+    )
+  ),
+)
+
+#let task8 = task(
+  title: "Count", lb: "task8",
+  description: 
+  [
+    Implement the logic of count method. You are given list *a* and value *b*. Count how many time value *b* appears in given list.
+
+  ],
+  input: [
+    *a* : list of values.
+
+    *b* : any value.
+    
+    #stdin
+  ],
+  output: 
+  [
+    Count of value *b* : integer value.
+
+    #stdout
+  ],
+  examples: 
+  (
+    (
+      "8 1 2 1 43 \n6",
+      "0"
+    ),
+    (
+      "'Hello' 28 10 22 10 10 10 \n10 ",
+      "4"
+    )
+  ),
+)
+
+#let task9 = task(
+  title: "Sort", lb: "task9",
+  description: 
+  [
+    Implement the logic of sort method. You are given list *a*, it should be sorted in some order - you can choose.
+
+    There are many many algorithms for doing this. You can start with bubble or insertion sort - you can google them. After this you can try implementing quick and merge sort.
+
+    After you have implemented some amount of sort algorithms - you can benchmark them to see the difference in efficiency.
+
+  ],
+  input: [
+    *a* : list of values.
+    
+    #stdin
+  ],
+  output: 
+  [
+    list.
+
+    #stdout
+  ],
+  examples: 
+  (
+    (
+      "8 1 2 1 43",
+      "1 1 2 8 43"
+    ),
+    (
+      "'Hello' 28 10 22 10 10 10",
+      "We cant sort this list, so it stays the same"
+    ),
+    (
+      "3 8 20 46 1 35 2 2 4 6",
+      "1 2 2 3 4 6 8 20 35 46"
+    )
+  ),
+)
+
+#let task10 = task(
+  title: "Poisoning Enemies", lb: "task10",
+  description: [
+    There are 10 enemies, each one has 10 health point initially.
+
+    Enemy can become poisoned. Being poisoned means an enemy loses 1 hp every 1 second.
+
+    Given a time in seconds and some additional commands calculate enemies hp values by the end of time.
+
+    There is no work with time actually by the way.
+  ],
+  input: [
+    *s* seconds : integer value.
+
+    Every second you receive a command - Integer n - number of enemy.
+
+    If this enemy is not poisoned it becomes poisoned.
+
+    If this enemy is poisoned it becomes normal.
+
+    If command -1 is given - nothing happens.
+    
+    #stdin
+  ],
+  output: [
+    Health of enemies : list.
+
+    #stdout
+  ],
+  examples: (
+    (
+      "5
+1
+2
+2
+-1
+4",
+      "10 5 9 10 9 10 10 10 10 10"
+    ),
+  )
+)
+
+#let task11 = task(
+  title: "Higher dimension", lb: "task11",
+  description: [
+    Did you know you can store a list inside a list? Well - you can, now try it out and print a result.
+
+    Two dimensional list is also called a table or matrix. Create a table of 4 by 3 size (4 - number of rows, 3 - number of columns) and fill it with zeros.
+
+    Now iterate through it and change every value to a sum of its indices.
+  ],
+
+  output: [
+    A table.
+
+    #stdout
+  ],
+  examples: 
+  (
+    (
+      "Input: none",
+"0 1 2
+1 2 3
+2 3 4
+3 4 5"
+    ),
+  ),
+  additional: "Notice that you should print it out not like [[1, 2, 3], [2, 3, 4]] this."
+)
+
+#let task12 = task(
+  title: "Matrix addition", lb: "task12",
+  description: [
+    Now you have to implement a matrix addition logic. Having two matrixes of same sizes you can perform an addition operation by calculating a sum between values of same positions.
+
+    Matrixes are big, it is not very handy to type them in terminal for testing your program - so lets read them from file.
+
+    Having a file named input.txt you can open it like this:
+    #linebreak()
+    #linebreak()
+    with open("input.txt", "r", encoding="utf-8") as file:
+
+        fileContent = file.read()
+
+        There are other file methods to read from file and write to it, you can look them up in python documentation.
+  ],
+  input: [
+    Two numbers - sizes of matixes.
+    Two matrixes of give sizes.
+
+    #filein input.txt
+  ],
+  output: [
+    
+    #fileout output.txt
+  ],
+  examples: 
+  (
+    (
+      "bInput input.txt: 
+2 2
+
+1 1
+1 1
+
+4 4 
+5 5
+",
+"5 5
+6 6"
+    ),
+  ),
+  additional: "Try to make matrix1 and matrix2 stay unchanged, explore how to copy a normal list and nested list. Try different ways and print all matrixes to see the results."
+)
+
+#let task13 = task(
+  title: "Flatten", lb: "task13",
+  description: 
+  [
+    You  are given a list of lists aka table. Flattening is transforming higher dimension list to lower dimension list. You should transform a list of dimension 2 into list of dimension 1.
+
+  ],
+  input: [
+    *a* : list of lists.
+    
+    #filein input.txt
+  ],
+  output: 
+  [
+    list.
+
+    #stdout
+  ],
+  examples: 
+  (
+    (
+      "[[8, 1], [2, 1], [43, 55]]",
+      "[8, 1, 2, 1, 43, 55]"
+    ),
+  ),
+)
+// ============================================
+// Drawing tasks
+// ============================================
+#let task_order = (
+  task1,
+  task2,
+  task3,
+  task4,
+  task5,
+  task6,
+  task7,
+  task8,
+  task9,
+  task10,
+  task11,
+  task12,
+  task13
+)
+#for item in task_order {
+  item
+}

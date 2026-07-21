@@ -1,0 +1,365 @@
+// ============================================
+// Title and table of contents
+// ============================================
+#align(center)[#text(size:24pt,weight:"bold",fill:rgb("#2A523A"))[Basic Tasks]];#v(1cm);
+#{block(width: 100%)[#set par(first-line-indent: (amount: 1em, all:true)); #set text(size: 16pt);
+  This is a collection of basic tasks, you can complete all of them using only variables, conditional operators and loops.
+  
+]}
+#v(1cm);
+#align(center)[#text(size:20pt,weight:"bold",fill:rgb("#2A523A"))[Contents]];#v(0.5cm);
+#let task_list = (
+  ("Hello World", <task1>),
+  ("Find Greatest", <task2>),
+  ("Even Number", <task3>),
+  ("Comparing", <task4>),
+  ("Area", <task8>),
+  ("Looping", <task5>),
+  ("Breaking the infinity", <task6>),
+  ("Too many loops", <task7>),
+  ("Fibbonaci", <task10>),
+  ("Vowels", <task11>),
+  ("Replace All", <task12>),
+  ("Sequence", <task9>),
+)
+#for (name, label) in task_list{[+ #text(size:14pt,fill: rgb("#2E98F2"))[#link(label)[#name]]]};
+// ============================================
+// TASKS
+// ============================================
+
+#let task1 = task(
+  title: "Hello world", lb: "task1",
+  description: 
+  [
+    Just print Hello world phrase.
+
+  ],
+  output: 
+  [
+    string value.
+
+    #stdout
+  ],
+  examples: 
+  (
+    (
+      "",
+      "Hello world"
+    ),
+  ),
+)
+
+#let task2 = task(
+  title: "Find greatest", lb: "task2",
+  description: [
+    You are given 3 numbers, a b c. Find the greatest one.
+    
+  ],
+  input: [
+    a, b, c: integer values. Each one on a new line.
+
+    #stdin
+    
+  ],
+  output: [
+    integer value.
+
+    #stdout
+  ],
+  examples: 
+  (
+    (
+      "5 \n2 \n3",
+      "5"
+    ),
+  ),
+)
+
+#let task3 = task(
+  title: "Even number", lb: "task3",
+  description: [
+    Check if given number n is even.
+    
+  ],
+  input: [
+    n : integer value.
+
+    #stdin
+  ],
+  output: [
+    boolean value.
+    
+    #stdout
+  ],
+  examples: 
+  (
+    (
+      "3",
+      "false"
+    ),
+    (
+      "100",
+      "True"
+    )
+  ), 
+)
+
+#let task4 = task(
+  title: "Comparing", lb: "task4",
+  description: [
+    You are given two numbers a and b. If a is greater than b print "A", otherwise print "B".
+    
+  ],
+  input: [
+    a, b : integer values. In one line, separated by whitespace.
+
+    #stdin
+  ],
+  output: [
+    boolean value.
+
+    #stdout
+  ],
+  examples: 
+  (
+    (
+      "9 7",
+      "A"
+    ),
+    (
+      "-100 100",
+      "B"
+    )
+  ),
+  additional: [
+     You can try to do it without directly checking a > b, but comparing something with zero. That is how it happens on the lowest level.
+     
+  ]
+)
+
+#let task5 = task(
+  title: "Looping", lb: "task5",
+  description: [
+    Print number 1 ten times.
+    
+  ],
+  output: [
+    a sequence of integer values, separated by whitespace.
+
+    #stdout
+  ],
+  examples: 
+  (
+    (
+      "",
+      "1 1 1 1 1 1 1 1 1 1"
+    ),
+  ), 
+)
+
+#let task6 = task(
+  title: "Breaking the infinity", lb: "task6",
+  description: [
+    Run an infinite loop. Inside it generate a random value between 0 and 1000. Your task is to count the amount of iterations. 
+    
+    But, if generated value is divisible by 3 - we don't count it as iteration. And if generated value squared is bigger than 100000 we end the loop.
+  ],
+  output: [
+    integer value.
+
+    #stdout
+  ],
+  examples: 
+  (
+    (
+      "Lets say we generated this: 100 98 33 2 2 90 1000",
+      "5"
+    ),
+  ), 
+)
+
+#let task7 = task(
+  title: "Too many loops", lb: "task7",
+  description: [
+    Print all possible three number combinations of numbers from 1 to 4.
+    Lets say combination is good if the sum of its numbers equals to a given value n. Count the amount of good combinations.
+    
+  ],
+  input: [
+    n : integer value.
+
+    #stdin
+  ],
+  output: [
+    A list of combinations, each one on a new line.
+    
+    Count of good combinations : integer.
+
+    #stdout
+  ],
+)
+
+#let task8 = task(
+  title: "Area", lb: "task8",
+  description: [
+    You are given coordinates of rectangle vertices. Calculate the area of this rectangle.
+    
+  ],
+  input: [
+    Four pairs of floating point values. Starting from upper-left corner, clockwise.
+
+    #stdin
+  ],
+  output: [
+    Area of rectangle : floating point value.
+
+    #stdout
+  ],
+examples: (
+(
+"2.2 3.3
+5.2 3.3 
+5.2 -1.2 
+2.2 -1.2",
+"13.5"
+),
+), 
+)
+
+#let task9 = task(
+  title: "Sequence*", lb: "task9",
+  description: [
+    There is a sequence: 1,1,2,1,2,3,1,2,3,4... and so on. 
+    
+    Print out first N numbers of this sequence.
+  ],
+  input: [
+    N : integer value.
+
+    #stdin
+  ],
+  output: [
+    N first numbers of the sequence.
+
+    #stdout
+  ],
+  examples: 
+  (
+    (
+      "3",
+      "1 1 2"
+    ),
+    (
+      "7",
+      "1 1 2 1 2 3 1"
+    )
+  ), 
+)
+
+#let task10 = task(
+  title: "Fibonacci", lb: "task10",
+  description: [
+    Print n-th number of fibonacci sequence (1 1 2 3 5 8 13 21)
+    
+  ],
+  input: [
+    n : integer value.
+
+    #stdin
+  ],
+  output: [
+    n-th number of sequence : integer value.
+
+    #stdout
+  ],
+  examples: 
+  (
+    (
+      "4",
+      "2"
+    ),
+    (
+      "10",
+      "55"
+    )
+  ), 
+)
+
+#let task11 = task(
+  title: "Vowels", lb: "task11",
+  description: [
+    Count amount of vowels in given string s. (vowels: a i u e o)
+    
+  ],
+  input: [
+    s: string value.
+
+    #stdin
+  ],
+  output: [
+    integer value.
+
+    #stdout
+  ],
+  examples: 
+  (
+    (
+      "hello world",
+      "3"
+    ),
+    (
+      "there are 11 vowels in this sentence",
+      "11"
+    )
+  ), 
+)
+
+#let task12 = task(
+  title: "Replace All", lb: "task12",
+  description: [
+    You are given a string s consists only of symbols "@", "\$" and "\#". Replace all symbols in a string, which count is minimal by symbols, which count is greatest
+    
+  ],
+  input: [
+    s : string value.
+
+    #stdin
+  ],
+  output: [
+    string value.
+
+    #stdout
+  ],
+  examples: 
+  (
+    (
+      "##@@@@$$$",
+      "@@@@@@$$$"
+    ),
+    (
+      "$$$$$$$@@$#############",
+      "$$$$$$$##$#############"
+    )
+  ), 
+)
+
+// ============================================
+// Drawing tasks
+// ============================================
+#let task_order = (
+  task1,
+  task2,
+  task3,
+  task4,
+  task8,
+  task5,
+  task6,
+  task7,
+  task10,
+  task11,
+  task12,
+  task9,
+)
+#for item in task_order {
+  item
+}

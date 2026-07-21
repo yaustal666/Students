@@ -1,0 +1,83 @@
+#set document(
+  title: "Tasks",
+  author: "Yaustal666",
+  date: datetime.today(),
+)
+
+#set page(
+  paper: "a4",
+  margin: (top: 1.5cm, bottom: 1cm, left: 1.5cm, right: 2cm),
+  number-align: center,
+)
+
+#set text(
+  font: "Inconsolata",
+  size: 12pt,
+// ============================================
+// TASKS
+// ============================================
+
+#task(
+  title: "Task 1 - Dict",
+  description: [
+    Count amount of each letter in a string.
+  ],
+  input: [
+    A string.
+  ],
+  output: [
+    A line for each letter like this : letterName: count
+  ],
+  examples: 
+  (
+    (
+      "Input: aaa",
+      "a : 3"
+    ),
+    (
+      "Input: Hello world",
+"h: 1
+e: 1
+l: 3
+o: 2
+w: 1
+r: 1
+d: 1
+"
+    )
+  ), 
+)
+
+#pagebreak()
+
+#task(
+  title: "Task 1 - Dict",
+  description: [
+    Count amount of each letter in a string.
+  ],
+  input: [
+    A string.
+  ],
+  output: [
+    A line for each letter like this : letterName: count
+  ],
+  examples: 
+  (
+    (
+      "Input: aaa",
+      "a : 3"
+    ),
+    (
+      "Input: Hello world",
+"h: 1
+e: 1
+l: 3
+o: 2
+w: 1
+r: 1
+d: 1
+"
+    )
+  ), 
+)
+

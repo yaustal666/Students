@@ -1,0 +1,3 @@
+Id,Patient Name,Surgeon Name,Surgery Type,Scheduled Date,Scheduled Time,Duration Min,Status,Priority,Room Name,Notes
+1,Tyler Durden,Dr. Mikhail Evalenko,Colectomy,2026-05-03,08:00,60,In Progress,High,OR-2,
+2,Tyler Durden,Dr. Mikhail Evalenko,Laparoscopy,2026-05-10,08:00,60,Scheduled,Low,OR-1,

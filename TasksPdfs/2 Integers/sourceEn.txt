@@ -1,0 +1,306 @@
+// ============================================
+// Title and table of contents
+// ============================================
+#align(center)[#text(size:24pt,weight:"bold",fill:rgb("#2A523A"))[Integers]];#v(1cm);
+#{block(width: 100%)[#set par(first-line-indent: (amount: 1em, all:true)); #set text(size: 16pt);
+  This is a collection of tasks with integers, most of the tasks are about checking if number is prime. This is an introduction to the fact that there are faster and slower methods.
+
+  For a benchmarking task you should look for time measurement library for you language. For example in python is is time, in c it is time.h and in c++ you should use chrono.
+  
+]}
+#v(1cm);
+#align(center)[#text(size:20pt,weight:"bold",fill:rgb("#2A523A"))[Contents]];#v(0.5cm);
+#let task_list = (
+  ("Palindrome", <task1>),
+  ("Inside number", <task2>),
+  ("Is Divisible by?", <task3>),
+  ("Divisors count", <task4>),
+  ("Is Prime?", <task5>),
+  ("Do I need a list?", <task6>),
+  ("Is Prime? Going faster", <task7>),
+  ("Is Prime? Sieve of Eratosthenes", <task8>),
+  ("Benchmarking", <task9>),
+)
+#for (name, label) in task_list{[+ #text(size:14pt,fill: rgb("#2E98F2"))[#link(label)[#name]]]};
+// ============================================
+// TASKS
+// ============================================
+
+#let task1 = task(
+  title: "Palindrome", lb: "task1",
+  description: 
+  [
+    You are given a number *n*, check if this is palindrome.
+
+  ],
+  input: [
+    *n* - integer value.
+
+    #stdin
+  ],
+  output: 
+  [
+    boolean value.
+
+    #stdout
+  ],
+  examples: 
+  (
+    (
+      "121",
+      "true"
+    ),
+    (
+      "2342241324",
+      "false"
+    )
+  ),
+)
+
+#let task2 = task(
+  title: "Inside number", lb: "task2",
+  description: 
+  [
+    Calculate a count of digits and a sum of digits in a given number *n*.
+
+  ],
+  input: [
+    *n* - integer value.
+
+    #stdin
+  ],
+  output: 
+  [
+    Count of digits: integer value.
+    
+    Sum of digits: integer value.
+
+    #stdout
+  ],
+  examples: 
+  (
+    (
+      "111",
+      "3 \n3"
+    ),
+    (
+      "9801",
+      "4 \n18"
+    )
+  ),
+)
+
+#let task3 = task(
+  title: "Is Divisible by?", lb: "task3",
+  description: 
+  [
+    Check if given *n* is divisible by numbers in range from 2 to *n* - 1.
+
+  ],
+  input: [
+    *n* - integer value.
+
+    #stdin
+  ],
+  output: 
+  [
+    A list of boolean values.
+
+    #stdout
+  ],
+  examples: 
+  (
+    (
+      "5",
+      "[false, false, false]"
+    ),
+    (
+      "10",
+      "[true, false, false, true, false, false, false, false]"
+    )
+  ),
+)
+
+#let task4 = task(
+  title: "Divisors count", lb: "task4",
+  description: 
+  [
+    Use your Task 3 result and count divisors of a number.
+
+  ],
+  input: [
+    *n* - integer value.
+
+    #stdin
+  ],
+  output: 
+  [
+    Count of divisors : integer value.
+
+    #stdout
+  ],
+  examples: 
+  (
+    (
+      "5",
+      "0"
+    ),
+    (
+      "10",
+      "2"
+    )
+  ),
+)
+
+#let task5 = task(
+  title: "Is Prime?", lb: "task5",
+  description: 
+  [
+    Use your Task 4 result to find if number is prime.
+
+  ],
+  input: [
+    *n* - integer value.
+
+    #stdin
+  ],
+  output: 
+  [
+    boolean value.
+
+    #stdout
+  ],
+  examples: 
+  (
+    (
+      "5",
+      "true"
+    ),
+    (
+      "10",
+      "false"
+    )
+  ),
+)
+
+#let task6 = task(
+  title: "Do I need a list?", lb: "task6",
+  description: 
+  [
+    Check if number is prime, not using a list.
+
+  ],
+  input: [
+    *n* - integer value.
+
+    #stdin
+  ],
+  output: 
+  [
+    boolean value.
+
+    #stdout
+  ],
+  examples: 
+  (
+    (
+      "5",
+      "true"
+    ),
+    (
+      "10",
+      "false"
+    )
+  ),
+)
+
+#let task7 = task(
+  title: "Is Prime? Going faster", lb: "task7",
+  description: 
+  [
+    Do you need to check from 2 to *n* - 1, maybe you can lower the range?
+
+  ],
+  input: [
+    *n* - integer value.
+
+    #stdin
+  ],
+  output: 
+  [
+    boolean value.
+
+    #stdout
+  ],
+  examples: 
+  (
+    (
+      "5",
+      "true"
+    ),
+    (
+      "10",
+      "false"
+    )
+  ),
+)
+
+#let task8 = task(
+  title: "Is Prime? Sieve of Eratosthenes", lb: "task8",
+  description: 
+  [
+    Collect all prime numbers that are less than *n*. You can google algorithm by name.
+
+  ],
+  input: [
+    *n* - integer value.
+
+    #stdin
+  ],
+  output: 
+  [
+    A list of prime numbers.
+
+    #stdout
+  ],
+  examples: 
+  (
+    (
+      "5",
+      "2 3"
+    ),
+    (
+      "20",
+      "2 3 5 7 11 13 17 19"
+    )
+  ),
+)
+
+#let task9 = task(
+  title: "Benchmarking", lb: "task9",
+  description: [
+    You can wrap up all your prime number search solutions in functions and measure time of their work. You sould test them on random values, multiple time for each function and calculate the mean time.
+
+
+    For this you should rework Sieve algorithm and make it also answering a question if given number is prime. It will be slow by the way, but you can think of how to cache your calculations.
+
+    You can leave this task for later if you feel not confident enough.
+  ],
+)
+// ============================================
+// Drawing tasks
+// ============================================
+#let task_order = (
+  task1,
+  task2,
+  task3,
+  task4,
+  task5,
+  task6,
+  task7,
+  task8,
+  task9
+)
+#for item in task_order {
+  item
+}

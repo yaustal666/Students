@@ -1,0 +1,73 @@
+// ============================================
+// TASKS
+// ============================================
+
+#task(
+  title: "Task 1 - Draw pyramid",
+  description: [
+    Draw an image based on given N value, according to examples.
+  ],
+  input: [
+    Integer N : N > 0.
+
+    Standard Input
+  ],
+  output: [
+    A pyramid ASCII picture.
+
+    Standard Output
+  ],
+  examples: (
+    ("Input: 3",
+"__x__
+_xxx_
+xxxxx
+",
+    ),
+    ("Input: 5",
+"____x____
+___xxx___
+__xxxxx__
+_xxxxxxx_
+xxxxxxxxx
+",
+    )
+  ),
+  additional: "Try to draw it upside down after you finish, also you can try to make it look to the left or to the right, or be split vertically in half."
+)
+
+#pagebreak()
+
+#task(
+  title: "Task 2 - Draw \"X\"",
+  description: [
+    Create a program draws X as shown in examples given N value
+  ],
+  input: [
+    Integer N : N > 2. N is an odd number
+    
+    Standard Input
+  ],
+  output: [
+    A X-letter ASCII picture
+
+    Standard Output
+  ],
+  examples: (
+    ("Input: 3",
+"x_x
+_x_
+x_x
+",
+    ),
+    ("Input: 5",
+"x___x
+_x_x_
+__x__
+_x_x_
+x___x
+",
+    )
+  ),
+    additional: "Try to draw it upside down after you finish, also you can try to make it look split vertically or horizonally in half."
+)

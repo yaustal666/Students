@@ -1,0 +1,131 @@
+Метки
+internal - внутренний, недоступен для скриптов
+editor-only - работает в редакторе, взаимодействие через интерфейсы редактора
+deprecated - помечен как нежелательный для использования / недоступный / работает с ошибками
+
+- Базовые -
+Workspace                   - 3D объекты на сцене, которые отображаются
+Players                     - Все игрока, которые сейчас в игре
+ReplicatedFirst             - Самые первые вещи, которые передаются всем клиентам (экран загрузки например)
+ReplicatedStorage           - Все, что доступно и на сервере и на клиенте. 
+ServerScriptService         - Хранилище серверных скриптов.
+ServerStorage               - Хранилище для серверных данных.
+StarterPlayer               - Настройка стартовых параметров игрока
+StarterPack                 - Начальный Backpack игрока
+StarterGui                  - Начальный пользовательский интерфейс (шаблон)
+SoundService                - Контроль над звуком в игре
+
+
+- Разное -
+Teams                       - Чтобы разбивать игроков на команды
+PathfindingService          - Настройка навигации NPC в мире игры
+ProximityPromptService      - ProximityPrompt позволяет игроку взаимодействовать с объектами за счет приближения (открывание двери)
+Сервис для контроля над этими вещами
+
+CollectionService           - Работа с группами объектов по тэгам
+
+GuiService                  - Работа и UI интерфейсами в игре
+
+Run Service                 - runtime activity and progression of time
+Debris                      - Сервис для удаления объектов, для оптимизации работы игры
+
+AnimationClipProvider       - Работа с анимациями     
+                       
+NotificationService         - Внутриигровые уведомления
+TextService                 - Сервис для работы с текстами        
+LocalizationService         - Работа с локализацией игры
+
+Teleport Service            - Для телепортации игроков между Place внутри Experience
+
+BadgeService                - Сервис для выдачи и менеджмента badge игрока.
+GamePassService             - Работа с game-pass-ами игрока
+
+AssetService                - Загрузка ассетов и менеджмент ассетов
+InsertService               - Загрузка ассетов и менеджмент ассетов из библиотеки роблокса
+ContentProvider             - Менеджмент ассетов, позволяет предзагрузить ассеты
+
+PhysicsService              - Для работы с физикой и коллизиями
+
+
+- Пользовательский ввод -
+UserInputService            - Контроль ввода игрока (клавиатура, мышь, контроллер)
+KeyboardService             - конкретно клавиатура
+MouseService                - конкретно мышь
+ContextActionService        - Контекстуальные действия (чисто клиент) например когда игрок держит инструмент, обработка ввода
+TouchInputService           - ввод для сенсорных экранов
+VRService                   - VR
+
+
+- Визуал -
+Lighting                    - Контроль освещения в игре
+GenerationService           - Генерация 3D моделей по текстовым промптам
+AvatarCreationService       - Инструменты для создания кастомных персонажей из своих 3D моделей, используется например ассетах в toolbox
+AvatarEditorService         - Создание внутриигрового редактора персонажа
+VideoService                - Добавление видео в игру / текстур из видео
+TweenService                - Анимирование property объектов              
+MaterialService             - Хранилище кастомных материалов (текстур)
+
+
+- Социальные -
+SocialService               - Приглашения друзей в игру
+VoiceChatService            - Контроль над внутриигровым голосовым чатом
+MarketplaceService          - Внутриигровые покупки
+CommerceService             - Покупки за реальную валюту
+RecommendationService       - Создание системы рекомендаций в игре
+VideoCaptureService         - Скриншоты и записи экрана игроков
+CaptureService              - примерно то же
+AnalyticsService            - Сервер для сбора телеметрии и отправки ее в roblox
+TextChatService             - Работа с игровыми чатами
+Chat                        - устаревшая deprecated система чатов
+FriendService               - Взаимодействие со списком друзей игрока
+PolicyService               - Для проверки возраста и региона пользователя для предоставления контента соответствующего типа.
+
+
+- Сеть -
+HttpService                 - Отправка и получение http запросов, можно в интернет залезать
+BrowserService              - Открывание страниц браузера в игре
+LuaWebService               - internal, внутренний сетевой сервис, все остальные работают за счет него
+CookiesService              - internal, работает с cookie
+HttpRbxApiService           - internal, обрабатывает запросы конкретно к API роблокса
+
+
+- Технические ---------------
+LogService                  - Логирование в консоль/в файлы логов
+RemoteDebuggerServer        - Дебаг уже запущенной игры через удаленный доступ
+
+MicroProfilerService        - Замеры производительности, internal, editor-only
+Stats                       - Замеры производительности игры
+TimerService                - Отвечает за таймеры, internal
+ScriptProfilerService       - Дебаг, замеры производительности, internal, enditor-only, in some plugins
+HeapProfilerService         - Замеры производительности памяти, internal, но можно из скриптов юзать частично
+PackageService              - Управление пакетами, ассетами, internal, editor-only
+TestService                 - Написание тестов к разрабатываемой игре
+
+ModerationService           - ? internal, неизвестно. По логике что-то с модерацией сервера
+StudioTestService           - Для тестирования при разработки плагинов
+SerializationService        - internal, переносит сцену в файлы и все такое
+SpawnerService              - internal, обрабатывает спавн объектов
+GuidRegistryService         - internal, работает с id объектов
+PublishService              - internal, отвечает за процесс публикации нашей игры
+ChangeHistoryService        - internal, для создания плагинов - контроль истории изменений, чтобы undo redo обрабатывать
+ProcessInstancePhysicsService - internal, физика движка
+ConfigureServerService      - internal, работа сервера игры
+NetworkServer               - internal, работа сервера игры
+
+SelectionHighlightManager   - Подсветка объектов на сцене, когда мы их выбираем для работы
+ServiceVisibilityService    - Отвечает за доступность сервисов, как раз типа internal или public, защита roblox
+
+ScriptContext               - internal
+FeatureRestrictionManager   - internal
+ScriptService               - internal
+ClusterPacketCache          - internal
+PermissionsService          - internal, разрешения доступа для пользователей          
+SharedTableRegistry         - internal
+Selection                   - internal, Для создания плагинов
+SlimContentProvider         - internal
+JointsService               - internal
+
+KeyframeSequenceProvider    
+PointsService               - deprecated
+
+AdService                   - Для показа рекламы, deprecated

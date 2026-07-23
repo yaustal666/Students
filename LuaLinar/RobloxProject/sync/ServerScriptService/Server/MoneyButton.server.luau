@@ -8,25 +8,20 @@ button.Parent = workspace
 
 local isActive = true
 
-local function KillPlayer(humanoid) 
-    humanoid.Health = 0
-end
-
-local function SwitchMaterial(part)
-    button.Material = Enum.Material.Carpet
-end
-
 local function OnPlayerTouched(otherPart)
     local character = otherPart.Parent
-    local humanoid = character:FindFirstChild("Humanoid")
+	if not character then return end
 
-    if humanoid and isActive then 
-        KillPlayer(humanoid)
-        SwitchMaterial(button)
-        isActive = false
-    end
+	local player = game:GetService("Players"):GetPlayerFromCharacter(character)
+	
+	if not player then return end
+    if not isActive then return end
 
-    task.wait(8)
+	isActive = false
+    _G.addCoins(player, 10)
+	button.Material = Enum.Material.Carpet
+
+    task.wait(4)
     button.Material = Enum.Material.CrackedLava
     isActive = true
 end

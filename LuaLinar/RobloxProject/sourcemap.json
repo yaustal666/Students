@@ -1,0 +1,205 @@
+{
+  "name": "Game",
+  "className": "DataModel",
+  "children": [
+    {
+      "name": "Lighting",
+      "className": "Lighting",
+      "guid": "11544",
+      "children": [
+        {
+          "name": "Atmosphere",
+          "className": "Atmosphere",
+          "guid": "11521"
+        },
+        {
+          "name": "Bloom",
+          "className": "BloomEffect",
+          "guid": "11529"
+        },
+        {
+          "name": "DepthOfField",
+          "className": "DepthOfFieldEffect",
+          "guid": "11537"
+        },
+        {
+          "name": "Sky",
+          "className": "Sky",
+          "guid": "11560"
+        },
+        {
+          "name": "SunRays",
+          "className": "SunRaysEffect",
+          "guid": "11565"
+        }
+      ]
+    },
+    {
+      "name": "ReplicatedFirst",
+      "className": "ReplicatedFirst",
+      "guid": "8798"
+    },
+    {
+      "name": "ServerScriptService",
+      "className": "ServerScriptService",
+      "guid": "11557",
+      "children": [
+        {
+          "name": "Server",
+          "className": "Folder",
+          "guid": "11541",
+          "children": [
+            {
+              "name": "JumpUpdgradeButton",
+              "className": "Script",
+              "guid": "444877",
+              "filePaths": [
+                "sync/ServerScriptService/Server/JumpUpdgradeButton.server.luau"
+              ]
+            },
+            {
+              "name": "CurrencyHandler",
+              "className": "Script",
+              "guid": "455499",
+              "filePaths": [
+                "sync/ServerScriptService/Server/CurrencyHandler.server.luau"
+              ]
+            },
+            {
+              "name": "MoneyButton",
+              "className": "Script",
+              "guid": "444875",
+              "filePaths": [
+                "sync/ServerScriptService/Server/MoneyButton.server.luau"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ServerStorage",
+      "className": "ServerStorage",
+      "guid": "11558"
+    },
+    {
+      "name": "SoundService",
+      "className": "SoundService",
+      "guid": "7828"
+    },
+    {
+      "name": "StarterGui",
+      "className": "StarterGui",
+      "guid": "8811",
+      "children": [
+        {
+          "name": "UI",
+          "className": "Folder",
+          "guid": "11539",
+          "children": [
+            {
+              "name": "ScreenGui",
+              "className": "ScreenGui",
+              "guid": "454774",
+              "children": [
+                {
+                  "name": "CoinDisplay",
+                  "className": "LocalScript",
+                  "guid": "455329",
+                  "filePaths": [
+                    "sync/StarterGui/UI/ScreenGui/CoinDisplay.client.luau"
+                  ]
+                },
+                {
+                  "name": "Frame",
+                  "className": "Frame",
+                  "guid": "454947",
+                  "children": [
+                    {
+                      "name": "ImageLabel",
+                      "className": "ImageLabel",
+                      "guid": "455196"
+                    },
+                    {
+                      "name": "CoinLabel",
+                      "className": "TextLabel",
+                      "guid": "455088"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "StarterPack",
+      "className": "StarterPack",
+      "guid": "8810"
+    },
+    {
+      "name": "StarterPlayer",
+      "className": "StarterPlayer",
+      "guid": "8809",
+      "children": [
+        {
+          "name": "StarterCharacterScripts",
+          "className": "StarterCharacterScripts",
+          "guid": "11562"
+        },
+        {
+          "name": "StarterPlayerScripts",
+          "className": "StarterPlayerScripts",
+          "guid": "11563"
+        }
+      ]
+    },
+    {
+      "name": "Workspace",
+      "className": "Workspace",
+      "guid": "14",
+      "children": [
+        {
+          "name": "Baseplate",
+          "className": "Part",
+          "guid": "11549",
+          "children": [
+            {
+              "name": "Texture",
+              "className": "Texture",
+              "guid": "11569"
+            }
+          ]
+        },
+        {
+          "name": "Camera",
+          "className": "Camera",
+          "guid": "300554"
+        },
+        {
+          "name": "Part",
+          "className": "Part",
+          "guid": "11550"
+        },
+        {
+          "name": "SpawnLocation",
+          "className": "SpawnLocation",
+          "guid": "11561",
+          "children": [
+            {
+              "name": "Decal",
+              "className": "Decal",
+              "guid": "11536"
+            }
+          ]
+        },
+        {
+          "name": "Terrain",
+          "className": "Terrain",
+          "guid": "11567"
+        }
+      ]
+    }
+  ]
+}

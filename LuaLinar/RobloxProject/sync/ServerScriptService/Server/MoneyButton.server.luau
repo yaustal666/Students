@@ -1,3 +1,4 @@
+local CurrencyManager = require(script.Parent.CurrencyManager)
 local button = Instance.new("Part")
 
 button.Size = Vector3.new(6, 2, 6)
@@ -17,9 +18,13 @@ local function OnPlayerTouched(otherPart)
 	if not player then return end
     if not isActive then return end
 
-	isActive = false
-    _G.addCoins(player, 10)
-	button.Material = Enum.Material.Carpet
+    local success = CurrencyManager.addCurrency(player, "Coins", 10)
+    if success then
+        button.Material = Enum.Material.Carpet
+        isActive = false
+    else
+        return
+    end
 
     task.wait(4)
     button.Material = Enum.Material.CrackedLava

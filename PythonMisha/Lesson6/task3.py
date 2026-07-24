@@ -6,3 +6,4 @@ price = [
 ]
 
 sample = [line[::2] for line in price]
+print(sample)

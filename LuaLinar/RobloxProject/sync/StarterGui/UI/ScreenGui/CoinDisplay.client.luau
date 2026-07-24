@@ -2,12 +2,17 @@ local player = game.Players.LocalPlayer
 local coinLabel = script.Parent.Frame.CoinLabel
 
 local leaderstats = player:WaitForChild("leaderstats")
-local coins = leaderstats:WaitForChild("Coins")
 
-local function updateCoinLable()
-    coinLabel.Text = "💰 " .. tostring(coins.Value)
+local function updateCoinDisplay()
+    local coins = leaderstats:FindFirstChild("Coins")
+    if coins then
+        coinLabel.Text = "💰 " .. tostring(coins.Value)
+    end
 end
 
-updateCoinLable()
+updateCoinDisplay()
 
-coins:GetPropertyChangedSignal("Value"):Connect(updateCoinLable)
+local coins = leaderstats:FindFirstChild("Coins")
+if coins then
+    coins:GetPropertyChangedSignal("Value"):Connect(updateCoinDisplay)
+end

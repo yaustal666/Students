@@ -48,6 +48,22 @@ function CurrencyManager.addCurrency(player, currencyName, amount)
 end
 
 -- функция проверки достаточно ли валюты
+function CurrencyManager.hasCurrency(player, currencyName, amount)
+    local currency: IntValue = CurrencyManager.GetCurrency(player, currencyName)
+    if currency.Value >= amount then
+        return true
+    end
+    return false
+end
+
 -- функция вычета валюты, например при покупке
+function CurrencyManager.Pay(player, currencyName, amount)
+    local currency: IntValue = CurrencyManager.GetCurrency(player, currencyName)
+    if CurrencyManager.hasCurrency(player, currencyName, amount) then
+        currency.Value -= amount
+        return true
+    end
+    return false
+end
 
 return CurrencyManager

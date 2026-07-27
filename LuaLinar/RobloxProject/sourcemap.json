@@ -64,7 +64,7 @@
             {
               "name": "CurrencyManager",
               "className": "ModuleScript",
-              "guid": "11548",
+              "guid": "444920",
               "filePaths": [
                 "sync/ServerScriptService/Server/CurrencyManager.luau"
               ]
@@ -72,25 +72,25 @@
             {
               "name": "MoneyButton",
               "className": "Script",
-              "guid": "11555",
+              "guid": "444924",
               "filePaths": [
                 "sync/ServerScriptService/Server/MoneyButton.server.luau"
               ]
             },
             {
-              "name": "MovementTracker",
+              "name": "Server",
               "className": "Script",
-              "guid": "11557",
+              "guid": "1153264",
               "filePaths": [
-                "sync/ServerScriptService/Server/MovementTracker.server.luau"
+                "sync/ServerScriptService/Server/Server.server.luau"
               ]
             },
             {
-              "name": "PlayerManager",
-              "className": "Script",
-              "guid": "11556",
+              "name": "MovementTracker",
+              "className": "ModuleScript",
+              "guid": "1553568",
               "filePaths": [
-                "sync/ServerScriptService/Server/PlayerManager.server.luau"
+                "sync/ServerScriptService/Server/MovementTracker.luau"
               ]
             }
           ]
@@ -105,7 +105,7 @@
     {
       "name": "SoundService",
       "className": "SoundService",
-      "guid": "7909"
+      "guid": "8182"
     },
     {
       "name": "StarterGui",
@@ -125,7 +125,7 @@
                 {
                   "name": "CoinDisplay",
                   "className": "LocalScript",
-                  "guid": "11547",
+                  "guid": "444926",
                   "filePaths": [
                     "sync/StarterGui/UI/ScreenGui/CoinDisplay.client.luau"
                   ]
@@ -195,7 +195,7 @@
         {
           "name": "Camera",
           "className": "Camera",
-          "guid": "201439"
+          "guid": "442005"
         },
         {
           "name": "Part",
@@ -218,6 +218,16 @@
           "name": "Terrain",
           "className": "Terrain",
           "guid": "11569"
+        },
+        {
+          "name": "Part",
+          "className": "Part",
+          "guid": "1154629"
+        },
+        {
+          "name": "Part",
+          "className": "Part",
+          "guid": "1155217"
         }
       ]
     }

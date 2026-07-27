@@ -22,25 +22,11 @@ local function connectToPlayerRunning(player)
     end)
 end
 
-Players.PlayerAdded:Connect(function(player)
-    print(player)
-    runningPlayers[tostring(player)] = 
-    {
-        playerRefrence = player, 
-        isActive = false,
-        timePassed = 0    
-    }
-    connectToPlayerRunning(player)
-    print(runningPlayers)
-end)
-
-
 local function OnRunning(dt: number)
     for userId, playerData in pairs(runningPlayers) do
         if not playerData.isActive then
             playerData.timePassed = 0
-            continue -- Я глупи, тут было написано return и естественно все вылетало, теперь норм
-            -- continue пропускает 1 итерацию цикла и переходит к следующей сразу
+            continue
         end
         
         playerData.timePassed += dt
@@ -53,3 +39,17 @@ local function OnRunning(dt: number)
 end
 
 game:GetService("RunService").Heartbeat:Connect(OnRunning)
+
+local MovementTracker = {}
+
+function MovementTracker.initPlayer(player: Player)
+    runningPlayers[tostring(player)] = 
+    {
+        playerRefrence = player, 
+        isActive = false,
+        timePassed = 0    
+    }
+    connectToPlayerRunning(player)
+end
+
+return MovementTracker

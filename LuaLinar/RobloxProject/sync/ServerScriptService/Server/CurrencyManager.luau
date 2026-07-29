@@ -1,33 +1,24 @@
 local LogService = game:GetService("LogService")
+local DataService = require(game.ServerScriptService.Server.DataService)
+
 local CurrencyManager = {}
 
-local CurrencyData = {
-    Coins = {
-        defaultValue = 0,
-        displayName = "Coins",
-    }
-}
-
-function CurrencyManager.initPlayer(player)
-    local leaderstats = Instance.new("Folder")
+function CurrencyManager.initPlayer(player, playerData)
+    local leaderstats = Instance.new("Folder", player)
     leaderstats.Name = "leaderstats"
-    leaderstats.Parent = player
 
-    for currencyName, config in pairs(CurrencyData) do
-        local currency = Instance.new("IntValue")
-        currency.Parent = leaderstats
+    for currencyName, value in pairs(playerData) do
+        local currency = Instance.new("IntValue", leaderstats)
         currency.Name = currencyName
-        currency.Value = config.defaultValue
+        currency.Value = value
     end
 end
 
 function CurrencyManager.GetCurrency(player, currencyName)
-    local leaderstats = player:FindFirstChild("leaderstats")
-    if not leaderstats then 
-        return false
-    end
+    local playerData = DataService.getPlayerData(player)
+    if not playerData then return 0 end
 
-    local currency = leaderstats:FindFirstChild(currencyName)
+    local currency = playerData[currencyName]
 
     if not currency then
         return false
@@ -42,8 +33,16 @@ function CurrencyManager.addCurrency(player, currencyName, amount)
         return false
     end
 
-    currency.Value += amount
-    LogService:Info(`{player.Name} received {amount} {currencyName}. Total {currencyName}: {currency.Value}`)
+    local newValue = currency + amount
+    DataService.updatePlayerData(player, currencyName, newValue)
+    -- TODO
+    -- Если update Player Data выполнилась успешно, то есть вернуло true
+    -- Нужно с сервера запустить событие CurrencyChangedEvent, прокинуть имя валюты и значение
+
+    local leaderstats = player:FindFirstChild("leaderstats")
+    if not leaderstats then return false end
+    local leaderstatsCurrency = leaderstats:FindFirstChild(currencyName)
+    leaderstatsCurrency.Value = newValue
     return true
 end
 

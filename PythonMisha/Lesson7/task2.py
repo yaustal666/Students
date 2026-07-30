@@ -8,6 +8,11 @@ today_discounts = {
     }
 }
 
+prices = {
+    "Bread" : 10,
+    "Milk" : 25
+}
+
 class ShoppingCart:
     def __init__(self):
         self.products = []
@@ -16,10 +21,12 @@ class ShoppingCart:
         self.products.append((name, amount))
 
 shopping_cart = ShoppingCart()
-shopping_cart.addItem("Bread", 10)
+shopping_cart.addItem("Bread", 2)
+shopping_cart.addItem("Milk", 10)
 
 # Необходимо написать функцию рассчета стоимости корзины с учетом скидок
-def calculateCart(cart: ShoppingCart, discounts: dict):
-    pass
+def calculateCart(cart: ShoppingCart, discounts: dict, prices: dict) -> float:
+    for productName, productAmount in cart.products:
+        
 
-print(calculateCart(shopping_cart, today_discounts))
+print(calculateCart(shopping_cart, today_discounts, prices))

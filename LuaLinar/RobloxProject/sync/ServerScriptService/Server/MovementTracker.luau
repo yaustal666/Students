@@ -1,4 +1,3 @@
-local Players = game:GetService("Players")
 local CurrencyManager = require(script.Parent.CurrencyManager)
 
 local runningPlayers = {}
@@ -32,7 +31,7 @@ local function OnRunning(dt: number)
         playerData.timePassed += dt
 
         if playerData.timePassed > 0.5 then
-            CurrencyManager.addCurrency(playerData.playerRefrence, "Coins", 5)
+            CurrencyManager.addCurrency(playerData.playerRefrence, "Speed", 1)
             playerData.timePassed = 0
         end
     end

@@ -24,9 +24,27 @@ shopping_cart = ShoppingCart()
 shopping_cart.addItem("Bread", 2)
 shopping_cart.addItem("Milk", 10)
 
+# productEndPrice = price * n * discount - sum
 # Необходимо написать функцию рассчета стоимости корзины с учетом скидок
 def calculateCart(cart: ShoppingCart, discounts: dict, prices: dict) -> float:
+    sum = 0
     for productName, productAmount in cart.products:
+        d = discounts.get(productName)
         
+        if d is not None:
+            d = d.get(productAmount)
+            if d is None:
+                d = 1
+        else:
+            d = 1
 
+        m = prices[productName]
+
+        if d == 1:
+            sum += m * productAmount
+        else:
+            sum += m * productAmount * (1 - d)
+
+    return sum
+            
 print(calculateCart(shopping_cart, today_discounts, prices))

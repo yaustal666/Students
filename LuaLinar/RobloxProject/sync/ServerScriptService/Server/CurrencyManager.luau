@@ -1,5 +1,5 @@
-local LogService = game:GetService("LogService")
 local DataService = require(game.ServerScriptService.Server.DataService)
+local InventoryManager = require(game.ServerScriptService.Server.InventoryManager)
 
 local CurrencyManager = {}
 
@@ -33,11 +33,14 @@ function CurrencyManager.addCurrency(player, currencyName, amount)
         return false
     end
 
-    local newValue = currency + amount
-    DataService.updatePlayerData(player, currencyName, newValue)
-    -- TODO
-    -- Если update Player Data выполнилась успешно, то есть вернуло true
-    -- Нужно с сервера запустить событие CurrencyChangedEvent, прокинуть имя валюты и значение
+    local mult = InventoryManager.calculateMultiplyer(player)
+    local newValue = currency + amount * mult
+
+    local success = DataService.updatePlayerData(player, currencyName, newValue)
+    if success then
+		local CurrencyChangedEvent: RemoteEvent = game.ReplicatedStorage.remotes.CurrencyChangedEvent
+		CurrencyChangedEvent:FireClient(player, currencyName, newValue)
+	end
 
     local leaderstats = player:FindFirstChild("leaderstats")
     if not leaderstats then return false end

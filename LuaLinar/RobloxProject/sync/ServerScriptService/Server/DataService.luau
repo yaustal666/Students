@@ -1,17 +1,13 @@
 local DataStoreService = game:GetService("DataStoreService")
 local Players = game:GetService("Players")
-local PlayerDataStore = DataStoreService:GetDataStore("PlayerDataStore_v1")
+local PlayerDataStore = DataStoreService:GetDataStore("PlayerDataStore_v2")
 
 local SessionData = {}
-
--- PlayerConnected - load data from datastore in SessionData
--- If player is new - create new data in both data store and session
--- Player playing game. Working with SessionData
--- Player leave -> save from SessionData in DataStore
 
 local function getPlayerDefaultData()
     return  {
         Coins = 0,
+        Speed = 0,
     }
 end
 

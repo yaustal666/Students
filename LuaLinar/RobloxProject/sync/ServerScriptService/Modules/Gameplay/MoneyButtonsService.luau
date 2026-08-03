@@ -1,6 +1,7 @@
 local CollectionService = game:GetService("CollectionService")
-local CurrencyManager = require(game.ServerScriptService.Server.CurrencyManager)
-local MoneyButtons = {}
+local CurrencyService = require(game.ServerScriptService.Modules.Core.CurrencyService)
+
+local MoneyButtonsService = {}
 
 local function setupCoinButton(part)
     part.Touched:Connect(
@@ -10,12 +11,12 @@ local function setupCoinButton(part)
             local player = game:GetService("Players"):GetPlayerFromCharacter(character)
             if not player then return end
             
-            CurrencyManager.addCurrency(player, "Coins", part:GetAttribute("CoinValue"))
+            CurrencyService.addCurrency(player, "Coins", part:GetAttribute("CoinValue"))
         end
     )
 end
 
-function MoneyButtons.Init()
+function MoneyButtonsService.Init()
     for _, part in ipairs(CollectionService:GetTagged("CoinButton")) do
         setupCoinButton(part)
     end
@@ -27,4 +28,4 @@ function MoneyButtons.Init()
     )
 end
 
-return MoneyButtons
+return MoneyButtonsService

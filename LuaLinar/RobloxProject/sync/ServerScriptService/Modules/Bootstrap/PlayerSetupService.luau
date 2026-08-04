@@ -11,7 +11,7 @@ local function SetupPlayerLeaderstats(player: Player, playerData: table)
     end
 end
 
-local function SetupPlayerInventory(player)
+local function SetupPlayerInventory(player: Player)
     local inventory = Instance.new("Folder")
     inventory.Name = "inventory"
     inventory.Parent = player

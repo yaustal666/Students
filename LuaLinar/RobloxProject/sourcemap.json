@@ -5,7 +5,7 @@
     {
       "name": "Lighting",
       "className": "Lighting",
-      "guid": "11616",
+      "guid": "11619",
       "children": [
         {
           "name": "Atmosphere",
@@ -25,12 +25,12 @@
         {
           "name": "Sky",
           "className": "Sky",
-          "guid": "11640"
+          "guid": "11646"
         },
         {
           "name": "SunRays",
           "className": "SunRaysEffect",
-          "guid": "11645"
+          "guid": "11651"
         }
       ]
     },
@@ -42,17 +42,17 @@
     {
       "name": "ReplicatedStorage",
       "className": "ReplicatedStorage",
-      "guid": "11633"
+      "guid": "11639"
     },
     {
       "name": "ServerScriptService",
       "className": "ServerScriptService",
-      "guid": "11637",
+      "guid": "11643",
       "children": [
         {
           "name": "init_server",
           "className": "Script",
-          "guid": "11635",
+          "guid": "11641",
           "filePaths": [
             "sync/ServerScriptService/init_server.server.luau"
           ]
@@ -65,12 +65,12 @@
             {
               "name": "Bootstrap",
               "className": "Folder",
-              "guid": "444976",
+              "guid": "11612",
               "children": [
                 {
                   "name": "NetworkSetupService",
                   "className": "ModuleScript",
-                  "guid": "11620",
+                  "guid": "11623",
                   "filePaths": [
                     "sync/ServerScriptService/Modules/Bootstrap/NetworkSetupService.luau"
                   ]
@@ -78,7 +78,7 @@
                 {
                   "name": "PlayerSetupService",
                   "className": "ModuleScript",
-                  "guid": "1785320",
+                  "guid": "11624",
                   "filePaths": [
                     "sync/ServerScriptService/Modules/Bootstrap/PlayerSetupService.luau"
                   ]
@@ -86,61 +86,46 @@
               ]
             },
             {
-              "name": "Gameplay",
-              "className": "Folder",
-              "guid": "445082",
-              "children": [
-                {
-                  "name": "MoneyButtonsService",
-                  "className": "ModuleScript",
-                  "guid": "11624",
-                  "filePaths": [
-                    "sync/ServerScriptService/Modules/Gameplay/MoneyButtonsService.luau"
-                  ]
-                },
-                {
-                  "name": "MovementTrackerService",
-                  "className": "ModuleScript",
-                  "guid": "11622",
-                  "filePaths": [
-                    "sync/ServerScriptService/Modules/Gameplay/MovementTrackerService.luau"
-                  ]
-                }
+              "name": "ControllerService",
+              "className": "ModuleScript",
+              "guid": "11631",
+              "filePaths": [
+                "sync/ServerScriptService/Modules/ControllerService.luau"
               ]
             },
             {
               "name": "Core",
               "className": "Folder",
-              "guid": "445478",
+              "guid": "11614",
               "children": [
                 {
                   "name": "CurrencyService",
                   "className": "ModuleScript",
-                  "guid": "11623",
+                  "guid": "11627",
                   "filePaths": [
                     "sync/ServerScriptService/Modules/Core/CurrencyService.luau"
                   ]
                 },
                 {
-                  "name": "InventoryService",
-                  "className": "ModuleScript",
-                  "guid": "11625",
-                  "filePaths": [
-                    "sync/ServerScriptService/Modules/Core/InventoryService.luau"
-                  ]
-                },
-                {
                   "name": "DataService",
                   "className": "ModuleScript",
-                  "guid": "11621",
+                  "guid": "11628",
                   "filePaths": [
                     "sync/ServerScriptService/Modules/Core/DataService.luau"
                   ]
                 },
                 {
+                  "name": "InventoryService",
+                  "className": "ModuleScript",
+                  "guid": "11629",
+                  "filePaths": [
+                    "sync/ServerScriptService/Modules/Core/InventoryService.luau"
+                  ]
+                },
+                {
                   "name": "PlayerConnectionService",
                   "className": "ModuleScript",
-                  "guid": "1785196",
+                  "guid": "11630",
                   "filePaths": [
                     "sync/ServerScriptService/Modules/Core/PlayerConnectionService.luau"
                   ]
@@ -148,12 +133,32 @@
               ]
             },
             {
-              "name": "ControllerService",
-              "className": "ModuleScript",
-              "guid": "2155938",
-              "filePaths": [
-                "sync/ServerScriptService/Modules/ControllerService.luau"
+              "name": "Gameplay",
+              "className": "Folder",
+              "guid": "11613",
+              "children": [
+                {
+                  "name": "MoneyButtonsService",
+                  "className": "ModuleScript",
+                  "guid": "11625",
+                  "filePaths": [
+                    "sync/ServerScriptService/Modules/Gameplay/MoneyButtonsService.luau"
+                  ]
+                },
+                {
+                  "name": "MovementTrackerService",
+                  "className": "ModuleScript",
+                  "guid": "11626",
+                  "filePaths": [
+                    "sync/ServerScriptService/Modules/Gameplay/MovementTrackerService.luau"
+                  ]
+                }
               ]
+            },
+            {
+              "name": "Util",
+              "className": "Folder",
+              "guid": "815792"
             }
           ]
         }
@@ -162,12 +167,12 @@
     {
       "name": "ServerStorage",
       "className": "ServerStorage",
-      "guid": "11638"
+      "guid": "11644"
     },
     {
       "name": "SoundService",
       "className": "SoundService",
-      "guid": "8602"
+      "guid": "7783"
     },
     {
       "name": "StarterGui",
@@ -182,12 +187,12 @@
             {
               "name": "ScreenGui",
               "className": "ScreenGui",
-              "guid": "11634",
+              "guid": "11640",
               "children": [
                 {
                   "name": "CoinDisplay",
                   "className": "LocalScript",
-                  "guid": "11619",
+                  "guid": "11622",
                   "filePaths": [
                     "sync/StarterGui/UI/ScreenGui/CoinDisplay.client.luau"
                   ]
@@ -195,17 +200,17 @@
                 {
                   "name": "Frame",
                   "className": "Frame",
-                  "guid": "11612",
+                  "guid": "11615",
                   "children": [
                     {
                       "name": "CoinLabel",
                       "className": "TextLabel",
-                      "guid": "11649"
+                      "guid": "11655"
                     },
                     {
                       "name": "ImageLabel",
                       "className": "ImageLabel",
-                      "guid": "11615"
+                      "guid": "11618"
                     }
                   ]
                 }
@@ -228,17 +233,17 @@
         {
           "name": "StarterCharacterScripts",
           "className": "StarterCharacterScripts",
-          "guid": "11642"
+          "guid": "11648"
         },
         {
           "name": "StarterPlayerScripts",
           "className": "StarterPlayerScripts",
-          "guid": "11643",
+          "guid": "11649",
           "children": [
             {
               "name": "SpeedChanger",
               "className": "LocalScript",
-              "guid": "11618",
+              "guid": "11621",
               "filePaths": [
                 "sync/StarterPlayer/StarterPlayerScripts/SpeedChanger.client.luau"
               ]
@@ -246,7 +251,7 @@
             {
               "name": "Walls",
               "className": "LocalScript",
-              "guid": "11617",
+              "guid": "11620",
               "filePaths": [
                 "sync/StarterPlayer/StarterPlayerScripts/Walls.client.luau"
               ]
@@ -263,44 +268,44 @@
         {
           "name": "Baseplate",
           "className": "Part",
-          "guid": "11627",
+          "guid": "11633",
           "children": [
             {
               "name": "Texture",
               "className": "Texture",
-              "guid": "11650"
+              "guid": "11656"
             }
           ]
         },
         {
           "name": "Camera",
           "className": "Camera",
-          "guid": "223451"
+          "guid": "244508"
         },
         {
           "name": "Part",
           "className": "Part",
-          "guid": "11628"
+          "guid": "11634"
         },
         {
           "name": "Part",
           "className": "Part",
-          "guid": "11629"
+          "guid": "11635"
         },
         {
           "name": "Part",
           "className": "Part",
-          "guid": "11630"
+          "guid": "11636"
         },
         {
           "name": "Part",
           "className": "Part",
-          "guid": "11631"
+          "guid": "11637"
         },
         {
           "name": "SpawnLocation",
           "className": "SpawnLocation",
-          "guid": "11641",
+          "guid": "11647",
           "children": [
             {
               "name": "Decal",
@@ -312,7 +317,7 @@
         {
           "name": "Terrain",
           "className": "Terrain",
-          "guid": "11647"
+          "guid": "11653"
         }
       ]
     }

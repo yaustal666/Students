@@ -6,37 +6,21 @@ tasks = {
     "1": {
         "title": "Task1",
         "description": "bla bla 1",
-        "subtasks": {
-            "1_1": "subtask 1",
-            "1_2": "subtask 2" 
-        },
         "priority": 0
     },
     "2": {
         "title": "Task2",
         "description": "bla bla 2",
-        "subtasks": {
-            "2_1": "subtask 1",
-            "2_2": "subtask 2" 
-        },
         "priority": 1
     },
     "3": {
         "title": "Task3",
         "description": "bla bla 3",
-        "subtasks": {
-            "2_1": "subtask 1",
-            "2_2": "subtask 2" 
-        },
         "priority": 1
     },
     "4": {
         "title": "Task4",
         "description": "bla bla 4",
-        "subtasks": {
-            "2_1": "subtask 1",
-            "2_2": "subtask 2" 
-        },
         "priority": 3
     },
 }

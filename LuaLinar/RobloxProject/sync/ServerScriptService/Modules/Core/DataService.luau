@@ -11,9 +11,9 @@ local function getPlayerDefaultData()
     }
 end
 
-local DataService = {}
+local Module = {}
 
-function DataService.loadDataAsync(player: Player) 
+function Module.loadDataAsync(player: Player) 
     local success, data = pcall(
         function()
             return PlayerDataStore:GetAsync(player.UserId)
@@ -25,19 +25,19 @@ function DataService.loadDataAsync(player: Player)
     return data
 end
 
-function DataService.saveDataAsync(player: Player) 
-    local success, result = pcall(
+function Module.saveDataAsync(player: Player) 
+    pcall(
         function()
             PlayerDataStore:SetAsync(player.UserId, SessionData[player.UserId])
         end
     )
 end
 
-function DataService.getPlayerData(player: Player)
+function Module.getPlayerData(player: Player)
     return SessionData[player.UserId]
 end
 
-function DataService.updatePlayerData(player: Player, key: string, newValue)
+function Module.updatePlayerData(player: Player, key: string, newValue: any)
     if SessionData[player.UserId] then
         SessionData[player.UserId][key] = newValue
         return true
@@ -45,16 +45,16 @@ function DataService.updatePlayerData(player: Player, key: string, newValue)
     return false
 end
 
-function DataService.initPlayerSession(player, playerData)
+function Module.initPlayerSession(player: Player, playerData: table)
     SessionData[player.UserId] = playerData
 end
 
 game:BindToClose (
     function()
         for _, player in ipairs(Players:GetPlayers()) do
-            DataService.saveDataAsync(player)
+            Module.saveDataAsync(player)
         end
     end
 )
 
-return DataService
+return Module

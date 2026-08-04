@@ -3,9 +3,9 @@ local remoteEventsNames = {
     "CurrencyChangedEvent"
 }
 
-local NetworkSetupService = {}
+local Module = {}
 
-function NetworkSetupService.Init()
+function Module.Init()
     local remotes = Instance.new("Folder", game.ReplicatedStorage)
     remotes.Name = "remotes"
 
@@ -15,4 +15,4 @@ function NetworkSetupService.Init()
     end
 end
 
-return NetworkSetupService
+return Module

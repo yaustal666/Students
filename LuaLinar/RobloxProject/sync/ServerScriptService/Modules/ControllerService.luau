@@ -5,7 +5,7 @@ local CurrencyService = require(game.ServerScriptService.Modules.Core.CurrencySe
 local AddCurrencyEvent = ReplicatedStorage.remotes.AddCurrencyEvent
 local buttonCooldowns = {}
 AddCurrencyEvent.OnServerEvent:Connect(
-	function(player, currencyName, amount, part)
+	function(player: Player, currencyName: string, amount: number, part: BasePart)
 		if not (part and part:IsA("BasePart") and CollectionService:HasTag(part, "CoinButton")) then return end
 		if part:GetAttribute("CoinValue") ~= amount then return end
 		if buttonCooldowns[part] then return end

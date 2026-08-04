@@ -2,7 +2,7 @@ local CurrencyService = require(game.ServerScriptService.Modules.Core.CurrencySe
 
 local runningPlayers = {}
 
-local function connectToPlayerRunning(player)
+local function connectToPlayerRunning(player: Player)
     player.CharacterAdded:Connect(function(character)
         local humanoid = character:FindFirstChild("Humanoid")
         humanoid.Running:Connect(function(speed)
@@ -22,7 +22,7 @@ local function connectToPlayerRunning(player)
 end
 
 local function OnRunning(dt: number)
-    for userId, playerData in pairs(runningPlayers) do
+    for _, playerData in pairs(runningPlayers) do
         if not playerData.isActive then
             playerData.timePassed = 0
             continue
@@ -39,9 +39,9 @@ end
 
 game:GetService("RunService").Heartbeat:Connect(OnRunning)
 
-local MovementTracker = {}
+local Module = {}
 
-function MovementTracker.initPlayer(player: Player)
+function Module.initPlayer(player: Player)
     runningPlayers[tostring(player)] = 
     {
         playerRefrence = player, 
@@ -51,4 +51,4 @@ function MovementTracker.initPlayer(player: Player)
     connectToPlayerRunning(player)
 end
 
-return MovementTracker
+return Module

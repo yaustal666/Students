@@ -4,7 +4,7 @@ local DataService = require(game.ServerScriptService.Modules.Core.DataService)
 local MovementTrackerService = require(game.ServerScriptService.Modules.Gameplay.MovementTrackerService)
 
 Players.PlayerAdded:Connect(
-    function(player)
+    function(player: Player)
         local playerData = DataService.loadDataAsync(player)
         DataService.initPlayerSession(player, playerData)
         PlayerSetupService.initPlayer(player, playerData)
@@ -13,10 +13,10 @@ Players.PlayerAdded:Connect(
 )
 
 Players.PlayerRemoving:Connect(
-    function(player)
+    function(player: Player)
         DataService.saveDataAsync(player)
     end
 )
 
-local PlayerConnectionService = {}
-return PlayerConnectionService
+local Module = {}
+return Module

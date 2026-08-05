@@ -1,6 +1,6 @@
 local PlayerSetupService = {}
 
-local function SetupPlayerLeaderstats(player: Player, playerData: table)
+local function SetupPlayerLeaderstats(player: Player, playerData)
     local leaderstats = Instance.new("Folder", player)
     leaderstats.Name = "leaderstats"
 
@@ -21,7 +21,7 @@ local function SetupPlayerInventory(player: Player)
     currency.Value = 2.5
 end
 
-function PlayerSetupService.initPlayer(player: Player, playerData: table)
+function PlayerSetupService.initPlayer(player: Player, playerData)
     SetupPlayerLeaderstats(player, playerData)
     SetupPlayerInventory(player)
 end

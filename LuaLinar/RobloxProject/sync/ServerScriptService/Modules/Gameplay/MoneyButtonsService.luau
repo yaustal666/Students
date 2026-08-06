@@ -1,6 +1,6 @@
 local CollectionService = game:GetService("CollectionService")
 local Players = game:GetService("Players")
-local CurrencyService = require(game.ServerScriptService.Modules.Core.CurrencyService)
+local CurrencyService = require(game.ServerScriptService.Modules.Economics.CurrencyService)
 
 local function setupCoinButton(part: BasePart)
     part.Touched:Connect(

@@ -1,4 +1,4 @@
-local CurrencyService = require(game.ServerScriptService.Modules.Core.CurrencyService)
+local CurrencyService = require(game.ServerScriptService.Modules.Economics.CurrencyService)
 
 local runningPlayers = {}
 

@@ -5,54 +5,64 @@
     {
       "name": "Lighting",
       "className": "Lighting",
-      "guid": "148102",
+      "guid": "11651",
       "children": [
         {
           "name": "Atmosphere",
           "className": "Atmosphere",
-          "guid": "148082"
+          "guid": "11623"
         },
         {
           "name": "Bloom",
           "className": "BloomEffect",
-          "guid": "148090"
+          "guid": "11631"
         },
         {
           "name": "DepthOfField",
           "className": "DepthOfFieldEffect",
-          "guid": "148098"
+          "guid": "11639"
         },
         {
           "name": "Sky",
           "className": "Sky",
-          "guid": "148119"
+          "guid": "11679"
         },
         {
           "name": "SunRays",
           "className": "SunRaysEffect",
-          "guid": "148124"
+          "guid": "11684"
         }
       ]
     },
     {
       "name": "ReplicatedFirst",
       "className": "ReplicatedFirst",
-      "guid": "147772"
+      "guid": "8876"
     },
     {
       "name": "ReplicatedStorage",
       "className": "ReplicatedStorage",
-      "guid": "148011"
+      "guid": "11672",
+      "children": [
+        {
+          "name": "Admin",
+          "className": "ModuleScript",
+          "guid": "445130",
+          "filePaths": [
+            "sync/ReplicatedStorage/Admin.luau"
+          ]
+        }
+      ]
     },
     {
       "name": "ServerScriptService",
       "className": "ServerScriptService",
-      "guid": "148012",
+      "guid": "11676",
       "children": [
         {
           "name": "init_server",
           "className": "Script",
-          "guid": "444338",
+          "guid": "11674",
           "filePaths": [
             "sync/ServerScriptService/init_server.server.luau"
           ]
@@ -60,17 +70,25 @@
         {
           "name": "Modules",
           "className": "Folder",
-          "guid": "444337",
+          "guid": "11641",
           "children": [
             {
               "name": "Bootstrap",
               "className": "Folder",
-              "guid": "444348",
+              "guid": "11642",
               "children": [
+                {
+                  "name": "AdminSetup",
+                  "className": "ModuleScript",
+                  "guid": "3841895",
+                  "filePaths": [
+                    "sync/ServerScriptService/Modules/Bootstrap/AdminSetup.luau"
+                  ]
+                },
                 {
                   "name": "NetworkSetupService",
                   "className": "ModuleScript",
-                  "guid": "444364",
+                  "guid": "11655",
                   "filePaths": [
                     "sync/ServerScriptService/Modules/Bootstrap/NetworkSetupService.luau"
                   ]
@@ -78,7 +96,7 @@
                 {
                   "name": "PlayerSetupService",
                   "className": "ModuleScript",
-                  "guid": "444360",
+                  "guid": "11656",
                   "filePaths": [
                     "sync/ServerScriptService/Modules/Bootstrap/PlayerSetupService.luau"
                   ]
@@ -88,7 +106,7 @@
             {
               "name": "ControllerService",
               "className": "ModuleScript",
-              "guid": "444346",
+              "guid": "11662",
               "filePaths": [
                 "sync/ServerScriptService/Modules/ControllerService.luau"
               ]
@@ -96,20 +114,12 @@
             {
               "name": "Core",
               "className": "Folder",
-              "guid": "444349",
+              "guid": "11644",
               "children": [
-                {
-                  "name": "CurrencyService",
-                  "className": "ModuleScript",
-                  "guid": "444358",
-                  "filePaths": [
-                    "sync/ServerScriptService/Modules/Core/CurrencyService.luau"
-                  ]
-                },
                 {
                   "name": "DataService",
                   "className": "ModuleScript",
-                  "guid": "444362",
+                  "guid": "11659",
                   "filePaths": [
                     "sync/ServerScriptService/Modules/Core/DataService.luau"
                   ]
@@ -117,7 +127,7 @@
                 {
                   "name": "InventoryService",
                   "className": "ModuleScript",
-                  "guid": "444356",
+                  "guid": "11660",
                   "filePaths": [
                     "sync/ServerScriptService/Modules/Core/InventoryService.luau"
                   ]
@@ -125,7 +135,7 @@
                 {
                   "name": "PlayerConnectionService",
                   "className": "ModuleScript",
-                  "guid": "444352",
+                  "guid": "11661",
                   "filePaths": [
                     "sync/ServerScriptService/Modules/Core/PlayerConnectionService.luau"
                   ]
@@ -133,14 +143,37 @@
               ]
             },
             {
+              "name": "Economics",
+              "className": "Folder",
+              "guid": "11646",
+              "children": [
+                {
+                  "name": "CurrencyService",
+                  "className": "ModuleScript",
+                  "guid": "11663",
+                  "filePaths": [
+                    "sync/ServerScriptService/Modules/Economics/CurrencyService.luau"
+                  ]
+                },
+                {
+                  "name": "ShopService",
+                  "className": "ModuleScript",
+                  "guid": "11664",
+                  "filePaths": [
+                    "sync/ServerScriptService/Modules/Economics/ShopService.luau"
+                  ]
+                }
+              ]
+            },
+            {
               "name": "Gameplay",
               "className": "Folder",
-              "guid": "444344",
+              "guid": "11643",
               "children": [
                 {
                   "name": "MoneyButtonsService",
                   "className": "ModuleScript",
-                  "guid": "444354",
+                  "guid": "11657",
                   "filePaths": [
                     "sync/ServerScriptService/Modules/Gameplay/MoneyButtonsService.luau"
                   ]
@@ -148,12 +181,17 @@
                 {
                   "name": "MovementTrackerService",
                   "className": "ModuleScript",
-                  "guid": "444350",
+                  "guid": "11658",
                   "filePaths": [
                     "sync/ServerScriptService/Modules/Gameplay/MovementTrackerService.luau"
                   ]
                 }
               ]
+            },
+            {
+              "name": "Util",
+              "className": "Folder",
+              "guid": "11645"
             }
           ]
         }
@@ -162,85 +200,96 @@
     {
       "name": "ServerStorage",
       "className": "ServerStorage",
-      "guid": "148013"
-    },
-    {
-      "name": "SoundService",
-      "className": "SoundService",
-      "guid": "147747"
-    },
-    {
-      "name": "StarterGui",
-      "className": "StarterGui",
-      "guid": "147790",
+      "guid": "11677",
       "children": [
         {
-          "name": "ScreenGui",
-          "className": "ScreenGui",
-          "guid": "148116",
+          "name": "Frame",
+          "className": "Frame",
+          "guid": "11647",
           "children": [
             {
-              "name": "Frame",
-              "className": "Frame",
-              "guid": "148099",
-              "children": [
-                {
-                  "name": "ImageLabel",
-                  "className": "ImageLabel",
-                  "guid": "148101"
-                },
-                {
-                  "name": "TextLabel",
-                  "className": "TextLabel",
-                  "guid": "148128",
-                  "children": [
-                    {
-                      "name": "CoinDisplay",
-                      "className": "LocalScript",
-                      "guid": "148105",
-                      "filePaths": [
-                        "sync/StarterGui/ScreenGui/Frame/TextLabel/CoinDisplay.client.luau"
-                      ]
-                    }
-                  ]
-                }
-              ]
+              "name": "CoinLabel",
+              "className": "TextLabel",
+              "guid": "11688"
             },
             {
-              "name": "Buttons",
-              "className": "Frame",
-              "guid": "446606",
-              "children": [
-                {
-                  "name": "ImageButton",
-                  "className": "ImageButton",
-                  "guid": "447773",
-                  "children": [
-                    {
-                      "name": "TextLabel",
-                      "className": "TextLabel",
-                      "guid": "452737"
-                    }
-                  ]
-                }
-              ]
+              "name": "ImageLabel",
+              "className": "ImageLabel",
+              "guid": "11650"
             }
           ]
         },
         {
+          "name": "AdminPanelButton",
+          "className": "TextButton",
+          "guid": "446503",
+          "children": [
+            {
+              "name": "AdminButton",
+              "className": "LocalScript",
+              "guid": "753099",
+              "filePaths": [
+                "sync/ServerStorage/AdminPanelButton/AdminButton.client.luau"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SoundService",
+      "className": "SoundService",
+      "guid": "8090"
+    },
+    {
+      "name": "StarterGui",
+      "className": "StarterGui",
+      "guid": "8889",
+      "children": [
+        {
           "name": "UI",
           "className": "Folder",
-          "guid": "444335",
+          "guid": "11640",
           "children": [
             {
               "name": "ScreenGui",
-              "className": "Folder",
-              "guid": "444345",
+              "className": "ScreenGui",
+              "guid": "11673",
               "children": [
+                {
+                  "name": "AdminPanel",
+                  "className": "Frame",
+                  "guid": "447023",
+                  "children": [
+                    {
+                      "name": "AdminPanelControl",
+                      "className": "LocalScript",
+                      "guid": "1058565",
+                      "filePaths": [
+                        "sync/StarterGui/UI/ScreenGui/AdminPanel/AdminPanelControl.client.luau"
+                      ]
+                    },
+                    {
+                      "name": "GiveCoins",
+                      "className": "TextButton",
+                      "guid": "8236710"
+                    },
+                    {
+                      "name": "Kill",
+                      "className": "TextButton",
+                      "guid": "752499"
+                    },
+                    {
+                      "name": "UserIdInput",
+                      "className": "TextBox",
+                      "guid": "447566"
+                    }
+                  ]
+                },
                 {
                   "name": "CoinDisplay",
                   "className": "LocalScript",
-                  "guid": "444366",
+                  "guid": "11654",
                   "filePaths": [
                     "sync/StarterGui/UI/ScreenGui/CoinDisplay.client.luau"
                   ]
@@ -254,27 +303,27 @@
     {
       "name": "StarterPack",
       "className": "StarterPack",
-      "guid": "147789"
+      "guid": "8888"
     },
     {
       "name": "StarterPlayer",
       "className": "StarterPlayer",
-      "guid": "147788",
+      "guid": "8887",
       "children": [
         {
           "name": "StarterCharacterScripts",
           "className": "StarterCharacterScripts",
-          "guid": "148121"
+          "guid": "11681"
         },
         {
           "name": "StarterPlayerScripts",
           "className": "StarterPlayerScripts",
-          "guid": "148122",
+          "guid": "11682",
           "children": [
             {
               "name": "SpeedChanger",
               "className": "LocalScript",
-              "guid": "444340",
+              "guid": "11653",
               "filePaths": [
                 "sync/StarterPlayer/StarterPlayerScripts/SpeedChanger.client.luau"
               ]
@@ -282,7 +331,7 @@
             {
               "name": "Walls",
               "className": "LocalScript",
-              "guid": "444342",
+              "guid": "11652",
               "filePaths": [
                 "sync/StarterPlayer/StarterPlayerScripts/Walls.client.luau"
               ]
@@ -294,51 +343,1832 @@
     {
       "name": "Workspace",
       "className": "Workspace",
-      "guid": "146907",
+      "guid": "14",
       "children": [
         {
           "name": "Baseplate",
           "className": "Part",
-          "guid": "148112",
+          "guid": "11666",
           "children": [
             {
               "name": "Texture",
               "className": "Texture",
-              "guid": "148129"
+              "guid": "11689"
             }
           ]
         },
         {
           "name": "Camera",
           "className": "Camera",
-          "guid": "148092"
+          "guid": "201116"
+        },
+        {
+          "name": "Model",
+          "className": "Model",
+          "guid": "8243699",
+          "children": [
+            {
+              "name": "part",
+              "className": "MeshPart",
+              "guid": "8243663",
+              "children": [
+                {
+                  "name": "KeySound1",
+                  "className": "Sound",
+                  "guid": "8243736"
+                },
+                {
+                  "name": "KeySound2",
+                  "className": "Sound",
+                  "guid": "8243737"
+                },
+                {
+                  "name": "KeySound3",
+                  "className": "Sound",
+                  "guid": "8243738"
+                },
+                {
+                  "name": "Script",
+                  "className": "Script",
+                  "guid": "8243700",
+                  "filePaths": [
+                    "sync/Workspace/Model/part/Script.server.luau"
+                  ]
+                },
+                {
+                  "name": "SurfaceGui",
+                  "className": "SurfaceGui",
+                  "guid": "8243844",
+                  "children": [
+                    {
+                      "name": "Frame",
+                      "className": "Frame",
+                      "guid": "8243627",
+                      "children": [
+                        {
+                          "name": "TextLabel",
+                          "className": "TextLabel",
+                          "guid": "8243880"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "part",
+              "className": "MeshPart",
+              "guid": "8243664",
+              "children": [
+                {
+                  "name": "KeySound1",
+                  "className": "Sound",
+                  "guid": "8243739"
+                },
+                {
+                  "name": "KeySound2",
+                  "className": "Sound",
+                  "guid": "8243740"
+                },
+                {
+                  "name": "KeySound3",
+                  "className": "Sound",
+                  "guid": "8243741"
+                },
+                {
+                  "name": "Script",
+                  "className": "Script",
+                  "guid": "8243701",
+                  "filePaths": [
+                    "sync/Workspace/Model/part/Script__8243701.server.luau"
+                  ]
+                },
+                {
+                  "name": "SurfaceGui",
+                  "className": "SurfaceGui",
+                  "guid": "8243845",
+                  "children": [
+                    {
+                      "name": "Frame",
+                      "className": "Frame",
+                      "guid": "8243628",
+                      "children": [
+                        {
+                          "name": "TextLabel",
+                          "className": "TextLabel",
+                          "guid": "8243881"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "part",
+              "className": "MeshPart",
+              "guid": "8243665",
+              "children": [
+                {
+                  "name": "KeySound1",
+                  "className": "Sound",
+                  "guid": "8243742"
+                },
+                {
+                  "name": "KeySound2",
+                  "className": "Sound",
+                  "guid": "8243743"
+                },
+                {
+                  "name": "KeySound3",
+                  "className": "Sound",
+                  "guid": "8243744"
+                },
+                {
+                  "name": "Script",
+                  "className": "Script",
+                  "guid": "8243702",
+                  "filePaths": [
+                    "sync/Workspace/Model/part/Script__8243702.server.luau"
+                  ]
+                },
+                {
+                  "name": "SurfaceGui",
+                  "className": "SurfaceGui",
+                  "guid": "8243846",
+                  "children": [
+                    {
+                      "name": "Frame",
+                      "className": "Frame",
+                      "guid": "8243629",
+                      "children": [
+                        {
+                          "name": "TextLabel",
+                          "className": "TextLabel",
+                          "guid": "8243882"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "part",
+              "className": "MeshPart",
+              "guid": "8243666",
+              "children": [
+                {
+                  "name": "KeySound1",
+                  "className": "Sound",
+                  "guid": "8243745"
+                },
+                {
+                  "name": "KeySound2",
+                  "className": "Sound",
+                  "guid": "8243746"
+                },
+                {
+                  "name": "KeySound3",
+                  "className": "Sound",
+                  "guid": "8243747"
+                },
+                {
+                  "name": "Script",
+                  "className": "Script",
+                  "guid": "8243703",
+                  "filePaths": [
+                    "sync/Workspace/Model/part/Script__8243703.server.luau"
+                  ]
+                },
+                {
+                  "name": "SurfaceGui",
+                  "className": "SurfaceGui",
+                  "guid": "8243847",
+                  "children": [
+                    {
+                      "name": "Frame",
+                      "className": "Frame",
+                      "guid": "8243630",
+                      "children": [
+                        {
+                          "name": "TextLabel",
+                          "className": "TextLabel",
+                          "guid": "8243883"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "part",
+              "className": "MeshPart",
+              "guid": "8243667",
+              "children": [
+                {
+                  "name": "KeySound1",
+                  "className": "Sound",
+                  "guid": "8243748"
+                },
+                {
+                  "name": "KeySound2",
+                  "className": "Sound",
+                  "guid": "8243749"
+                },
+                {
+                  "name": "KeySound3",
+                  "className": "Sound",
+                  "guid": "8243750"
+                },
+                {
+                  "name": "Script",
+                  "className": "Script",
+                  "guid": "8243704",
+                  "filePaths": [
+                    "sync/Workspace/Model/part/Script__8243704.server.luau"
+                  ]
+                },
+                {
+                  "name": "SurfaceGui",
+                  "className": "SurfaceGui",
+                  "guid": "8243848",
+                  "children": [
+                    {
+                      "name": "Frame",
+                      "className": "Frame",
+                      "guid": "8243631",
+                      "children": [
+                        {
+                          "name": "TextLabel",
+                          "className": "TextLabel",
+                          "guid": "8243884"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "part",
+              "className": "MeshPart",
+              "guid": "8243668",
+              "children": [
+                {
+                  "name": "KeySound1",
+                  "className": "Sound",
+                  "guid": "8243751"
+                },
+                {
+                  "name": "KeySound2",
+                  "className": "Sound",
+                  "guid": "8243752"
+                },
+                {
+                  "name": "KeySound3",
+                  "className": "Sound",
+                  "guid": "8243753"
+                },
+                {
+                  "name": "Script",
+                  "className": "Script",
+                  "guid": "8243705",
+                  "filePaths": [
+                    "sync/Workspace/Model/part/Script__8243705.server.luau"
+                  ]
+                },
+                {
+                  "name": "SurfaceGui",
+                  "className": "SurfaceGui",
+                  "guid": "8243849",
+                  "children": [
+                    {
+                      "name": "Frame",
+                      "className": "Frame",
+                      "guid": "8243632",
+                      "children": [
+                        {
+                          "name": "TextLabel",
+                          "className": "TextLabel",
+                          "guid": "8243885"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "part",
+              "className": "MeshPart",
+              "guid": "8243669",
+              "children": [
+                {
+                  "name": "KeySound1",
+                  "className": "Sound",
+                  "guid": "8243754"
+                },
+                {
+                  "name": "KeySound2",
+                  "className": "Sound",
+                  "guid": "8243755"
+                },
+                {
+                  "name": "KeySound3",
+                  "className": "Sound",
+                  "guid": "8243756"
+                },
+                {
+                  "name": "Script",
+                  "className": "Script",
+                  "guid": "8243706",
+                  "filePaths": [
+                    "sync/Workspace/Model/part/Script__8243706.server.luau"
+                  ]
+                },
+                {
+                  "name": "SurfaceGui",
+                  "className": "SurfaceGui",
+                  "guid": "8243850",
+                  "children": [
+                    {
+                      "name": "Frame",
+                      "className": "Frame",
+                      "guid": "8243633",
+                      "children": [
+                        {
+                          "name": "TextLabel",
+                          "className": "TextLabel",
+                          "guid": "8243886"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "part",
+              "className": "MeshPart",
+              "guid": "8243670",
+              "children": [
+                {
+                  "name": "KeySound1",
+                  "className": "Sound",
+                  "guid": "8243757"
+                },
+                {
+                  "name": "KeySound2",
+                  "className": "Sound",
+                  "guid": "8243758"
+                },
+                {
+                  "name": "KeySound3",
+                  "className": "Sound",
+                  "guid": "8243759"
+                },
+                {
+                  "name": "Script",
+                  "className": "Script",
+                  "guid": "8243707",
+                  "filePaths": [
+                    "sync/Workspace/Model/part/Script__8243707.server.luau"
+                  ]
+                },
+                {
+                  "name": "SurfaceGui",
+                  "className": "SurfaceGui",
+                  "guid": "8243851",
+                  "children": [
+                    {
+                      "name": "Frame",
+                      "className": "Frame",
+                      "guid": "8243634",
+                      "children": [
+                        {
+                          "name": "TextLabel",
+                          "className": "TextLabel",
+                          "guid": "8243887"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "part",
+              "className": "MeshPart",
+              "guid": "8243671",
+              "children": [
+                {
+                  "name": "KeySound1",
+                  "className": "Sound",
+                  "guid": "8243760"
+                },
+                {
+                  "name": "KeySound2",
+                  "className": "Sound",
+                  "guid": "8243761"
+                },
+                {
+                  "name": "KeySound3",
+                  "className": "Sound",
+                  "guid": "8243762"
+                },
+                {
+                  "name": "Script",
+                  "className": "Script",
+                  "guid": "8243708",
+                  "filePaths": [
+                    "sync/Workspace/Model/part/Script__8243708.server.luau"
+                  ]
+                },
+                {
+                  "name": "SurfaceGui",
+                  "className": "SurfaceGui",
+                  "guid": "8243852",
+                  "children": [
+                    {
+                      "name": "Frame",
+                      "className": "Frame",
+                      "guid": "8243635",
+                      "children": [
+                        {
+                          "name": "TextLabel",
+                          "className": "TextLabel",
+                          "guid": "8243888"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "part",
+              "className": "MeshPart",
+              "guid": "8243672",
+              "children": [
+                {
+                  "name": "KeySound1",
+                  "className": "Sound",
+                  "guid": "8243763"
+                },
+                {
+                  "name": "KeySound2",
+                  "className": "Sound",
+                  "guid": "8243764"
+                },
+                {
+                  "name": "KeySound3",
+                  "className": "Sound",
+                  "guid": "8243765"
+                },
+                {
+                  "name": "Script",
+                  "className": "Script",
+                  "guid": "8243709",
+                  "filePaths": [
+                    "sync/Workspace/Model/part/Script__8243709.server.luau"
+                  ]
+                },
+                {
+                  "name": "SurfaceGui",
+                  "className": "SurfaceGui",
+                  "guid": "8243853",
+                  "children": [
+                    {
+                      "name": "Frame",
+                      "className": "Frame",
+                      "guid": "8243636",
+                      "children": [
+                        {
+                          "name": "TextLabel",
+                          "className": "TextLabel",
+                          "guid": "8243889"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "part",
+              "className": "MeshPart",
+              "guid": "8243673",
+              "children": [
+                {
+                  "name": "KeySound1",
+                  "className": "Sound",
+                  "guid": "8243766"
+                },
+                {
+                  "name": "KeySound2",
+                  "className": "Sound",
+                  "guid": "8243767"
+                },
+                {
+                  "name": "KeySound3",
+                  "className": "Sound",
+                  "guid": "8243768"
+                },
+                {
+                  "name": "Script",
+                  "className": "Script",
+                  "guid": "8243710",
+                  "filePaths": [
+                    "sync/Workspace/Model/part/Script__8243710.server.luau"
+                  ]
+                },
+                {
+                  "name": "SurfaceGui",
+                  "className": "SurfaceGui",
+                  "guid": "8243854",
+                  "children": [
+                    {
+                      "name": "Frame",
+                      "className": "Frame",
+                      "guid": "8243637",
+                      "children": [
+                        {
+                          "name": "TextLabel",
+                          "className": "TextLabel",
+                          "guid": "8243890"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "part",
+              "className": "MeshPart",
+              "guid": "8243674",
+              "children": [
+                {
+                  "name": "KeySound1",
+                  "className": "Sound",
+                  "guid": "8243769"
+                },
+                {
+                  "name": "KeySound2",
+                  "className": "Sound",
+                  "guid": "8243770"
+                },
+                {
+                  "name": "KeySound3",
+                  "className": "Sound",
+                  "guid": "8243771"
+                },
+                {
+                  "name": "Script",
+                  "className": "Script",
+                  "guid": "8243711",
+                  "filePaths": [
+                    "sync/Workspace/Model/part/Script__8243711.server.luau"
+                  ]
+                },
+                {
+                  "name": "SurfaceGui",
+                  "className": "SurfaceGui",
+                  "guid": "8243855",
+                  "children": [
+                    {
+                      "name": "Frame",
+                      "className": "Frame",
+                      "guid": "8243638",
+                      "children": [
+                        {
+                          "name": "TextLabel",
+                          "className": "TextLabel",
+                          "guid": "8243891"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "part",
+              "className": "MeshPart",
+              "guid": "8243675",
+              "children": [
+                {
+                  "name": "KeySound1",
+                  "className": "Sound",
+                  "guid": "8243772"
+                },
+                {
+                  "name": "KeySound2",
+                  "className": "Sound",
+                  "guid": "8243773"
+                },
+                {
+                  "name": "KeySound3",
+                  "className": "Sound",
+                  "guid": "8243774"
+                },
+                {
+                  "name": "Script",
+                  "className": "Script",
+                  "guid": "8243712",
+                  "filePaths": [
+                    "sync/Workspace/Model/part/Script__8243712.server.luau"
+                  ]
+                },
+                {
+                  "name": "SurfaceGui",
+                  "className": "SurfaceGui",
+                  "guid": "8243856",
+                  "children": [
+                    {
+                      "name": "Frame",
+                      "className": "Frame",
+                      "guid": "8243639",
+                      "children": [
+                        {
+                          "name": "TextLabel",
+                          "className": "TextLabel",
+                          "guid": "8243892"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "part",
+              "className": "MeshPart",
+              "guid": "8243676",
+              "children": [
+                {
+                  "name": "KeySound1",
+                  "className": "Sound",
+                  "guid": "8243775"
+                },
+                {
+                  "name": "KeySound2",
+                  "className": "Sound",
+                  "guid": "8243776"
+                },
+                {
+                  "name": "KeySound3",
+                  "className": "Sound",
+                  "guid": "8243777"
+                },
+                {
+                  "name": "Script",
+                  "className": "Script",
+                  "guid": "8243713",
+                  "filePaths": [
+                    "sync/Workspace/Model/part/Script__8243713.server.luau"
+                  ]
+                },
+                {
+                  "name": "SurfaceGui",
+                  "className": "SurfaceGui",
+                  "guid": "8243857",
+                  "children": [
+                    {
+                      "name": "Frame",
+                      "className": "Frame",
+                      "guid": "8243640",
+                      "children": [
+                        {
+                          "name": "TextLabel",
+                          "className": "TextLabel",
+                          "guid": "8243893"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "part",
+              "className": "MeshPart",
+              "guid": "8243677",
+              "children": [
+                {
+                  "name": "KeySound1",
+                  "className": "Sound",
+                  "guid": "8243778"
+                },
+                {
+                  "name": "KeySound2",
+                  "className": "Sound",
+                  "guid": "8243779"
+                },
+                {
+                  "name": "KeySound3",
+                  "className": "Sound",
+                  "guid": "8243780"
+                },
+                {
+                  "name": "Script",
+                  "className": "Script",
+                  "guid": "8243714",
+                  "filePaths": [
+                    "sync/Workspace/Model/part/Script__8243714.server.luau"
+                  ]
+                },
+                {
+                  "name": "SurfaceGui",
+                  "className": "SurfaceGui",
+                  "guid": "8243858",
+                  "children": [
+                    {
+                      "name": "Frame",
+                      "className": "Frame",
+                      "guid": "8243641",
+                      "children": [
+                        {
+                          "name": "TextLabel",
+                          "className": "TextLabel",
+                          "guid": "8243894"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "part",
+              "className": "MeshPart",
+              "guid": "8243678",
+              "children": [
+                {
+                  "name": "KeySound1",
+                  "className": "Sound",
+                  "guid": "8243781"
+                },
+                {
+                  "name": "KeySound2",
+                  "className": "Sound",
+                  "guid": "8243782"
+                },
+                {
+                  "name": "KeySound3",
+                  "className": "Sound",
+                  "guid": "8243783"
+                },
+                {
+                  "name": "Script",
+                  "className": "Script",
+                  "guid": "8243715",
+                  "filePaths": [
+                    "sync/Workspace/Model/part/Script__8243715.server.luau"
+                  ]
+                },
+                {
+                  "name": "SurfaceGui",
+                  "className": "SurfaceGui",
+                  "guid": "8243859",
+                  "children": [
+                    {
+                      "name": "Frame",
+                      "className": "Frame",
+                      "guid": "8243642",
+                      "children": [
+                        {
+                          "name": "TextLabel",
+                          "className": "TextLabel",
+                          "guid": "8243895"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "part",
+              "className": "MeshPart",
+              "guid": "8243679",
+              "children": [
+                {
+                  "name": "KeySound1",
+                  "className": "Sound",
+                  "guid": "8243784"
+                },
+                {
+                  "name": "KeySound2",
+                  "className": "Sound",
+                  "guid": "8243785"
+                },
+                {
+                  "name": "KeySound3",
+                  "className": "Sound",
+                  "guid": "8243786"
+                },
+                {
+                  "name": "Script",
+                  "className": "Script",
+                  "guid": "8243716",
+                  "filePaths": [
+                    "sync/Workspace/Model/part/Script__8243716.server.luau"
+                  ]
+                },
+                {
+                  "name": "SurfaceGui",
+                  "className": "SurfaceGui",
+                  "guid": "8243860",
+                  "children": [
+                    {
+                      "name": "Frame",
+                      "className": "Frame",
+                      "guid": "8243643",
+                      "children": [
+                        {
+                          "name": "TextLabel",
+                          "className": "TextLabel",
+                          "guid": "8243896"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "part",
+              "className": "MeshPart",
+              "guid": "8243680",
+              "children": [
+                {
+                  "name": "KeySound1",
+                  "className": "Sound",
+                  "guid": "8243787"
+                },
+                {
+                  "name": "KeySound2",
+                  "className": "Sound",
+                  "guid": "8243788"
+                },
+                {
+                  "name": "KeySound3",
+                  "className": "Sound",
+                  "guid": "8243789"
+                },
+                {
+                  "name": "Script",
+                  "className": "Script",
+                  "guid": "8243717",
+                  "filePaths": [
+                    "sync/Workspace/Model/part/Script__8243717.server.luau"
+                  ]
+                },
+                {
+                  "name": "SurfaceGui",
+                  "className": "SurfaceGui",
+                  "guid": "8243861",
+                  "children": [
+                    {
+                      "name": "Frame",
+                      "className": "Frame",
+                      "guid": "8243644",
+                      "children": [
+                        {
+                          "name": "TextLabel",
+                          "className": "TextLabel",
+                          "guid": "8243897"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "part",
+              "className": "MeshPart",
+              "guid": "8243681",
+              "children": [
+                {
+                  "name": "KeySound1",
+                  "className": "Sound",
+                  "guid": "8243790"
+                },
+                {
+                  "name": "KeySound2",
+                  "className": "Sound",
+                  "guid": "8243791"
+                },
+                {
+                  "name": "KeySound3",
+                  "className": "Sound",
+                  "guid": "8243792"
+                },
+                {
+                  "name": "Script",
+                  "className": "Script",
+                  "guid": "8243718",
+                  "filePaths": [
+                    "sync/Workspace/Model/part/Script__8243718.server.luau"
+                  ]
+                },
+                {
+                  "name": "SurfaceGui",
+                  "className": "SurfaceGui",
+                  "guid": "8243862",
+                  "children": [
+                    {
+                      "name": "Frame",
+                      "className": "Frame",
+                      "guid": "8243645",
+                      "children": [
+                        {
+                          "name": "TextLabel",
+                          "className": "TextLabel",
+                          "guid": "8243898"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "part",
+              "className": "MeshPart",
+              "guid": "8243682",
+              "children": [
+                {
+                  "name": "KeySound1",
+                  "className": "Sound",
+                  "guid": "8243793"
+                },
+                {
+                  "name": "KeySound2",
+                  "className": "Sound",
+                  "guid": "8243794"
+                },
+                {
+                  "name": "KeySound3",
+                  "className": "Sound",
+                  "guid": "8243795"
+                },
+                {
+                  "name": "Script",
+                  "className": "Script",
+                  "guid": "8243719",
+                  "filePaths": [
+                    "sync/Workspace/Model/part/Script__8243719.server.luau"
+                  ]
+                },
+                {
+                  "name": "SurfaceGui",
+                  "className": "SurfaceGui",
+                  "guid": "8243863",
+                  "children": [
+                    {
+                      "name": "Frame",
+                      "className": "Frame",
+                      "guid": "8243646",
+                      "children": [
+                        {
+                          "name": "TextLabel",
+                          "className": "TextLabel",
+                          "guid": "8243899"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "part",
+              "className": "MeshPart",
+              "guid": "8243683",
+              "children": [
+                {
+                  "name": "KeySound1",
+                  "className": "Sound",
+                  "guid": "8243796"
+                },
+                {
+                  "name": "KeySound2",
+                  "className": "Sound",
+                  "guid": "8243797"
+                },
+                {
+                  "name": "KeySound3",
+                  "className": "Sound",
+                  "guid": "8243798"
+                },
+                {
+                  "name": "Script",
+                  "className": "Script",
+                  "guid": "8243720",
+                  "filePaths": [
+                    "sync/Workspace/Model/part/Script__8243720.server.luau"
+                  ]
+                },
+                {
+                  "name": "SurfaceGui",
+                  "className": "SurfaceGui",
+                  "guid": "8243864",
+                  "children": [
+                    {
+                      "name": "Frame",
+                      "className": "Frame",
+                      "guid": "8243647",
+                      "children": [
+                        {
+                          "name": "TextLabel",
+                          "className": "TextLabel",
+                          "guid": "8243900"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "part",
+              "className": "MeshPart",
+              "guid": "8243684",
+              "children": [
+                {
+                  "name": "KeySound1",
+                  "className": "Sound",
+                  "guid": "8243799"
+                },
+                {
+                  "name": "KeySound2",
+                  "className": "Sound",
+                  "guid": "8243800"
+                },
+                {
+                  "name": "KeySound3",
+                  "className": "Sound",
+                  "guid": "8243801"
+                },
+                {
+                  "name": "Script",
+                  "className": "Script",
+                  "guid": "8243721",
+                  "filePaths": [
+                    "sync/Workspace/Model/part/Script__8243721.server.luau"
+                  ]
+                },
+                {
+                  "name": "SurfaceGui",
+                  "className": "SurfaceGui",
+                  "guid": "8243865",
+                  "children": [
+                    {
+                      "name": "Frame",
+                      "className": "Frame",
+                      "guid": "8243648",
+                      "children": [
+                        {
+                          "name": "TextLabel",
+                          "className": "TextLabel",
+                          "guid": "8243901"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "part",
+              "className": "MeshPart",
+              "guid": "8243685",
+              "children": [
+                {
+                  "name": "KeySound1",
+                  "className": "Sound",
+                  "guid": "8243802"
+                },
+                {
+                  "name": "KeySound2",
+                  "className": "Sound",
+                  "guid": "8243803"
+                },
+                {
+                  "name": "KeySound3",
+                  "className": "Sound",
+                  "guid": "8243804"
+                },
+                {
+                  "name": "Script",
+                  "className": "Script",
+                  "guid": "8243722",
+                  "filePaths": [
+                    "sync/Workspace/Model/part/Script__8243722.server.luau"
+                  ]
+                },
+                {
+                  "name": "SurfaceGui",
+                  "className": "SurfaceGui",
+                  "guid": "8243866",
+                  "children": [
+                    {
+                      "name": "Frame",
+                      "className": "Frame",
+                      "guid": "8243649",
+                      "children": [
+                        {
+                          "name": "TextLabel",
+                          "className": "TextLabel",
+                          "guid": "8243902"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "part",
+              "className": "MeshPart",
+              "guid": "8243686",
+              "children": [
+                {
+                  "name": "KeySound1",
+                  "className": "Sound",
+                  "guid": "8243805"
+                },
+                {
+                  "name": "KeySound2",
+                  "className": "Sound",
+                  "guid": "8243806"
+                },
+                {
+                  "name": "KeySound3",
+                  "className": "Sound",
+                  "guid": "8243807"
+                },
+                {
+                  "name": "Script",
+                  "className": "Script",
+                  "guid": "8243723",
+                  "filePaths": [
+                    "sync/Workspace/Model/part/Script__8243723.server.luau"
+                  ]
+                },
+                {
+                  "name": "SurfaceGui",
+                  "className": "SurfaceGui",
+                  "guid": "8243867",
+                  "children": [
+                    {
+                      "name": "Frame",
+                      "className": "Frame",
+                      "guid": "8243650",
+                      "children": [
+                        {
+                          "name": "TextLabel",
+                          "className": "TextLabel",
+                          "guid": "8243903"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "part",
+              "className": "MeshPart",
+              "guid": "8243687",
+              "children": [
+                {
+                  "name": "KeySound1",
+                  "className": "Sound",
+                  "guid": "8243808"
+                },
+                {
+                  "name": "KeySound2",
+                  "className": "Sound",
+                  "guid": "8243809"
+                },
+                {
+                  "name": "KeySound3",
+                  "className": "Sound",
+                  "guid": "8243810"
+                },
+                {
+                  "name": "Script",
+                  "className": "Script",
+                  "guid": "8243724",
+                  "filePaths": [
+                    "sync/Workspace/Model/part/Script__8243724.server.luau"
+                  ]
+                },
+                {
+                  "name": "SurfaceGui",
+                  "className": "SurfaceGui",
+                  "guid": "8243868",
+                  "children": [
+                    {
+                      "name": "Frame",
+                      "className": "Frame",
+                      "guid": "8243651",
+                      "children": [
+                        {
+                          "name": "TextLabel",
+                          "className": "TextLabel",
+                          "guid": "8243904"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "part",
+              "className": "MeshPart",
+              "guid": "8243688",
+              "children": [
+                {
+                  "name": "KeySound1",
+                  "className": "Sound",
+                  "guid": "8243811"
+                },
+                {
+                  "name": "KeySound2",
+                  "className": "Sound",
+                  "guid": "8243812"
+                },
+                {
+                  "name": "KeySound3",
+                  "className": "Sound",
+                  "guid": "8243813"
+                },
+                {
+                  "name": "Script",
+                  "className": "Script",
+                  "guid": "8243725",
+                  "filePaths": [
+                    "sync/Workspace/Model/part/Script__8243725.server.luau"
+                  ]
+                },
+                {
+                  "name": "SurfaceGui",
+                  "className": "SurfaceGui",
+                  "guid": "8243869",
+                  "children": [
+                    {
+                      "name": "Frame",
+                      "className": "Frame",
+                      "guid": "8243652",
+                      "children": [
+                        {
+                          "name": "TextLabel",
+                          "className": "TextLabel",
+                          "guid": "8243905"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "part",
+              "className": "MeshPart",
+              "guid": "8243689",
+              "children": [
+                {
+                  "name": "KeySound1",
+                  "className": "Sound",
+                  "guid": "8243814"
+                },
+                {
+                  "name": "KeySound2",
+                  "className": "Sound",
+                  "guid": "8243815"
+                },
+                {
+                  "name": "KeySound3",
+                  "className": "Sound",
+                  "guid": "8243816"
+                },
+                {
+                  "name": "Script",
+                  "className": "Script",
+                  "guid": "8243726",
+                  "filePaths": [
+                    "sync/Workspace/Model/part/Script__8243726.server.luau"
+                  ]
+                },
+                {
+                  "name": "SurfaceGui",
+                  "className": "SurfaceGui",
+                  "guid": "8243870",
+                  "children": [
+                    {
+                      "name": "Frame",
+                      "className": "Frame",
+                      "guid": "8243653",
+                      "children": [
+                        {
+                          "name": "TextLabel",
+                          "className": "TextLabel",
+                          "guid": "8243906"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "part",
+              "className": "MeshPart",
+              "guid": "8243690",
+              "children": [
+                {
+                  "name": "KeySound1",
+                  "className": "Sound",
+                  "guid": "8243817"
+                },
+                {
+                  "name": "KeySound2",
+                  "className": "Sound",
+                  "guid": "8243818"
+                },
+                {
+                  "name": "KeySound3",
+                  "className": "Sound",
+                  "guid": "8243819"
+                },
+                {
+                  "name": "Script",
+                  "className": "Script",
+                  "guid": "8243727",
+                  "filePaths": [
+                    "sync/Workspace/Model/part/Script__8243727.server.luau"
+                  ]
+                },
+                {
+                  "name": "SurfaceGui",
+                  "className": "SurfaceGui",
+                  "guid": "8243871",
+                  "children": [
+                    {
+                      "name": "Frame",
+                      "className": "Frame",
+                      "guid": "8243654",
+                      "children": [
+                        {
+                          "name": "TextLabel",
+                          "className": "TextLabel",
+                          "guid": "8243907"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "part",
+              "className": "MeshPart",
+              "guid": "8243691",
+              "children": [
+                {
+                  "name": "KeySound1",
+                  "className": "Sound",
+                  "guid": "8243820"
+                },
+                {
+                  "name": "KeySound2",
+                  "className": "Sound",
+                  "guid": "8243821"
+                },
+                {
+                  "name": "KeySound3",
+                  "className": "Sound",
+                  "guid": "8243822"
+                },
+                {
+                  "name": "Script",
+                  "className": "Script",
+                  "guid": "8243728",
+                  "filePaths": [
+                    "sync/Workspace/Model/part/Script__8243728.server.luau"
+                  ]
+                },
+                {
+                  "name": "SurfaceGui",
+                  "className": "SurfaceGui",
+                  "guid": "8243872",
+                  "children": [
+                    {
+                      "name": "Frame",
+                      "className": "Frame",
+                      "guid": "8243655",
+                      "children": [
+                        {
+                          "name": "TextLabel",
+                          "className": "TextLabel",
+                          "guid": "8243908"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "part",
+              "className": "MeshPart",
+              "guid": "8243692",
+              "children": [
+                {
+                  "name": "KeySound1",
+                  "className": "Sound",
+                  "guid": "8243823"
+                },
+                {
+                  "name": "KeySound2",
+                  "className": "Sound",
+                  "guid": "8243824"
+                },
+                {
+                  "name": "KeySound3",
+                  "className": "Sound",
+                  "guid": "8243825"
+                },
+                {
+                  "name": "Script",
+                  "className": "Script",
+                  "guid": "8243729",
+                  "filePaths": [
+                    "sync/Workspace/Model/part/Script__8243729.server.luau"
+                  ]
+                },
+                {
+                  "name": "SurfaceGui",
+                  "className": "SurfaceGui",
+                  "guid": "8243873",
+                  "children": [
+                    {
+                      "name": "Frame",
+                      "className": "Frame",
+                      "guid": "8243656",
+                      "children": [
+                        {
+                          "name": "TextLabel",
+                          "className": "TextLabel",
+                          "guid": "8243909"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "part",
+              "className": "MeshPart",
+              "guid": "8243693",
+              "children": [
+                {
+                  "name": "KeySound1",
+                  "className": "Sound",
+                  "guid": "8243826"
+                },
+                {
+                  "name": "KeySound2",
+                  "className": "Sound",
+                  "guid": "8243827"
+                },
+                {
+                  "name": "KeySound3",
+                  "className": "Sound",
+                  "guid": "8243828"
+                },
+                {
+                  "name": "Script",
+                  "className": "Script",
+                  "guid": "8243730",
+                  "filePaths": [
+                    "sync/Workspace/Model/part/Script__8243730.server.luau"
+                  ]
+                },
+                {
+                  "name": "SurfaceGui",
+                  "className": "SurfaceGui",
+                  "guid": "8243874",
+                  "children": [
+                    {
+                      "name": "Frame",
+                      "className": "Frame",
+                      "guid": "8243657",
+                      "children": [
+                        {
+                          "name": "TextLabel",
+                          "className": "TextLabel",
+                          "guid": "8243910"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "part",
+              "className": "MeshPart",
+              "guid": "8243694",
+              "children": [
+                {
+                  "name": "KeySound1",
+                  "className": "Sound",
+                  "guid": "8243829"
+                },
+                {
+                  "name": "KeySound2",
+                  "className": "Sound",
+                  "guid": "8243830"
+                },
+                {
+                  "name": "KeySound3",
+                  "className": "Sound",
+                  "guid": "8243831"
+                },
+                {
+                  "name": "Script",
+                  "className": "Script",
+                  "guid": "8243731",
+                  "filePaths": [
+                    "sync/Workspace/Model/part/Script__8243731.server.luau"
+                  ]
+                },
+                {
+                  "name": "SurfaceGui",
+                  "className": "SurfaceGui",
+                  "guid": "8243875",
+                  "children": [
+                    {
+                      "name": "Frame",
+                      "className": "Frame",
+                      "guid": "8243658",
+                      "children": [
+                        {
+                          "name": "TextLabel",
+                          "className": "TextLabel",
+                          "guid": "8243911"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "part",
+              "className": "MeshPart",
+              "guid": "8243695",
+              "children": [
+                {
+                  "name": "KeySound1",
+                  "className": "Sound",
+                  "guid": "8243832"
+                },
+                {
+                  "name": "KeySound2",
+                  "className": "Sound",
+                  "guid": "8243833"
+                },
+                {
+                  "name": "KeySound3",
+                  "className": "Sound",
+                  "guid": "8243834"
+                },
+                {
+                  "name": "Script",
+                  "className": "Script",
+                  "guid": "8243732",
+                  "filePaths": [
+                    "sync/Workspace/Model/part/Script__8243732.server.luau"
+                  ]
+                },
+                {
+                  "name": "SurfaceGui",
+                  "className": "SurfaceGui",
+                  "guid": "8243876",
+                  "children": [
+                    {
+                      "name": "Frame",
+                      "className": "Frame",
+                      "guid": "8243659",
+                      "children": [
+                        {
+                          "name": "TextLabel",
+                          "className": "TextLabel",
+                          "guid": "8243912"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "part",
+              "className": "MeshPart",
+              "guid": "8243696",
+              "children": [
+                {
+                  "name": "KeySound1",
+                  "className": "Sound",
+                  "guid": "8243835"
+                },
+                {
+                  "name": "KeySound2",
+                  "className": "Sound",
+                  "guid": "8243836"
+                },
+                {
+                  "name": "KeySound3",
+                  "className": "Sound",
+                  "guid": "8243837"
+                },
+                {
+                  "name": "Script",
+                  "className": "Script",
+                  "guid": "8243733",
+                  "filePaths": [
+                    "sync/Workspace/Model/part/Script__8243733.server.luau"
+                  ]
+                },
+                {
+                  "name": "SurfaceGui",
+                  "className": "SurfaceGui",
+                  "guid": "8243877",
+                  "children": [
+                    {
+                      "name": "Frame",
+                      "className": "Frame",
+                      "guid": "8243660",
+                      "children": [
+                        {
+                          "name": "TextLabel",
+                          "className": "TextLabel",
+                          "guid": "8243913"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "part",
+              "className": "MeshPart",
+              "guid": "8243697",
+              "children": [
+                {
+                  "name": "KeySound1",
+                  "className": "Sound",
+                  "guid": "8243838"
+                },
+                {
+                  "name": "KeySound2",
+                  "className": "Sound",
+                  "guid": "8243839"
+                },
+                {
+                  "name": "KeySound3",
+                  "className": "Sound",
+                  "guid": "8243840"
+                },
+                {
+                  "name": "Script",
+                  "className": "Script",
+                  "guid": "8243734",
+                  "filePaths": [
+                    "sync/Workspace/Model/part/Script__8243734.server.luau"
+                  ]
+                },
+                {
+                  "name": "SurfaceGui",
+                  "className": "SurfaceGui",
+                  "guid": "8243878",
+                  "children": [
+                    {
+                      "name": "Frame",
+                      "className": "Frame",
+                      "guid": "8243661",
+                      "children": [
+                        {
+                          "name": "TextLabel",
+                          "className": "TextLabel",
+                          "guid": "8243914"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "part",
+              "className": "MeshPart",
+              "guid": "8243698",
+              "children": [
+                {
+                  "name": "KeySound1",
+                  "className": "Sound",
+                  "guid": "8243841"
+                },
+                {
+                  "name": "KeySound2",
+                  "className": "Sound",
+                  "guid": "8243842"
+                },
+                {
+                  "name": "KeySound3",
+                  "className": "Sound",
+                  "guid": "8243843"
+                },
+                {
+                  "name": "Script",
+                  "className": "Script",
+                  "guid": "8243735",
+                  "filePaths": [
+                    "sync/Workspace/Model/part/Script__8243735.server.luau"
+                  ]
+                },
+                {
+                  "name": "SurfaceGui",
+                  "className": "SurfaceGui",
+                  "guid": "8243879",
+                  "children": [
+                    {
+                      "name": "Frame",
+                      "className": "Frame",
+                      "guid": "8243662",
+                      "children": [
+                        {
+                          "name": "TextLabel",
+                          "className": "TextLabel",
+                          "guid": "8243915"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         {
           "name": "Part",
           "className": "Part",
-          "guid": "148113"
+          "guid": "11667"
+        },
+        {
+          "name": "Part",
+          "className": "Part",
+          "guid": "11668"
+        },
+        {
+          "name": "Part",
+          "className": "Part",
+          "guid": "11669"
+        },
+        {
+          "name": "Part",
+          "className": "Part",
+          "guid": "11670"
         },
         {
           "name": "SpawnLocation",
           "className": "SpawnLocation",
-          "guid": "148120",
+          "guid": "11680",
           "children": [
             {
               "name": "Decal",
               "className": "Decal",
-              "guid": "148097"
+              "guid": "11638"
             }
           ]
         },
         {
           "name": "Terrain",
           "className": "Terrain",
-          "guid": "148126"
-        },
-        {
-          "name": "Wall",
-          "className": "Part",
-          "guid": "148114"
+          "guid": "11686"
         }
       ]
     }

@@ -2,13 +2,21 @@ local Players = game:GetService("Players")
 local PlayerSetupService = require(game.ServerScriptService.Modules.Bootstrap.PlayerSetupService)
 local DataService = require(game.ServerScriptService.Modules.Core.DataService)
 local MovementTrackerService = require(game.ServerScriptService.Modules.Gameplay.MovementTrackerService)
+local AdminSetup = require(game.ServerScriptService.Modules.Bootstrap.AdminSetup)
 
 Players.PlayerAdded:Connect(
     function(player: Player)
         local playerData = DataService.loadDataAsync(player)
         DataService.initPlayerSession(player, playerData)
         PlayerSetupService.initPlayer(player, playerData)
+        
 		MovementTrackerService.initPlayer(player)
+
+        player.CharacterAdded:Connect(
+            function(character)
+                AdminSetup.initPlayer(player)
+            end
+        )
     end
 )
 

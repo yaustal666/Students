@@ -1,6 +1,6 @@
 local CollectionService = game:GetService("CollectionService")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local CurrencyService = require(game.ServerScriptService.Modules.Core.CurrencyService)
+local CurrencyService = require(game.ServerScriptService.Modules.Economics.CurrencyService)
 
 local AddCurrencyEvent = ReplicatedStorage.remotes.AddCurrencyEvent
 local buttonCooldowns = {}

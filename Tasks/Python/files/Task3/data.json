@@ -1,0 +1,7 @@
+{
+    "hello" : "world",
+    "fire": [
+        "event",
+        42
+    ]
+}

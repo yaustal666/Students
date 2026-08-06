@@ -7,10 +7,10 @@
 
 # Можно протестировать вашу функцию на следующих данных
 d = {}
-add_kvp(d, "key", "value")
-add_kvp(d, 1, 2)
-add_kvp(d, 4, 1)
-add_kvp(d, 1, "value")
+d = add_kvp(d, "key", "value")
+d = add_kvp(d, 1, 2)
+d = add_kvp(d, 4, 1)
+d = add_kvp(d, 1, "value")
 print(d)
 # Должен получиться следующий результат
 # {"key": "value", 1: 2, 4: 1}

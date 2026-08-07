@@ -17,7 +17,7 @@ function Module.addCurrency(player, currencyName, amount)
     local currency = Module.GetCurrency(player, currencyName)
     if currency == false then return false end
 
-    local mult = InventoryService.calculateMultiplyer(player)
+    local mult = InventoryService.calculateMultiplyer(player, currencyName)
     local newValue = currency + amount * mult
     local success = DataService.updatePlayerData(player, currencyName, newValue)
     if not success then return false end

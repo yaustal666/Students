@@ -5,6 +5,6 @@ local Players = game:GetService("Players")
 CurrencyChangedEvent.OnClientEvent:Connect(function(currencyName, amount)
     if "Speed" == currencyName then
         local humanoid: Humanoid = Players.LocalPlayer.Character:FindFirstChild("Humanoid")
-        humanoid.WalkSpeed = amount
+        humanoid.WalkSpeed = math.log(amount, 2) * 2
     end
 end)

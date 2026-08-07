@@ -12,13 +12,16 @@ local function SetupPlayerLeaderstats(player: Player, playerData: table)
 end
 
 local function SetupPlayerInventory(player: Player)
-    local inventory = Instance.new("Folder")
+    local inventory = Instance.new("Folder", player)
     inventory.Name = "inventory"
-    inventory.Parent = player
 
-	local currency = Instance.new("NumberValue", inventory)
-	currency.Name = "SpeedMultiplier"
-    currency.Value = 2.5
+    local multipliers = Instance.new("Folder", inventory)
+    multipliers.Name = "multipliers"
+    
+	local mult = Instance.new("NumberValue", multipliers)
+	mult.Name = "SpeedMultiplier"
+    mult.Value = 2.5
+    mult:SetAttribute("CurrencyName", "Speed")
 end
 
 function PlayerSetupService.initPlayer(player: Player, playerData: table)

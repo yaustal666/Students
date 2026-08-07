@@ -1,12 +1,9 @@
-local NetworkSetupService = require(game.ServerScriptService.Modules.Bootstrap.NetworkSetupService)
-NetworkSetupService.Init()
+require(game.ServerScriptService.Modules.Bootstrap.NetworkSetupService)
+require(game.ServerScriptService.Modules.Economics.CurrencyService)
+require(game.ServerScriptService.Modules.Core.InventoryService)
 
-local CurrencyService = require(game.ServerScriptService.Modules.Economics.CurrencyService)
-local InventoryService = require(game.ServerScriptService.Modules.Core.InventoryService)
+require(game.ServerScriptService.Modules.Core.PlayerConnectionService)
 
-local PlayerConnectionService = require(game.ServerScriptService.Modules.Core.PlayerConnectionService)
+require(game.ServerScriptService.Modules.ControllerService)
 
-local MoneyButtonsService = require(game.ServerScriptService.Modules.Gameplay.MoneyButtonsService)
-MoneyButtonsService.Init()
-
-local ControllerService = require(game.ServerScriptService.Modules.ControllerService)
+require(game.ServerScriptService.Modules.Gameplay.KillObjectService)

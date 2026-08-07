@@ -3,16 +3,13 @@ local remoteEventsNames = {
     "CurrencyChangedEvent"
 }
 
-local Module = {}
+local remotes = Instance.new("Folder", game.ReplicatedStorage)
+remotes.Name = "remotes"
 
-function Module.Init()
-    local remotes = Instance.new("Folder", game.ReplicatedStorage)
-    remotes.Name = "remotes"
-
-    for _, remoteEventName in ipairs(remoteEventsNames) do
-        local event = Instance.new("RemoteEvent", remotes)
-        event.Name = remoteEventName
-    end
+for _, remoteEventName in ipairs(remoteEventsNames) do
+    local event = Instance.new("RemoteEvent", remotes)
+    event.Name = remoteEventName
 end
 
+local Module = {}
 return Module

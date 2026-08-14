@@ -1,6 +1,6 @@
 local CollectionService = game:GetService("CollectionService")
 local Players = game:GetService("Players")
-local Enemy = require(game.ServerScriptService.Modules.Gameplay.Enemy)
+local Rooms = require(game.ServerScriptService.Modules.Gameplay.Rooms)
 
 local triggersCooldowns = {}
 
@@ -16,9 +16,9 @@ local function setupEnemyTrigger(part: BasePart)
             if triggersCooldowns[tostring(player)] == false then return end
             triggersCooldowns[tostring(player)] = false
 
-            local enemyName = part:GetAttribute("EnemyName")
-            Enemy.playerTrigger(player, enemyName)
+            Rooms.handlePlayer(player, part:GetAttribute("RoomNumber"))
 
+            print(player)
             task.wait(1)
             triggersCooldowns[tostring(player)] = true
         end

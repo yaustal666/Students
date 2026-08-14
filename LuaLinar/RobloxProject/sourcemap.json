@@ -5,49 +5,49 @@
     {
       "name": "Lighting",
       "className": "Lighting",
-      "guid": "11688",
+      "guid": "11747",
       "children": [
         {
           "name": "Atmosphere",
           "className": "Atmosphere",
-          "guid": "11623"
+          "guid": "11718"
         },
         {
           "name": "Bloom",
           "className": "BloomEffect",
-          "guid": "11631"
+          "guid": "11726"
         },
         {
           "name": "DepthOfField",
           "className": "DepthOfFieldEffect",
-          "guid": "11639"
+          "guid": "11734"
         },
         {
           "name": "Sky",
           "className": "Sky",
-          "guid": "11793"
+          "guid": "11788"
         },
         {
           "name": "SunRays",
           "className": "SunRaysEffect",
-          "guid": "11906"
+          "guid": "11793"
         }
       ]
     },
     {
       "name": "ReplicatedFirst",
       "className": "ReplicatedFirst",
-      "guid": "8876"
+      "guid": "8946"
     },
     {
       "name": "ReplicatedStorage",
       "className": "ReplicatedStorage",
-      "guid": "11750",
+      "guid": "11778",
       "children": [
         {
           "name": "Admin",
           "className": "ModuleScript",
-          "guid": "11731",
+          "guid": "11753",
           "filePaths": [
             "sync/ReplicatedStorage/Admin.luau"
           ]
@@ -57,12 +57,12 @@
     {
       "name": "ServerScriptService",
       "className": "ServerScriptService",
-      "guid": "11790",
+      "guid": "11785",
       "children": [
         {
           "name": "init_server",
           "className": "Script",
-          "guid": "11788",
+          "guid": "11783",
           "filePaths": [
             "sync/ServerScriptService/init_server.server.luau"
           ]
@@ -70,17 +70,17 @@
         {
           "name": "Modules",
           "className": "Folder",
-          "guid": "11641",
+          "guid": "11736",
           "children": [
             {
               "name": "Bootstrap",
               "className": "Folder",
-              "guid": "11642",
+              "guid": "11737",
               "children": [
                 {
                   "name": "AdminSetup",
                   "className": "ModuleScript",
-                  "guid": "11734",
+                  "guid": "11756",
                   "filePaths": [
                     "sync/ServerScriptService/Modules/Bootstrap/AdminSetup.luau"
                   ]
@@ -88,7 +88,7 @@
                 {
                   "name": "NetworkSetupService",
                   "className": "ModuleScript",
-                  "guid": "11732",
+                  "guid": "11754",
                   "filePaths": [
                     "sync/ServerScriptService/Modules/Bootstrap/NetworkSetupService.luau"
                   ]
@@ -96,7 +96,7 @@
                 {
                   "name": "PlayerSetupService",
                   "className": "ModuleScript",
-                  "guid": "11733",
+                  "guid": "11755",
                   "filePaths": [
                     "sync/ServerScriptService/Modules/Bootstrap/PlayerSetupService.luau"
                   ]
@@ -106,7 +106,7 @@
             {
               "name": "ControllerService",
               "className": "ModuleScript",
-              "guid": "11740",
+              "guid": "11765",
               "filePaths": [
                 "sync/ServerScriptService/Modules/ControllerService.luau"
               ]
@@ -114,12 +114,12 @@
             {
               "name": "Core",
               "className": "Folder",
-              "guid": "11644",
+              "guid": "11739",
               "children": [
                 {
                   "name": "DataService",
                   "className": "ModuleScript",
-                  "guid": "11737",
+                  "guid": "11762",
                   "filePaths": [
                     "sync/ServerScriptService/Modules/Core/DataService.luau"
                   ]
@@ -127,7 +127,7 @@
                 {
                   "name": "InventoryService",
                   "className": "ModuleScript",
-                  "guid": "11738",
+                  "guid": "11763",
                   "filePaths": [
                     "sync/ServerScriptService/Modules/Core/InventoryService.luau"
                   ]
@@ -135,7 +135,7 @@
                 {
                   "name": "PlayerConnectionService",
                   "className": "ModuleScript",
-                  "guid": "11739",
+                  "guid": "11764",
                   "filePaths": [
                     "sync/ServerScriptService/Modules/Core/PlayerConnectionService.luau"
                   ]
@@ -145,12 +145,12 @@
             {
               "name": "Economics",
               "className": "Folder",
-              "guid": "11646",
+              "guid": "11741",
               "children": [
                 {
                   "name": "CurrencyService",
                   "className": "ModuleScript",
-                  "guid": "11741",
+                  "guid": "11766",
                   "filePaths": [
                     "sync/ServerScriptService/Modules/Economics/CurrencyService.luau"
                   ]
@@ -158,7 +158,7 @@
                 {
                   "name": "ShopService",
                   "className": "ModuleScript",
-                  "guid": "11742",
+                  "guid": "11767",
                   "filePaths": [
                     "sync/ServerScriptService/Modules/Economics/ShopService.luau"
                   ]
@@ -168,36 +168,12 @@
             {
               "name": "Gameplay",
               "className": "Folder",
-              "guid": "11643",
+              "guid": "11738",
               "children": [
-                {
-                  "name": "KillObjectService",
-                  "className": "ModuleScript",
-                  "guid": "454576",
-                  "filePaths": [
-                    "sync/ServerScriptService/Modules/Gameplay/KillObjectService.luau"
-                  ]
-                },
-                {
-                  "name": "MoneyButtonsService",
-                  "className": "ModuleScript",
-                  "guid": "11735",
-                  "filePaths": [
-                    "sync/ServerScriptService/Modules/Gameplay/MoneyButtonsService.luau"
-                  ]
-                },
-                {
-                  "name": "MovementTrackerService",
-                  "className": "ModuleScript",
-                  "guid": "11736",
-                  "filePaths": [
-                    "sync/ServerScriptService/Modules/Gameplay/MovementTrackerService.luau"
-                  ]
-                },
                 {
                   "name": "Enemy",
                   "className": "ModuleScript",
-                  "guid": "6174112",
+                  "guid": "11760",
                   "filePaths": [
                     "sync/ServerScriptService/Modules/Gameplay/Enemy.luau"
                   ]
@@ -205,9 +181,41 @@
                 {
                   "name": "EnemyTriggers",
                   "className": "ModuleScript",
-                  "guid": "6175037",
+                  "guid": "11761",
                   "filePaths": [
                     "sync/ServerScriptService/Modules/Gameplay/EnemyTriggers.luau"
+                  ]
+                },
+                {
+                  "name": "KillObjectService",
+                  "className": "ModuleScript",
+                  "guid": "11759",
+                  "filePaths": [
+                    "sync/ServerScriptService/Modules/Gameplay/KillObjectService.luau"
+                  ]
+                },
+                {
+                  "name": "MoneyButtonsService",
+                  "className": "ModuleScript",
+                  "guid": "11757",
+                  "filePaths": [
+                    "sync/ServerScriptService/Modules/Gameplay/MoneyButtonsService.luau"
+                  ]
+                },
+                {
+                  "name": "MovementTrackerService",
+                  "className": "ModuleScript",
+                  "guid": "11758",
+                  "filePaths": [
+                    "sync/ServerScriptService/Modules/Gameplay/MovementTrackerService.luau"
+                  ]
+                },
+                {
+                  "name": "Rooms",
+                  "className": "ModuleScript",
+                  "guid": "17518310",
+                  "filePaths": [
+                    "sync/ServerScriptService/Modules/Gameplay/Rooms.luau"
                   ]
                 }
               ]
@@ -215,7 +223,7 @@
             {
               "name": "Util",
               "className": "Folder",
-              "guid": "11645"
+              "guid": "11740"
             }
           ]
         }
@@ -224,32 +232,17 @@
     {
       "name": "ServerStorage",
       "className": "ServerStorage",
-      "guid": "11791",
+      "guid": "11786",
       "children": [
-        {
-          "name": "AdminPanelButton",
-          "className": "TextButton",
-          "guid": "11949",
-          "children": [
-            {
-              "name": "AdminButton",
-              "className": "LocalScript",
-              "guid": "11693",
-              "filePaths": [
-                "sync/ServerStorage/AdminPanelButton/AdminButton.client.luau"
-              ]
-            }
-          ]
-        },
         {
           "name": "AdminPanel",
           "className": "Frame",
-          "guid": "11683",
+          "guid": "11743",
           "children": [
             {
               "name": "AdminPanelControl",
               "className": "LocalScript",
-              "guid": "11692",
+              "guid": "11751",
               "filePaths": [
                 "sync/ServerStorage/AdminPanel/AdminPanelControl.client.luau"
               ]
@@ -257,17 +250,32 @@
             {
               "name": "GiveCoins",
               "className": "TextButton",
-              "guid": "11948"
+              "guid": "11799"
             },
             {
               "name": "Kill",
               "className": "TextButton",
-              "guid": "11947"
+              "guid": "11798"
             },
             {
               "name": "UserIdInput",
               "className": "TextBox",
-              "guid": "11946"
+              "guid": "11797"
+            }
+          ]
+        },
+        {
+          "name": "AdminPanelButton",
+          "className": "TextButton",
+          "guid": "11800",
+          "children": [
+            {
+              "name": "AdminButton",
+              "className": "LocalScript",
+              "guid": "11752",
+              "filePaths": [
+                "sync/ServerStorage/AdminPanelButton/AdminButton.client.luau"
+              ]
             }
           ]
         }
@@ -276,27 +284,27 @@
     {
       "name": "SoundService",
       "className": "SoundService",
-      "guid": "8073"
+      "guid": "7751"
     },
     {
       "name": "StarterGui",
       "className": "StarterGui",
-      "guid": "8889",
+      "guid": "8959",
       "children": [
         {
           "name": "UI",
           "className": "Folder",
-          "guid": "11640",
+          "guid": "11735",
           "children": [
             {
               "name": "ScreenGui",
               "className": "ScreenGui",
-              "guid": "11751",
+              "guid": "11779",
               "children": [
                 {
                   "name": "CoinDisplay",
                   "className": "LocalScript",
-                  "guid": "11691",
+                  "guid": "11750",
                   "filePaths": [
                     "sync/StarterGui/UI/ScreenGui/CoinDisplay.client.luau"
                   ]
@@ -304,17 +312,17 @@
                 {
                   "name": "Frame",
                   "className": "Frame",
-                  "guid": "11684",
+                  "guid": "11742",
                   "children": [
                     {
                       "name": "CoinLabel",
                       "className": "TextLabel",
-                      "guid": "11986"
+                      "guid": "11801"
                     },
                     {
                       "name": "ImageLabel",
                       "className": "ImageLabel",
-                      "guid": "11687"
+                      "guid": "11746"
                     }
                   ]
                 }
@@ -327,27 +335,27 @@
     {
       "name": "StarterPack",
       "className": "StarterPack",
-      "guid": "8888"
+      "guid": "8958"
     },
     {
       "name": "StarterPlayer",
       "className": "StarterPlayer",
-      "guid": "8887",
+      "guid": "8957",
       "children": [
         {
           "name": "StarterCharacterScripts",
           "className": "StarterCharacterScripts",
-          "guid": "11903"
+          "guid": "11790"
         },
         {
           "name": "StarterPlayerScripts",
           "className": "StarterPlayerScripts",
-          "guid": "11904",
+          "guid": "11791",
           "children": [
             {
               "name": "SpeedChanger",
               "className": "LocalScript",
-              "guid": "11690",
+              "guid": "11749",
               "filePaths": [
                 "sync/StarterPlayer/StarterPlayerScripts/SpeedChanger.client.luau"
               ]
@@ -355,7 +363,7 @@
             {
               "name": "Walls",
               "className": "LocalScript",
-              "guid": "11689",
+              "guid": "11748",
               "filePaths": [
                 "sync/StarterPlayer/StarterPlayerScripts/Walls.client.luau"
               ]
@@ -372,71 +380,213 @@
         {
           "name": "Baseplate",
           "className": "Part",
-          "guid": "11744",
+          "guid": "11769",
           "children": [
             {
               "name": "Texture",
               "className": "Texture",
-              "guid": "11987"
+              "guid": "11802"
             }
           ]
         },
         {
           "name": "Camera",
           "className": "Camera",
-          "guid": "246563"
+          "guid": "204077"
         },
         {
-          "name": "Part",
+          "name": "Enemy1",
           "className": "Part",
-          "guid": "11745"
-        },
-        {
-          "name": "Part",
-          "className": "Part",
-          "guid": "448393"
-        },
-        {
-          "name": "Part",
-          "className": "Part",
-          "guid": "449920"
-        },
-        {
-          "name": "Part",
-          "className": "Part",
-          "guid": "451041"
-        },
-        {
-          "name": "SpawnLocation",
-          "className": "SpawnLocation",
-          "guid": "11902",
+          "guid": "11775",
           "children": [
             {
-              "name": "Decal",
-              "className": "Decal",
-              "guid": "11638"
+              "name": "Script",
+              "className": "Script",
+              "guid": "1883356",
+              "filePaths": [
+                "sync/Workspace/Enemy1/Script.server.luau"
+              ]
             }
           ]
         },
         {
+          "name": "Enemy2",
+          "className": "Model",
+          "guid": "4233483",
+          "children": [
+            {
+              "name": "Humanoid",
+              "className": "Humanoid",
+              "guid": "3618373"
+            },
+            {
+              "name": "HumanoidRootPart",
+              "className": "Part",
+              "guid": "3615795"
+            },
+            {
+              "name": "Script",
+              "className": "Script",
+              "guid": "3618610",
+              "filePaths": [
+                "sync/Workspace/Enemy2/Script.server.luau"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MovingThing2",
+          "className": "Part",
+          "guid": "5467061",
+          "children": [
+            {
+              "name": "Script",
+              "className": "Script",
+              "guid": "5468440",
+              "filePaths": [
+                "sync/Workspace/MovingThing2/Script.server.luau"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MovingWall",
+          "className": "Part",
+          "guid": "11776",
+          "children": [
+            {
+              "name": "MovingWall",
+              "className": "Script",
+              "guid": "11782",
+              "filePaths": [
+                "sync/Workspace/MovingWall/MovingWall.server.luau"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MovingWall3",
+          "className": "Part",
+          "guid": "8645690",
+          "children": [
+            {
+              "name": "MovingWall",
+              "className": "Script",
+              "guid": "8645691",
+              "filePaths": [
+                "sync/Workspace/MovingWall3/MovingWall.server.luau"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MovingWall4",
+          "className": "Model",
+          "guid": "14537030",
+          "children": [
+            {
+              "name": "Humanoid",
+              "className": "Humanoid",
+              "guid": "14537571"
+            },
+            {
+              "name": "HumanoidRootPart",
+              "className": "Part",
+              "guid": "14536827"
+            },
+            {
+              "name": "MovingWall",
+              "className": "Script",
+              "guid": "14536828",
+              "filePaths": [
+                "sync/Workspace/MovingWall4/MovingWall.server.luau"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Part",
+          "className": "Part",
+          "guid": "11770"
+        },
+        {
+          "name": "Part",
+          "className": "Part",
+          "guid": "11771",
+          "children": [
+            {
+              "name": "Script",
+              "className": "Script",
+              "guid": "11780",
+              "filePaths": [
+                "sync/Workspace/Part/Script__11780.server.luau"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Part",
+          "className": "Part",
+          "guid": "11772"
+        },
+        {
+          "name": "Part",
+          "className": "Part",
+          "guid": "11773",
+          "children": [
+            {
+              "name": "Script",
+              "className": "Script",
+              "guid": "11781",
+              "filePaths": [
+                "sync/Workspace/Part/Script.server.luau"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Part",
+          "className": "Part",
+          "guid": "11774"
+        },
+        {
+          "name": "SpawnLocation",
+          "className": "SpawnLocation",
+          "guid": "11789",
+          "children": [
+            {
+              "name": "Decal",
+              "className": "Decal",
+              "guid": "11733"
+            }
+          ]
+        },
+        {
+          "name": "Target",
+          "className": "Part",
+          "guid": "1603171"
+        },
+        {
           "name": "Terrain",
           "className": "Terrain",
-          "guid": "11944"
-        },
-        {
-          "name": "Part",
-          "className": "Part",
-          "guid": "6165452"
-        },
-        {
-          "name": "Part",
-          "className": "Part",
-          "guid": "6171861"
+          "guid": "11795"
         },
         {
           "name": "Enemy",
-          "className": "Part",
-          "guid": "6172254"
+          "className": "Model",
+          "guid": "17525072",
+          "children": [
+            {
+              "name": "HumanoidRootPart",
+              "className": "Part",
+              "guid": "17521234"
+            },
+            {
+              "name": "Humanoid",
+              "className": "Humanoid",
+              "guid": "17525351"
+            }
+          ]
         }
       ]
     }

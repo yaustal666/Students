@@ -1,42 +1,20 @@
-local RunService = game:GetService("RunService")
-local wall = script.Parent
+local part = script.Parent
+local startPosition = part.Position
 
-local startPosition = wall.CFrame
-local timer = 3
-local speed = 10
-local a = 0
-
-local isActive = true
-local side = true
-local cooldown = 3
-local b = 0
-
-local function respawnCooldown(dt)
-	if not isActive then
-		b += dt
-		if b > cooldown then
-			b = 0
-			isActive = true
-		end
-	end
-end
-
-local function move(dt)
-	if not isActive then return end
+while true do
+	part.Anchored = false
+	part.Transparency = 0
+	part.CanCollide = true
+	part.CanTouch = true
 	
-    a += dt
-    if side then
-        wall.CFrame += Vector3.new(1, 0, 0) * dt * speed
-    else
-        wall.CFrame -= Vector3.new(1, 0, 0) * dt * speed
-    end
-
-    if a > timer then
-        a = 0
-		side = not side
-		isActive = false
-    end
+	wait(1.9)
+	part.Position = startPosition
+	part.AssemblyLinearVelocity = Vector3.zero
+	part.AssemblyAngularVelocity = Vector3.zero
+	
+	part.Anchored = true
+	part.Transparency = 1
+	part.CanCollide = false
+	part.CanTouch = false
+	wait(2)
 end
-
-RunService.Heartbeat:Connect(move)
-RunService.Heartbeat:Connect(respawnCooldown)

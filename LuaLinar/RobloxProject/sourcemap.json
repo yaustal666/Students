@@ -5,7 +5,7 @@
     {
       "name": "Lighting",
       "className": "Lighting",
-      "guid": "11747",
+      "guid": "11750",
       "children": [
         {
           "name": "Atmosphere",
@@ -25,12 +25,12 @@
         {
           "name": "Sky",
           "className": "Sky",
-          "guid": "11788"
+          "guid": "11806"
         },
         {
           "name": "SunRays",
           "className": "SunRaysEffect",
-          "guid": "11793"
+          "guid": "11811"
         }
       ]
     },
@@ -42,12 +42,12 @@
     {
       "name": "ReplicatedStorage",
       "className": "ReplicatedStorage",
-      "guid": "11778",
+      "guid": "11791",
       "children": [
         {
           "name": "Admin",
           "className": "ModuleScript",
-          "guid": "11753",
+          "guid": "11759",
           "filePaths": [
             "sync/ReplicatedStorage/Admin.luau"
           ]
@@ -57,12 +57,12 @@
     {
       "name": "ServerScriptService",
       "className": "ServerScriptService",
-      "guid": "11785",
+      "guid": "11803",
       "children": [
         {
           "name": "init_server",
           "className": "Script",
-          "guid": "11783",
+          "guid": "11801",
           "filePaths": [
             "sync/ServerScriptService/init_server.server.luau"
           ]
@@ -80,7 +80,7 @@
                 {
                   "name": "AdminSetup",
                   "className": "ModuleScript",
-                  "guid": "11756",
+                  "guid": "11762",
                   "filePaths": [
                     "sync/ServerScriptService/Modules/Bootstrap/AdminSetup.luau"
                   ]
@@ -88,7 +88,7 @@
                 {
                   "name": "NetworkSetupService",
                   "className": "ModuleScript",
-                  "guid": "11754",
+                  "guid": "11760",
                   "filePaths": [
                     "sync/ServerScriptService/Modules/Bootstrap/NetworkSetupService.luau"
                   ]
@@ -96,7 +96,7 @@
                 {
                   "name": "PlayerSetupService",
                   "className": "ModuleScript",
-                  "guid": "11755",
+                  "guid": "11761",
                   "filePaths": [
                     "sync/ServerScriptService/Modules/Bootstrap/PlayerSetupService.luau"
                   ]
@@ -106,7 +106,7 @@
             {
               "name": "ControllerService",
               "className": "ModuleScript",
-              "guid": "11765",
+              "guid": "11772",
               "filePaths": [
                 "sync/ServerScriptService/Modules/ControllerService.luau"
               ]
@@ -119,7 +119,7 @@
                 {
                   "name": "DataService",
                   "className": "ModuleScript",
-                  "guid": "11762",
+                  "guid": "11769",
                   "filePaths": [
                     "sync/ServerScriptService/Modules/Core/DataService.luau"
                   ]
@@ -127,7 +127,7 @@
                 {
                   "name": "InventoryService",
                   "className": "ModuleScript",
-                  "guid": "11763",
+                  "guid": "11770",
                   "filePaths": [
                     "sync/ServerScriptService/Modules/Core/InventoryService.luau"
                   ]
@@ -135,7 +135,7 @@
                 {
                   "name": "PlayerConnectionService",
                   "className": "ModuleScript",
-                  "guid": "11764",
+                  "guid": "11771",
                   "filePaths": [
                     "sync/ServerScriptService/Modules/Core/PlayerConnectionService.luau"
                   ]
@@ -150,7 +150,7 @@
                 {
                   "name": "CurrencyService",
                   "className": "ModuleScript",
-                  "guid": "11766",
+                  "guid": "11773",
                   "filePaths": [
                     "sync/ServerScriptService/Modules/Economics/CurrencyService.luau"
                   ]
@@ -158,7 +158,7 @@
                 {
                   "name": "ShopService",
                   "className": "ModuleScript",
-                  "guid": "11767",
+                  "guid": "11774",
                   "filePaths": [
                     "sync/ServerScriptService/Modules/Economics/ShopService.luau"
                   ]
@@ -173,7 +173,7 @@
                 {
                   "name": "Enemy",
                   "className": "ModuleScript",
-                  "guid": "11760",
+                  "guid": "11766",
                   "filePaths": [
                     "sync/ServerScriptService/Modules/Gameplay/Enemy.luau"
                   ]
@@ -181,7 +181,7 @@
                 {
                   "name": "EnemyTriggers",
                   "className": "ModuleScript",
-                  "guid": "11761",
+                  "guid": "11767",
                   "filePaths": [
                     "sync/ServerScriptService/Modules/Gameplay/EnemyTriggers.luau"
                   ]
@@ -189,7 +189,7 @@
                 {
                   "name": "KillObjectService",
                   "className": "ModuleScript",
-                  "guid": "11759",
+                  "guid": "11765",
                   "filePaths": [
                     "sync/ServerScriptService/Modules/Gameplay/KillObjectService.luau"
                   ]
@@ -197,7 +197,7 @@
                 {
                   "name": "MoneyButtonsService",
                   "className": "ModuleScript",
-                  "guid": "11757",
+                  "guid": "11763",
                   "filePaths": [
                     "sync/ServerScriptService/Modules/Gameplay/MoneyButtonsService.luau"
                   ]
@@ -205,7 +205,7 @@
                 {
                   "name": "MovementTrackerService",
                   "className": "ModuleScript",
-                  "guid": "11758",
+                  "guid": "11764",
                   "filePaths": [
                     "sync/ServerScriptService/Modules/Gameplay/MovementTrackerService.luau"
                   ]
@@ -213,7 +213,7 @@
                 {
                   "name": "Rooms",
                   "className": "ModuleScript",
-                  "guid": "17518310",
+                  "guid": "11768",
                   "filePaths": [
                     "sync/ServerScriptService/Modules/Gameplay/Rooms.luau"
                   ]
@@ -232,7 +232,7 @@
     {
       "name": "ServerStorage",
       "className": "ServerStorage",
-      "guid": "11786",
+      "guid": "11804",
       "children": [
         {
           "name": "AdminPanel",
@@ -242,7 +242,7 @@
             {
               "name": "AdminPanelControl",
               "className": "LocalScript",
-              "guid": "11751",
+              "guid": "11754",
               "filePaths": [
                 "sync/ServerStorage/AdminPanel/AdminPanelControl.client.luau"
               ]
@@ -250,29 +250,29 @@
             {
               "name": "GiveCoins",
               "className": "TextButton",
-              "guid": "11799"
+              "guid": "11817"
             },
             {
               "name": "Kill",
               "className": "TextButton",
-              "guid": "11798"
+              "guid": "11816"
             },
             {
               "name": "UserIdInput",
               "className": "TextBox",
-              "guid": "11797"
+              "guid": "11815"
             }
           ]
         },
         {
           "name": "AdminPanelButton",
           "className": "TextButton",
-          "guid": "11800",
+          "guid": "11818",
           "children": [
             {
               "name": "AdminButton",
               "className": "LocalScript",
-              "guid": "11752",
+              "guid": "11755",
               "filePaths": [
                 "sync/ServerStorage/AdminPanelButton/AdminButton.client.luau"
               ]
@@ -284,7 +284,7 @@
     {
       "name": "SoundService",
       "className": "SoundService",
-      "guid": "7751"
+      "guid": "8215"
     },
     {
       "name": "StarterGui",
@@ -299,12 +299,12 @@
             {
               "name": "ScreenGui",
               "className": "ScreenGui",
-              "guid": "11779",
+              "guid": "11792",
               "children": [
                 {
                   "name": "CoinDisplay",
                   "className": "LocalScript",
-                  "guid": "11750",
+                  "guid": "11753",
                   "filePaths": [
                     "sync/StarterGui/UI/ScreenGui/CoinDisplay.client.luau"
                   ]
@@ -317,12 +317,12 @@
                     {
                       "name": "CoinLabel",
                       "className": "TextLabel",
-                      "guid": "11801"
+                      "guid": "11819"
                     },
                     {
                       "name": "ImageLabel",
                       "className": "ImageLabel",
-                      "guid": "11746"
+                      "guid": "11749"
                     }
                   ]
                 }
@@ -345,17 +345,17 @@
         {
           "name": "StarterCharacterScripts",
           "className": "StarterCharacterScripts",
-          "guid": "11790"
+          "guid": "11808"
         },
         {
           "name": "StarterPlayerScripts",
           "className": "StarterPlayerScripts",
-          "guid": "11791",
+          "guid": "11809",
           "children": [
             {
               "name": "SpeedChanger",
               "className": "LocalScript",
-              "guid": "11749",
+              "guid": "11752",
               "filePaths": [
                 "sync/StarterPlayer/StarterPlayerScripts/SpeedChanger.client.luau"
               ]
@@ -363,7 +363,7 @@
             {
               "name": "Walls",
               "className": "LocalScript",
-              "guid": "11748",
+              "guid": "11751",
               "filePaths": [
                 "sync/StarterPlayer/StarterPlayerScripts/Walls.client.luau"
               ]
@@ -380,71 +380,58 @@
         {
           "name": "Baseplate",
           "className": "Part",
-          "guid": "11769",
+          "guid": "11776",
           "children": [
             {
               "name": "Texture",
               "className": "Texture",
-              "guid": "11802"
+              "guid": "11820"
             }
           ]
         },
         {
           "name": "Camera",
           "className": "Camera",
-          "guid": "204077"
+          "guid": "191681"
         },
         {
-          "name": "Enemy1",
+          "name": "Door",
           "className": "Part",
-          "guid": "11775",
-          "children": [
-            {
-              "name": "Script",
-              "className": "Script",
-              "guid": "1883356",
-              "filePaths": [
-                "sync/Workspace/Enemy1/Script.server.luau"
-              ]
-            }
-          ]
+          "guid": "11779"
         },
         {
-          "name": "Enemy2",
+          "name": "Door",
+          "className": "Part",
+          "guid": "11781"
+        },
+        {
+          "name": "Enemy",
           "className": "Model",
-          "guid": "4233483",
+          "guid": "11758",
           "children": [
             {
               "name": "Humanoid",
               "className": "Humanoid",
-              "guid": "3618373"
+              "guid": "11747"
             },
             {
               "name": "HumanoidRootPart",
               "className": "Part",
-              "guid": "3615795"
-            },
-            {
-              "name": "Script",
-              "className": "Script",
-              "guid": "3618610",
-              "filePaths": [
-                "sync/Workspace/Enemy2/Script.server.luau"
-              ]
+              "guid": "11789"
             }
           ]
         },
         {
-          "name": "MovingThing2",
+          "name": "MovingThingTween",
           "className": "Part",
-          "guid": "5467061",
+          "guid": "11786",
           "children": [
             {
               "name": "Script",
               "className": "Script",
-              "guid": "5468440",
+              "guid": "11798",
               "filePaths": [
-                "sync/Workspace/MovingThing2/Script.server.luau"
+                "sync/Workspace/MovingThingTween/Script.server.luau"
               ]
             }
           ]
@@ -452,12 +439,12 @@
         {
           "name": "MovingWall",
           "className": "Part",
-          "guid": "11776",
+          "guid": "11782",
           "children": [
             {
               "name": "MovingWall",
               "className": "Script",
-              "guid": "11782",
+              "guid": "11795",
               "filePaths": [
                 "sync/Workspace/MovingWall/MovingWall.server.luau"
               ]
@@ -467,12 +454,12 @@
         {
           "name": "MovingWall3",
           "className": "Part",
-          "guid": "8645690",
+          "guid": "11787",
           "children": [
             {
               "name": "MovingWall",
               "className": "Script",
-              "guid": "8645691",
+              "guid": "11799",
               "filePaths": [
                 "sync/Workspace/MovingWall3/MovingWall.server.luau"
               ]
@@ -480,64 +467,19 @@
           ]
         },
         {
-          "name": "MovingWall4",
-          "className": "Model",
-          "guid": "14537030",
-          "children": [
-            {
-              "name": "Humanoid",
-              "className": "Humanoid",
-              "guid": "14537571"
-            },
-            {
-              "name": "HumanoidRootPart",
-              "className": "Part",
-              "guid": "14536827"
-            },
-            {
-              "name": "MovingWall",
-              "className": "Script",
-              "guid": "14536828",
-              "filePaths": [
-                "sync/Workspace/MovingWall4/MovingWall.server.luau"
-              ]
-            }
-          ]
+          "name": "Part",
+          "className": "Part",
+          "guid": "10487996"
         },
         {
           "name": "Part",
           "className": "Part",
-          "guid": "11770"
-        },
-        {
-          "name": "Part",
-          "className": "Part",
-          "guid": "11771",
+          "guid": "10490133",
           "children": [
             {
               "name": "Script",
               "className": "Script",
-              "guid": "11780",
-              "filePaths": [
-                "sync/Workspace/Part/Script__11780.server.luau"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Part",
-          "className": "Part",
-          "guid": "11772"
-        },
-        {
-          "name": "Part",
-          "className": "Part",
-          "guid": "11773",
-          "children": [
-            {
-              "name": "Script",
-              "className": "Script",
-              "guid": "11781",
+              "guid": "11057379",
               "filePaths": [
                 "sync/Workspace/Part/Script.server.luau"
               ]
@@ -547,12 +489,12 @@
         {
           "name": "Part",
           "className": "Part",
-          "guid": "11774"
+          "guid": "13496291"
         },
         {
           "name": "SpawnLocation",
           "className": "SpawnLocation",
-          "guid": "11789",
+          "guid": "11807",
           "children": [
             {
               "name": "Decal",
@@ -562,31 +504,606 @@
           ]
         },
         {
-          "name": "Target",
-          "className": "Part",
-          "guid": "1603171"
-        },
-        {
           "name": "Terrain",
           "className": "Terrain",
-          "guid": "11795"
+          "guid": "11813"
         },
         {
-          "name": "Enemy",
+          "name": "Treadmill",
           "className": "Model",
-          "guid": "17525072",
+          "guid": "6813898",
           "children": [
             {
-              "name": "HumanoidRootPart",
-              "className": "Part",
-              "guid": "17521234"
+              "name": "Attachment0",
+              "className": "Attachment",
+              "guid": "6813837"
             },
             {
-              "name": "Humanoid",
-              "className": "Humanoid",
-              "guid": "17525351"
+              "name": "Attachment1",
+              "className": "Attachment",
+              "guid": "6813838"
+            },
+            {
+              "name": "Beam",
+              "className": "Beam",
+              "guid": "6813844"
+            },
+            {
+              "name": "Conveyor",
+              "className": "Part",
+              "guid": "6813990"
+            },
+            {
+              "name": "Script",
+              "className": "Script",
+              "guid": "6814047",
+              "filePaths": [
+                "sync/Workspace/Treadmill/Script__6814047.server.luau"
+              ]
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813985"
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813986"
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813987"
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813988"
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813989"
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813991"
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813992"
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813993"
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813994"
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813995"
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813996"
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813997"
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813998"
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813999"
+            },
+            {
+              "name": "TreadmillBillboard",
+              "className": "BillboardGui",
+              "guid": "6813849",
+              "children": [
+                {
+                  "name": "Frame",
+                  "className": "Frame",
+                  "guid": "6813854",
+                  "children": [
+                    {
+                      "name": "ImageLabel",
+                      "className": "ImageLabel",
+                      "guid": "6813862"
+                    },
+                    {
+                      "name": "TextLabel",
+                      "className": "TextLabel",
+                      "guid": "6814059",
+                      "children": [
+                        {
+                          "name": "UIStroke",
+                          "className": "UIStroke",
+                          "guid": "6814064"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           ]
+        },
+        {
+          "name": "Treadmill",
+          "className": "Part",
+          "guid": "449946",
+          "children": [
+            {
+              "name": "Script",
+              "className": "Script",
+              "guid": "452144",
+              "filePaths": [
+                "sync/Workspace/Treadmill/Script.server.luau"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "TreadmillCandy",
+          "className": "Model",
+          "guid": "6813897",
+          "children": [
+            {
+              "name": "Attachment0",
+              "className": "Attachment",
+              "guid": "6813835"
+            },
+            {
+              "name": "Attachment1",
+              "className": "Attachment",
+              "guid": "6813836"
+            },
+            {
+              "name": "Beam",
+              "className": "Beam",
+              "guid": "6813843"
+            },
+            {
+              "name": "Candy1",
+              "className": "MeshPart",
+              "guid": "6813881"
+            },
+            {
+              "name": "Candy1",
+              "className": "MeshPart",
+              "guid": "6813882"
+            },
+            {
+              "name": "Candy1",
+              "className": "MeshPart",
+              "guid": "6813883"
+            },
+            {
+              "name": "Candy1",
+              "className": "MeshPart",
+              "guid": "6813885"
+            },
+            {
+              "name": "Candy2",
+              "className": "Part",
+              "guid": "6813963",
+              "children": [
+                {
+                  "name": "Mesh",
+                  "className": "SpecialMesh",
+                  "guid": "6814049"
+                }
+              ]
+            },
+            {
+              "name": "Candy2",
+              "className": "Part",
+              "guid": "6813972",
+              "children": [
+                {
+                  "name": "Mesh",
+                  "className": "SpecialMesh",
+                  "guid": "6814050"
+                }
+              ]
+            },
+            {
+              "name": "Conveyor",
+              "className": "Part",
+              "guid": "6813962"
+            },
+            {
+              "name": "Lolipop",
+              "className": "MeshPart",
+              "guid": "6813884"
+            },
+            {
+              "name": "Lolipop",
+              "className": "MeshPart",
+              "guid": "6813886"
+            },
+            {
+              "name": "Script",
+              "className": "Script",
+              "guid": "6814046",
+              "filePaths": [
+                "sync/Workspace/TreadmillCandy/Script.server.luau"
+              ]
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813960"
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813964"
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813965"
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813966"
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813968"
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813973"
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813975"
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813977"
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813978"
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813979"
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813980"
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813981"
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813982"
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813983"
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813984"
+            },
+            {
+              "name": "SolTapis",
+              "className": "Part",
+              "guid": "6813961"
+            },
+            {
+              "name": "SolTapis",
+              "className": "Part",
+              "guid": "6813967"
+            },
+            {
+              "name": "SolTapis",
+              "className": "Part",
+              "guid": "6813969"
+            },
+            {
+              "name": "SolTapis",
+              "className": "Part",
+              "guid": "6813970"
+            },
+            {
+              "name": "SolTapis",
+              "className": "Part",
+              "guid": "6813971"
+            },
+            {
+              "name": "SolTapis",
+              "className": "Part",
+              "guid": "6813974"
+            },
+            {
+              "name": "SolTapis",
+              "className": "Part",
+              "guid": "6813976"
+            },
+            {
+              "name": "TreadmillBillboard",
+              "className": "BillboardGui",
+              "guid": "6813848",
+              "children": [
+                {
+                  "name": "Frame",
+                  "className": "Frame",
+                  "guid": "6813853",
+                  "children": [
+                    {
+                      "name": "ImageLabel",
+                      "className": "ImageLabel",
+                      "guid": "6813861"
+                    },
+                    {
+                      "name": "TextLabel",
+                      "className": "TextLabel",
+                      "guid": "6814058",
+                      "children": [
+                        {
+                          "name": "UIStroke",
+                          "className": "UIStroke",
+                          "guid": "6814063"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "TreadmillGold",
+          "className": "Model",
+          "guid": "6813896",
+          "children": [
+            {
+              "name": "Attachment0",
+              "className": "Attachment",
+              "guid": "6813833"
+            },
+            {
+              "name": "Attachment1",
+              "className": "Attachment",
+              "guid": "6813834"
+            },
+            {
+              "name": "Beam",
+              "className": "Beam",
+              "guid": "6813842"
+            },
+            {
+              "name": "Conveyor",
+              "className": "Part",
+              "guid": "6813949"
+            },
+            {
+              "name": "Script",
+              "className": "Script",
+              "guid": "6814045",
+              "filePaths": [
+                "sync/Workspace/TreadmillGold/Script.server.luau"
+              ]
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813938"
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813939"
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813940"
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813941"
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813942"
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813943"
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813944"
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813945"
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813946"
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813947"
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813948"
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813950"
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813951"
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813952"
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813953"
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813954"
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813955"
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813956"
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813957"
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813958"
+            },
+            {
+              "name": "Smooth Block Model",
+              "className": "Part",
+              "guid": "6813959"
+            },
+            {
+              "name": "TreadmillBillboard",
+              "className": "BillboardGui",
+              "guid": "6813847",
+              "children": [
+                {
+                  "name": "Frame",
+                  "className": "Frame",
+                  "guid": "6813852",
+                  "children": [
+                    {
+                      "name": "ImageLabel",
+                      "className": "ImageLabel",
+                      "guid": "6813860"
+                    },
+                    {
+                      "name": "TextLabel",
+                      "className": "TextLabel",
+                      "guid": "6814057",
+                      "children": [
+                        {
+                          "name": "UIStroke",
+                          "className": "UIStroke",
+                          "guid": "6814062"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Truss",
+          "className": "TrussPart",
+          "guid": "13499060"
+        },
+        {
+          "name": "Truss",
+          "className": "TrussPart",
+          "guid": "13501116"
+        },
+        {
+          "name": "Wall",
+          "className": "Part",
+          "guid": "11778",
+          "children": [
+            {
+              "name": "Script",
+              "className": "Script",
+              "guid": "11793",
+              "filePaths": [
+                "sync/Workspace/Wall/Script.server.luau"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Wall",
+          "className": "Part",
+          "guid": "11780",
+          "children": [
+            {
+              "name": "Script",
+              "className": "Script",
+              "guid": "11794",
+              "filePaths": [
+                "sync/Workspace/Wall/Script__11794.server.luau"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "WInButton",
+          "className": "Part",
+          "guid": "11777"
         }
       ]
     }

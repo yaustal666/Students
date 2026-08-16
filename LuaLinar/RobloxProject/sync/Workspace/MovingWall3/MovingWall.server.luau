@@ -13,14 +13,11 @@ local animationSettings = TweenInfo.new(
 
 local anim = TweenService:Create(wall, animationSettings, {Position = wall.Position + Vector3.new(80, 0, 0)})
 
-anim:Play()
-
---while true do
---	task.wait(3)
+while true do
+	task.wait(3)
 	
---	anim:Play()
---	anim.Completed:Wait()
+	anim:Play()
+	anim.Completed:Wait()
 	
-	
---	wall.Position = startPosition
---end
+	wall.Position = startPosition
+end

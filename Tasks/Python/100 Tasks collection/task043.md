@@ -1,21 +1,26 @@
-### Question 43
-Write a program to generate and print another tuple whose values are even numbers in the given tuple (1,2,3,4,5,6,7,8,9,10). 
+### Question 26 | Level 1
 
-Hints:
+### EN
+***
+Define a function which can compute the sum of two numbers.
 
-Use "for" to iterate the tuple
-Use tuple() to generate a tuple from a list.
+<br><br>
 
-Solution
+### RU
+***
+Определите функцию, которая вычисляет сумму двух чисел.
+
+<br><br>
+
+<details>
+<summary>Solution/Решение</summary>
+
 ```python
-tp=(1,2,3,4,5,6,7,8,9,10)
-li=list()
-for i in tp:
-	if tp[i]%2==0:
-		li.append(tp[i])
+def SumFunction(number1, number2):
+    return number1+number2
 
-tp2=tuple(li)
-print(tp2)
+print(SumFunction(1,2))
+```
 
 </details>
-```
+

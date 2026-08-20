@@ -1,27 +1,29 @@
-### Question 16
-Level 2
+### Question 43 | Level 1
 
-Question:
-Use a list comprehension to square each odd number in a list. The list is input by a sequence of comma-separated numbers.
-Suppose the following input is supplied to the program:
-1,2,3,4,5,6,7,8,9
-Then, the output should be:
-1,3,5,7,9
+### EN
+***
+Write a program to generate and print another tuple whose values are even numbers in the given tuple (1,2,3,4,5,6,7,8,9,10).
 
-Hints:
-In case of input data being supplied to the question, it should be assumed to be a console input.
+<br><br>
 
-Solution:
+### RU
+***
+Напишите программу для генерации и вывода другого кортежа, значениями которого являются четные числа из заданного кортежа (1,2,3,4,5,6,7,8,9,10).
+
+<br><br>
+
 <details>
-
-<summary> Click to extend </summary>
-
+<summary>Solution/Решение</summary>
 
 ```python
-values = input()
-numbers = [x for x in values.split(",") if int(x)%2!=0]
-print(",".join(numbers))
+tp=(1,2,3,4,5,6,7,8,9,10)
+li=list()
+for i in tp:
+    if tp[i]%2==0:
+        li.append(tp[i])
+
+tp2=tuple(li)
+print(tp2)
 ```
 
 </details>
-

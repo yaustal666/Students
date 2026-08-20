@@ -1,14 +1,19 @@
-### Question 61
+### Question 61 | Level 1
+
+### EN
+***
 Print a unicode string "hello world".
 
-Hints:
+<br><br>
 
-Use u'strings' format to define unicode string.
+### RU
+***
+Выведите юникод-строку "hello world".
 
-Solution:
+<br><br>
+
 <details>
-
-<summary> Click to extend </summary>
+<summary>Solution/Решение</summary>
 
 ```python
 unicodeString = u"hello world!"

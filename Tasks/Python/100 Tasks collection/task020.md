@@ -1,30 +1,24 @@
-### Question 20
-Level 3
+### Question 47 | Level 1
 
-Question:
-Define a class with a generator which can iterate the numbers, which are divisible by 7, between a given range 0 and n.
+### EN
+***
+Write a program which can map() and filter() to make a list whose elements are square of even number in [1,2,3,4,5,6,7,8,9,10].
 
-Hints:
-Consider use yield
+<br><br>
 
-Solution:
+### RU
+***
+Напишите программу, которая может использовать map() и filter() для создания списка, элементы которого являются квадратами четных чисел из [1,2,3,4,5,6,7,8,9,10].
+
+<br><br>
+
 <details>
-
-<summary> Click to extend </summary>
-
+<summary>Solution/Решение</summary>
 
 ```python
-def putNumbers(n):
-    i = 0
-    while i<n:
-        j=i
-        i=i+1
-        if j%7==0:
-            yield j
-
-for i in reverse(100):
-    print(i)
+li = [1,2,3,4,5,6,7,8,9,10]
+evenNumbers = map(lambda x: x**2, filter(lambda x: x%2==0, li))
+print(evenNumbers)
 ```
 
 </details>
-

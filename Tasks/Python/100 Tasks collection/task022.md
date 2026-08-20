@@ -1,44 +1,23 @@
-### Question 22
-Level 3
+### Question 49 | Level 1
 
-Question:
-Write a program to compute the frequency of the words from the input. The output should output after sorting the key alphanumerically. 
-Suppose the following input is supplied to the program:
-New to Python or choosing between Python 2 and Python 3? Read Python 2 or Python 3.
-Then, the output should be:
-2:2
-3.:1
-3?:1
-New:1
-Python:5
-Read:1
-and:1
-between:1
-choosing:1
-or:2
-to:1
+### EN
+***
+Write a program which can map() to make a list whose elements are square of numbers between 1 and 20 (both included).
 
-Hints
-In case of input data being supplied to the question, it should be assumed to be a console input.
+<br><br>
 
-Solution:
+### RU
+***
+Напишите программу, которая может использовать map() для создания списка, элементы которого являются квадратами чисел от 1 до 20 (включительно).
+
+<br><br>
+
 <details>
-
-<summary> Click to extend </summary>
-
+<summary>Solution/Решение</summary>
 
 ```python
-freq = {}   # frequency of words in text
-line = input()
-for word in line.split():
-    freq[word] = freq.get(word,0)+1
-
-words = freq.keys()
-words.sort()
-
-for w in words:
-    print("%s:%d" % (w,freq[w]))
+squaredNumbers = map(lambda x: x**2, range(1,21))
+print(squaredNumbers)
 ```
 
 </details>
-

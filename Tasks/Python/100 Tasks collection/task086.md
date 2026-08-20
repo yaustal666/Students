@@ -1,13 +1,19 @@
-### Question 86
+### Question 86 | Level 1
+
+### EN
+***
 Please write a program to generate all sentences where subject is in ["I", "You"] and verb is in ["Play", "Love"] and the object is in ["Hockey","Football"].
 
-Hints:
-Use list[index] notation to get a element from a list.
+<br><br>
 
-Solution:
+### RU
+***
+Пожалуйста, напишите программу для генерации всех предложений, где подлежащее находится в ["I", "You"], глагол в ["Play", "Love"], а объект в ["Hockey","Football"].
+
+<br><br>
+
 <details>
-
-<summary> Click to extend </summary>
+<summary>Solution/Решение</summary>
 
 ```python
 subjects=["I", "You"]

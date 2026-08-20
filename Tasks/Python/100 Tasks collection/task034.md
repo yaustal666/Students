@@ -1,21 +1,42 @@
-### Question 34
-Define a function which can print a dictionary where the keys are numbers between 1 and 20 (both included) and the values are square of keys.
+### Question 14 | Level 2
 
-Hints:
+### EN
+***
+Write a program that accepts a sentence and calculate the number of upper case letters and lower case letters.
+Suppose the following input is supplied to the program:
+Hello world!
+Then, the output should be:
+UPPER CASE 1
+LOWER CASE 9
 
-Use dict[key]=value pattern to put entry into a dictionary.
-Use ** operator to get power of a number.
-Use range() for loops.
+<br><br>
 
-Solution
+### RU
+***
+Напишите программу, которая принимает предложение и подсчитывает количество букв в верхнем и нижнем регистрах.
+Предположим, что на вход программе подается:
+Hello world!
+Тогда вывод должен быть:
+UPPER CASE 1
+LOWER CASE 9
+
+<br><br>
+
+<details>
+<summary>Solution/Решение</summary>
+
 ```python
-def printDict():
-	d=dict()
-	for i in range(1,21):
-		d[i]=i**2
-	print(d)
-
-printDict()
+s = input()
+d={"UPPER CASE":0, "LOWER CASE":0}
+for c in s:
+    if c.isupper():
+        d["UPPER CASE"]+=1
+    elif c.islower():
+        d["LOWER CASE"]+=1
+    else:
+        pass
+print("UPPER CASE", d["UPPER CASE"])
+print("LOWER CASE", d["LOWER CASE"])
 ```
 
 </details>

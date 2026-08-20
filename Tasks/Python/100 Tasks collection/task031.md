@@ -1,25 +1,40 @@
-### Question 31
-Define a function that can accept two strings as input and print the string with maximum length in console. If two strings have the same length, then the function should print al l strings line by line.
+### Question 11 | Level 2
 
-Hints:
+### EN
+***
+Write a program which accepts a sequence of comma separated 4 digit binary numbers as its input and then check whether they are divisible by 5 or not. The numbers that are divisible by 5 are to be printed in a comma separated sequence.
+Example:
+0100,0011,1010,1001
+Then the output should be:
+1010
+Notes: Assume the data is input by console.
 
-Use len() function to get the length of a string
+<br><br>
 
-Solution
+### RU
+***
+Напишите программу, которая принимает последовательность четырехзначных двоичных чисел, разделенных запятыми, в качестве входных данных и проверяет, делятся ли они на 5 или нет. Числа, которые делятся на 5, должны быть выведены в виде последовательности, разделенной запятыми.
+Пример:
+0100,0011,1010,1001
+Тогда вывод должен быть:
+1010
+Примечание: Предполагается, что данные вводятся с консоли.
+
+<br><br>
+
+<details>
+<summary>Solution/Решение</summary>
+
 ```python
-def printValue(s1,s2):
-    len1 = len(s1)
-    len2 = len(s2)
-    if len1>len2:
-        print(s1)
-    elif len2>len1:
-        print(s2)
-    else:
-        print(s1)
-        print(s2)
-        
-printValue("one","three")
+value = []
+items=[x for x in input().split(',')]
+for p in items:
+    intp = int(p, 2)
+    if not intp%5:
+        value.append(p)
 
+print(','.join(value))
+```
 
 </details>
-```
+

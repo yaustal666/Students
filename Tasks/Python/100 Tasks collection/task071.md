@@ -1,4 +1,7 @@
-### Question 71
+### Question 71 | Level 1
+
+### EN
+***
 Please write a program which accepts basic mathematic expression from console and print the evaluation result.
 
 Example:
@@ -10,17 +13,28 @@ Then, the output of the program should be:
 
 38
 
-Hints:
-Use eval() to evaluate an expression.
+<br><br>
 
+### RU
+***
+Пожалуйста, напишите программу, которая принимает базовое математическое выражение с консоли и выводит результат вычисления.
 
-Solution:
+Пример:
+Если на вход программе подается следующая строка:
+
+35+3
+
+Тогда вывод программы должен быть:
+
+38
+
+<br><br>
+
 <details>
-
-<summary> Click to extend </summary>
+<summary>Solution/Решение</summary>
 
 ```python
-expression = raw_input()
+expression = input()
 print(eval(expression))
 ```
 

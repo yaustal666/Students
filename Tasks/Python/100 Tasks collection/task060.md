@@ -1,4 +1,7 @@
-### Question 60
+### Question 60 | Level 1
+
+### EN
+***
 Write a program which accepts a sequence of words separated by whitespace as input to print the words composed of digits only.
 
 Example:
@@ -10,21 +13,30 @@ Then, the output of the program should be:
 
 ['2', '3']
 
-In case of input data being supplied to the question, it should be assumed to be a console input.
+<br><br>
 
-Hints:
+### RU
+***
+Напишите программу, которая принимает последовательность слов, разделенных пробелами, в качестве входных данных и выводит слова, состоящие только из цифр.
 
-Use re.findall() to find all substring using regex.
+Пример:
+Если на вход программе подаются следующие слова:
 
-Solution:
+2 cats and 3 dogs.
+
+Тогда вывод программы должен быть:
+
+['2', '3']
+
+<br><br>
+
 <details>
-
-<summary> Click to extend </summary>
+<summary>Solution/Решение</summary>
 
 ```python
 import re
-s = raw_input()
-print(re.findall("\d+",s))
+s = input()
+print(re.findall(r"\d+", s))
 ```
 
 </details>

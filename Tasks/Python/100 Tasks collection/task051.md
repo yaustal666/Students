@@ -1,14 +1,19 @@
-### Question 51
-Define a class named American and its subclass NewYorker. 
+### Question 51 | Level 1
 
-Hints:
+### EN
+***
+Define a class named American and its subclass NewYorker.
 
-Use class Subclass(ParentClass) to define a subclass.
+<br><br>
 
-Solution:
+### RU
+***
+Определите класс с именем American и его подкласс NewYorker.
+
+<br><br>
+
 <details>
-
-<summary> Click to extend </summary>
+<summary>Solution/Решение</summary>
 
 ```python
 class American(object):

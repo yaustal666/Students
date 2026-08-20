@@ -1,13 +1,19 @@
-### Question 99
+### Question 99 | Level 1
+
+### EN
+***
 Please write a program which prints all permutations of [1,2,3]
 
-Hints:
-Use itertools.permutations() to get permutations of list.
+<br><br>
 
-Solution:
+### RU
+***
+Пожалуйста, напишите программу, которая выводит все перестановки [1,2,3]
+
+<br><br>
+
 <details>
-
-<summary> Click to extend </summary>
+<summary>Solution/Решение</summary>
 
 ```python
 import itertools

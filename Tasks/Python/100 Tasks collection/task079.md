@@ -1,13 +1,19 @@
-### Question 79
+### Question 79 | Level 1
+
+### EN
+***
 Please write a program to randomly generate a list with 5 even numbers between 100 and 200 inclusive.
 
-Hints:
-Use random.sample() to generate a list of random values.
+<br><br>
 
-Solution:
+### RU
+***
+Пожалуйста, напишите программу для случайной генерации списка из 5 четных чисел от 100 до 200 включительно.
+
+<br><br>
+
 <details>
-
-<summary> Click to extend </summary>
+<summary>Solution/Решение</summary>
 
 ```python
 import random

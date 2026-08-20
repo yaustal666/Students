@@ -1,4 +1,7 @@
-### Question 96
+### Question 96 | Level 1
+
+### EN
+***
 Please write a program which count and print the numbers of each character in a string input by console.
 
 Example:
@@ -16,18 +19,35 @@ d,1
 g,1
 f,1
 
-Hints:
-Use dict to store key/value pairs.
-Use dict.get() method to lookup a key with default value.
+<br><br>
 
-Solution:
+### RU
+***
+Пожалуйста, напишите программу, которая подсчитывает и выводит количество каждого символа в строке, введенной с консоли.
+
+Пример:
+Если на вход программе подается следующая строка:
+
+abcdefgabc
+
+Тогда вывод программы должен быть:
+
+a,2
+c,2
+b,2
+e,1
+d,1
+g,1
+f,1
+
+<br><br>
+
 <details>
-
-<summary> Click to extend </summary>
+<summary>Solution/Решение</summary>
 
 ```python
 dic = {}
-s=raw_input()
+s = input()
 for s in s:
     dic[s] = dic.get(s,0)+1
 print('\n'.join(['%s,%s' % (k, v) for k, v in dic.items()]))

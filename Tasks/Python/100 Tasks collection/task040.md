@@ -1,22 +1,31 @@
-### Question 40
-Define a function which can generate a list where the values are square of numbers between 1 and 20 (both included). Then the function needs to print all values except the first 5 elements in the list.
+### Question 20 | Level 3
 
-Hints:
+### EN
+***
+Define a class with a generator which can iterate the numbers, which are divisible by 7, between a given range 0 and n.
 
-Use ** operator to get power of a number.
-Use range() for loops.
-Use list.append() to add values into a list.
-Use [n1:n2] to slice a list
+<br><br>
 
-Solution
+### RU
+***
+Определите класс с генератором, который может перебирать числа, делящиеся на 7, в заданном диапазоне от 0 до n.
+
+<br><br>
+
+<details>
+<summary>Solution/Решение</summary>
+
 ```python
-def printList():
-	li=list()
-	for i in range(1,21):
-		li.append(i**2)
-	print li[5:]
+def putNumbers(n):
+    i = 0
+    while i<n:
+        j=i
+        i=i+1
+        if j%7==0:
+            yield j
 
-printList()
+for i in reverse(100):
+    print(i)
 ```
 
 </details>

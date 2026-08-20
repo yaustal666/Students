@@ -1,35 +1,28 @@
-### Question 14
-Level 2
+### Question 41 | Level 1
 
-Question:
-Write a program that accepts a sentence and calculate the number of upper case letters and lower case letters.
-Suppose the following input is supplied to the program:
-Hello world!
-Then, the output should be:
-UPPER CASE 1
-LOWER CASE 9
+### EN
+***
+Define a function which can generate and print a tuple where the value are square of numbers between 1 and 20 (both included).
 
-Hints:
-In case of input data being supplied to the question, it should be assumed to be a console input.
+<br><br>
 
-Solution:
+### RU
+***
+Определите функцию, которая может генерировать и выводить кортеж, где значения являются квадратами чисел от 1 до 20 (включительно).
+
+<br><br>
+
 <details>
-
-<summary> Click to extend </summary>
+<summary>Solution/Решение</summary>
 
 ```python
-s = input()
-d={"UPPER CASE":0, "LOWER CASE":0}
-for c in s:
-    if c.isupper():
-        d["UPPER CASE"]+=1
-    elif c.islower():
-        d["LOWER CASE"]+=1
-    else:
-        pass
-print("UPPER CASE", d["UPPER CASE"])
-print("LOWER CASE", d["LOWER CASE"])
+def printTuple():
+    li=list()
+    for i in range(1,21):
+        li.append(i**2)
+    print(tuple(li))
+        
+printTuple()
 ```
 
 </details>
-

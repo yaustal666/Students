@@ -1,34 +1,29 @@
-### Question 9
-Level 2
+### Question 36 | Level 1
 
-Question£º
-Write a program that accepts sequence of lines as input and prints the lines after making all characters in the sentence capitalized.
-Suppose the following input is supplied to the program:
-Hello world
-Practice makes perfect
-Then, the output should be:
-HELLO WORLD
-PRACTICE MAKES PERFECT
+### EN
+***
+Define a function which can generate a dictionary where the keys are numbers between 1 and 20 (both included) and the values are square of keys. The function should just print the keys only.
 
-Hints:
-In case of input data being supplied to the question, it should be assumed to be a console input.
+<br><br>
 
-Solution:
+### RU
+***
+Определите функцию, которая может генерировать словарь, где ключи являются числами от 1 до 20 (включительно), а значения - квадратами ключей. Функция должна выводить только ключи.
+
+<br><br>
+
 <details>
-
-<summary> Click to extend </summary>
+<summary>Solution/Решение</summary>
 
 ```python
-lines = []
-while True:
-    s = input()
-    if s:
-        lines.append(s.upper())
-    else:
-        break;
+def printDict():
+    d=dict()
+    for i in range(1,21):
+        d[i]=i**2
+    for k in d.keys():	
+        print(k)
 
-for sentence in lines:
-    print(sentence)
+printDict()
 ```
 
 </details>

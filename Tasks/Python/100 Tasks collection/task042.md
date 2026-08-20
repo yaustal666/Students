@@ -1,17 +1,35 @@
-### Question 42
-With a given tuple (1,2,3,4,5,6,7,8,9,10), write a program to print the first half values in one line and the last half values in one line. 
+### Question 25 | Level 1
 
-Hints:
+### EN
+***
+Define a class, which have a class parameter and have a same instance parameter.
 
-Use [n1:n2] notation to get a slice from a tuple.
+<br><br>
 
-Solution
+### RU
+***
+Определите класс, который имеет параметр класса и такой же параметр экземпляра.
+
+<br><br>
+
+<details>
+<summary>Solution/Решение</summary>
+
 ```python
-tp=(1,2,3,4,5,6,7,8,9,10)
-tp1=tp[:5]
-tp2=tp[5:]
-print(tp1)
-print(tp2)
+class Person:
+    # Define the class parameter "name"
+    name = "Person"
+    
+    def __init__(self, name = None):
+        # self.name is the instance parameter
+        self.name = name
+
+jeffrey = Person("Jeffrey")
+print("%s name is %s" % (Person.name, jeffrey.name))
+
+nico = Person()
+nico.name = "Nico"
+print("%s name is %s" % (Person.name, nico.name))
 ```
 
 </details>

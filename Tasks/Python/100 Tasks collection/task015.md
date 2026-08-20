@@ -1,29 +1,26 @@
-### Question 15
-Level 2
+### Question 42 | Level 1
 
-Question:
-Write a program that computes the value of a+aa+aaa+aaaa with a given digit as the value of a.
-Suppose the following input is supplied to the program:
-9
-Then, the output should be:
-11106
+### EN
+***
+With a given tuple (1,2,3,4,5,6,7,8,9,10), write a program to print the first half values in one line and the last half values in one line.
 
-Hints:
-In case of input data being supplied to the question, it should be assumed to be a console input.
+<br><br>
 
-Solution:
+### RU
+***
+С заданным кортежем (1,2,3,4,5,6,7,8,9,10) напишите программу, которая выводит первую половину значений в одной строке, а вторую половину значений в другой строке.
+
+<br><br>
+
 <details>
-
-<summary> Click to extend </summary>
-
+<summary>Solution/Решение</summary>
 
 ```python
-a = input()
-n1 = int( "%s" % a )
-n2 = int( "%s%s" % (a,a) )
-n3 = int( "%s%s%s" % (a,a,a) )
-n4 = int( "%s%s%s%s" % (a,a,a,a) )
-print(n1+n2+n3+n4)
+tp=(1,2,3,4,5,6,7,8,9,10)
+tp1=tp[:5]
+tp2=tp[5:]
+print(tp1)
+print(tp2)
 ```
 
 </details>

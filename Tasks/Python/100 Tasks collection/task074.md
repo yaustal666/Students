@@ -1,13 +1,19 @@
-### Question 74
+### Question 74 | Level 1
+
+### EN
+***
 Please generate a random float where the value is between 10 and 100 using Python math module.
 
-Hints:
-Use random.random() to generate a random float in [0,1].
+<br><br>
 
-Solution:
+### RU
+***
+Пожалуйста, сгенерируйте случайное число с плавающей точкой со значением от 10 до 100, используя математический модуль Python.
+
+<br><br>
+
 <details>
-
-<summary> Click to extend </summary>
+<summary>Solution/Решение</summary>
 
 ```python
 import random

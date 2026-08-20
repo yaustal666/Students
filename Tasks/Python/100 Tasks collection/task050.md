@@ -1,10 +1,20 @@
-### Question 50
+### Question 50 | Level 1
+
+### EN
+***
 Define a class named American which has a static method called printNationality.
 
-Hints:
-Use @staticmethod decorator to define class static method.
+<br><br>
 
-Solution
+### RU
+***
+Определите класс с именем American, который имеет статический метод printNationality.
+
+<br><br>
+
+<details>
+<summary>Solution/Решение</summary>
+
 ```python
 class American(object):
     @staticmethod

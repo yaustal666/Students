@@ -1,13 +1,19 @@
-### Question 73
+### Question 73 | Level 1
+
+### EN
+***
 Please write a binary search function which searches an item in a sorted list. The function should return the index of element to be searched in the list.
 
-Hints:
-Use if/elif to deal with conditions.
+<br><br>
 
-Solution:
+### RU
+***
+Пожалуйста, напишите функцию бинарного поиска, которая ищет элемент в отсортированном списке. Функция должна возвращать индекс искомого элемента в списке.
+
+<br><br>
+
 <details>
-
-<summary> Click to extend </summary>
+<summary>Solution/Решение</summary>
 
 ```python
 import math

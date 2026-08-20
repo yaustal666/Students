@@ -1,17 +1,29 @@
-### Question 1
-Level 1
+### Question 1 | Level 1
 
-Question:
-Write a program which will find all such numbers which are divisible by 7 but are not a multiple of 5, between 2000 and 3200 (both included).
+### EN
+***
+Write a program which will find all numbers that
+
+* Divisible by 7 but are not a multiple of 5
+* Are inside [2000, 3200].
+
 The numbers obtained should be printed in a comma-separated sequence on a single line.
 
-Hints: 
-Consider use range(#begin, #end) method
+<br><br>
 
-Solution:
+### RU
+***
+Напишите программу которая находит все числа, которые
+
+* Делятся на 7 и не имеют множителя 5
+* Лежат в промежутке [2000, 3200].
+
+Полученные числа необходимо вывести в одну строку, разделенные запятыми
+
+<br><br>
 
 <details>
-  <summary>Click here to expand</summary>
+<summary>Solution/Решение</summary>
   
 ```python
 l=[]

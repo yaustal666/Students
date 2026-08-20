@@ -1,13 +1,19 @@
-### Question 94
+### Question 94 | Level 1
+
+### EN
+***
 With a given list [12,24,35,24,88,120,155,88,120,155], write a program to print this list after removing all duplicate values with original order reserved.
 
-Hints:
-Use set() to store a number of values without duplicate.
+<br><br>
 
-Solution:
+### RU
+***
+Имея список [12,24,35,24,88,120,155,88,120,155], напишите программу для вывода этого списка после удаления всех дубликатов с сохранением исходного порядка.
+
+<br><br>
+
 <details>
-
-<summary> Click to extend </summary>
+<summary>Solution/Решение</summary>
 
 ```python
 def removeDuplicate( li ):

@@ -1,15 +1,25 @@
-### Question 46
-Write a program which can map() to make a list whose elements are square of elements in [1,2,3,4,5,6,7,8,9,10].
+### Question 29 | Level 1
 
-Hints
-Use map() to generate a list.
-Use lambda to define anonymous functions.
+### EN
+***
+Define a function that can receive two integral numbers in string form and compute their sum and then print it in console.
 
-Solution
+<br><br>
+
+### RU
+***
+Определите функцию, которая может принимать два целых числа в строковой форме, вычислять их сумму и выводить её в консоль.
+
+<br><br>
+
+<details>
+<summary>Solution/Решение</summary>
+
 ```python
-li = [1,2,3,4,5,6,7,8,9,10]
-squaredNumbers = map(lambda x: x**2, li)
-print(squaredNumbers)
+def printValue(s1,s2):
+    print(int(s1)+int(s2))
+
+printValue("3","4")
 ```
 
 </details>

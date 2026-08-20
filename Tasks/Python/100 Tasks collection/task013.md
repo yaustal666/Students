@@ -1,34 +1,28 @@
-### Question 13
-Level 2
+### Question 40 | Level 1
 
-Question:
-Write a program that accepts a sentence and calculate the number of letters and digits.
-Suppose the following input is supplied to the program:
-hello world! 123
-Then, the output should be:
-LETTERS 10
-DIGITS 3
+### EN
+***
+Define a function which can generate a list where the values are square of numbers between 1 and 20 (both included). Then the function needs to print all values except the first 5 elements in the list.
 
-Hints:
-In case of input data being supplied to the question, it should be assumed to be a console input.
+<br><br>
 
-Solution:
+### RU
+***
+Определите функцию, которая может генерировать список, где значения являются квадратами чисел от 1 до 20 (включительно). Затем функция должна вывести все значения, кроме первых 5 элементов списка.
+
+<br><br>
+
 <details>
-
-<summary> Click to extend </summary>
+<summary>Solution/Решение</summary>
 
 ```python
-s = input()
-d={"DIGITS":0, "LETTERS":0}
-for c in s:
-    if c.isdigit():
-        d["DIGITS"]+=1
-    elif c.isalpha():
-        d["LETTERS"]+=1
-    else:
-        pass
-print("LETTERS", d["LETTERS"])
-print("DIGITS", d["DIGITS"])
+def printList():
+    li=list()
+    for i in range(1,21):
+        li.append(i**2)
+    print(li[5:])
+
+printList()
 ```
 
 </details>

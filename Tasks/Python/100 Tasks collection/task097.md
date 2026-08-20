@@ -1,4 +1,7 @@
-### Question 97
+### Question 97 | Level 1
+
+### EN
+***
 Please write a program which accepts a string from console and print it in reverse order.
 
 Example:
@@ -10,16 +13,28 @@ Then, the output of the program should be:
 
 ris etov ot esir
 
-Hints:
-Use list[::-1] to iterate a list in a reverse order.
+<br><br>
 
-Solution:
+### RU
+***
+Пожалуйста, напишите программу, которая принимает строку с консоли и выводит ее в обратном порядке.
+
+Пример:
+Если на вход программе подается следующая строка:
+
+rise to vote sir
+
+Тогда вывод программы должен быть:
+
+ris etov ot esir
+
+<br><br>
+
 <details>
-
-<summary> Click to extend </summary>
+<summary>Solution/Решение</summary>
 
 ```python
-s=raw_input()
+s = input()
 s = s[::-1]
 print(s)
 ```

@@ -1,16 +1,32 @@
-### Question 30
-Define a function that can accept two strings as input and concatenate them and then print it in console.
+### Question 10 | Level 2
 
-Hints:
+### EN
+***
+Write a program that accepts a sequence of whitespace separated words as input and prints the words after removing all duplicate words and sorting them alphanumerically.
+Suppose the following input is supplied to the program:
+hello world and practice makes perfect and hello world again
+Then, the output should be:
+again and hello makes perfect practice world
 
-Use + to concatenate the strings
+<br><br>
 
-Solution
+### RU
+***
+Напишите программу, которая принимает последовательность слов, разделенных пробелами, в качестве входных данных и выводит слова после удаления всех дубликатов и сортировки в алфавитно-цифровом порядке.
+Предположим, что на вход программе подается:
+hello world and practice makes perfect and hello world again
+Тогда вывод должен быть:
+again and hello makes perfect practice world
+
+<br><br>
+
+<details>
+<summary>Solution/Решение</summary>
+
 ```python
-def printValue(s1,s2):
-    print(s1+s2)
-
-printValue("3","4") #34
+s = input()
+words = [word for word in s.split(" ")]
+print(" ".join(sorted(list(set(words)))))
 ```
 
 </details>

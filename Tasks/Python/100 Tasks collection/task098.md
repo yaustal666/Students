@@ -2,12 +2,12 @@
 
 ### EN
 ***
-Please write a program which accepts a string from console and print the characters that have even indexes.
+Given a string of mixed letters and digits, extract letters from it.
 
 Example:
 If the following string is given as input to the program:
 
-H1e2l3l4o5w6o7r8l9d
+H1e2l3l54o5w6o777r8l9d
 
 Then, the output of the program should be:
 
@@ -17,12 +17,12 @@ Helloworld
 
 ### RU
 ***
-Пожалуйста, напишите программу, которая принимает строку с консоли и выводит символы, имеющие четные индексы.
+Дана строка из букв и цифр, извлеките буквы.
 
 Пример:
 Если на вход программе подается следующая строка:
 
-H1e2l3l4o5w6o7r8l9d
+H1e2l3l54o5w6o777r8l9d
 
 Тогда вывод программы должен быть:
 
@@ -34,9 +34,6 @@ Helloworld
 <summary>Solution/Решение</summary>
 
 ```python
-s = input()
-s = s[::2]
-print(s)
 ```
 
 </details>

@@ -2,31 +2,33 @@
 
 ### EN
 ***
-Please write a program which accepts a string from console and print it in reverse order.
+Please write a program which accepts a string from console\
+and prints same string, but every word reversed.
 
 Example:
 If the following string is given as input to the program:
 
-rise to vote sir
+esir otv ris
 
 Then, the output of the program should be:
 
-ris etov ot esir
+rise to vote sir
 
 <br><br>
 
 ### RU
 ***
-Пожалуйста, напишите программу, которая принимает строку с консоли и выводит ее в обратном порядке.
+Пожалуйста, напишите программу, которая принимает строку с консоли\
+выводит ту же строку, но каждое слово развернуто.
 
 Пример:
 Если на вход программе подается следующая строка:
 
-rise to vote sir
+esir otv ris
 
 Тогда вывод программы должен быть:
 
-ris etov ot esir
+rise to vote sir
 
 <br><br>
 
@@ -34,9 +36,7 @@ ris etov ot esir
 <summary>Solution/Решение</summary>
 
 ```python
-s = input()
-s = s[::-1]
-print(s)
+
 ```
 
 </details>

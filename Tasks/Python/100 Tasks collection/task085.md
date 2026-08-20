@@ -2,13 +2,13 @@
 
 ### EN
 ***
-Please write a program to shuffle and print the list [3,6,7,8].
+Please write a program to shuffle and print the list.
 
 <br><br>
 
 ### RU
 ***
-Пожалуйста, напишите программу для перемешивания и вывода списка [3,6,7,8].
+Пожалуйста, напишите программу для перемешивания и вывода списка .
 
 <br><br>
 

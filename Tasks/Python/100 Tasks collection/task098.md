@@ -13,23 +13,6 @@ Then, the output of the program should be:
 
 Helloworld
 
-<br><br>
-
-### RU
-***
-Дана строка из букв и цифр, извлеките буквы.
-
-Пример:
-Если на вход программе подается следующая строка:
-
-H1e2l3l54o5w6o777r8l9d
-
-Тогда вывод программы должен быть:
-
-Helloworld
-
-<br><br>
-
 <details>
 <summary>Solution/Решение</summary>
 

@@ -2,25 +2,20 @@
 
 ### EN
 ***
-With two given lists [1,3,6,78,35,55] and [12,24,35,24,88,120,155], write a program to make a list whose elements are intersection of the above given lists.
+You are given two sorted list, merge them, so result lis is also sorted
 
-<br><br>
+Example:
+You are given two lists:
+[1, 2, 5, 6] and [2, 3, 4, 7]
 
-### RU
-***
-Имея два списка [1,3,6,78,35,55] и [12,24,35,24,88,120,155], напишите программу для создания списка, элементы которого являются пересечением указанных выше списков.
+The result should be [1, 2, 2, 3, 4, 5, 6, 7]
 
-<br><br>
 
 <details>
 <summary>Solution/Решение</summary>
 
 ```python
-set1=set([1,3,6,78,35,55])
-set2=set([12,24,35,24,88,120,155])
-set1 &= set2
-li=list(set1)
-print(li)
+
 ```
 
 </details>

@@ -14,23 +14,6 @@ Then, the output of the program should be:
 
 rise to vote sir
 
-<br><br>
-
-### RU
-***
-Пожалуйста, напишите программу, которая принимает строку с консоли\
-выводит ту же строку, но каждое слово развернуто.
-
-Пример:
-Если на вход программе подается следующая строка:
-
-esir otv ris
-
-Тогда вывод программы должен быть:
-
-rise to vote sir
-
-<br><br>
 
 <details>
 <summary>Solution/Решение</summary>

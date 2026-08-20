@@ -1,27 +1,28 @@
-### Question 10
-Level 2
+### Question 37 | Level 1
 
-Question:
-Write a program that accepts a sequence of whitespace separated words as input and prints the words after removing all duplicate words and sorting them alphanumerically.
-Suppose the following input is supplied to the program:
-hello world and practice makes perfect and hello world again
-Then, the output should be:
-again and hello makes perfect practice world
+### EN
+***
+Define a function which can generate and print a list where the values are square of numbers between 1 and 20 (both included).
 
-Hints:
-In case of input data being supplied to the question, it should be assumed to be a console input.
-We use set container to remove duplicated data automatically and then use sorted() to sort the data.
+<br><br>
 
-Solution:
+### RU
+***
+Определите функцию, которая может генерировать и выводить список, где значения являются квадратами чисел от 1 до 20 (включительно).
+
+<br><br>
+
 <details>
-
-<summary> Click to extend </summary>
+<summary>Solution/Решение</summary>
 
 ```python
-s = input()
-words = [word for word in s.split(" ")]
-print(" ".join(sorted(list(set(words)))))
+def printList():
+    li=list()
+    for i in range(1,21):
+        li.append(i**2)
+    print(li)
+
+printList()
 ```
 
 </details>
-

@@ -1,21 +1,31 @@
-### Question 2
-Level 1
+### Question 2 | Level 1
 
-Question:
+### EN
+***
 Write a program which can compute the factorial of a given numbers.
 The results should be printed in a comma-separated sequence on a single line.
+
 Suppose the following input is supplied to the program:
-8
+8\
 Then, the output should be:
 40320
 
-Hints:
-In case of input data being supplied to the question, it should be assumed to be a console input.
+<br><br>
 
-Solution:
+### RU
+***
+Напишите программу, которая вычисляет факториал заданного числа.
+Результаты должны быть выведены в одну строку, разделенные запятыми.
+
+Предположим, что на вход программе подается число:
+8\
+Тогда вывод должен быть:
+40320
+
+<br><br>
+
 <details>
-
-<summary> Click to extend </summary>
+<summary>Solution/Решение</summary>
 
 ```python
 def fact(x):
@@ -28,4 +38,3 @@ print(fact(x))
 ```
 
 </details>
-

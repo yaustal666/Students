@@ -1,13 +1,19 @@
-### Question 70
+### Question 70 | Level 1
+
+### EN
+***
 Please write assert statements to verify that every number in the list [2,4,6,8] is even.
 
-Hints:
-Use "assert expression" to make assertion.
+<br><br>
 
-Solution:
+### RU
+***
+Пожалуйста, напишите утверждения assert, чтобы проверить, что каждое число в списке [2,4,6,8] является четным.
+
+<br><br>
+
 <details>
-
-<summary> Click to extend </summary>
+<summary>Solution/Решение</summary>
 
 ```python
 li = [2,4,6,8]

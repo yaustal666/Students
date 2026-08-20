@@ -1,16 +1,21 @@
-### Question 63
+### Question 63 | Level 1
 
+### EN
+***
 Write a special comment to indicate a Python source code file is in unicode.
 
-Hints:
+<br><br>
 
-Solution:
+### RU
+***
+Напишите специальный комментарий, чтобы указать, что файл исходного кода Python находится в кодировке unicode.
+
+<br><br>
+
 <details>
-
-<summary> Click to extend </summary>
+<summary>Solution/Решение</summary>
 
 ```python
-
 # -*- coding: utf-8 -*-
 
 #----------------------------------------#

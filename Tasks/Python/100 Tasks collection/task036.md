@@ -1,23 +1,32 @@
-### Question 36
-Define a function which can generate a dictionary where the keys are numbers between 1 and 20 (both included) and the values are square of keys. The function should just print the keys only.
+### Question 16 | Level 2
 
-Hints:
+### EN
+***
+Use a list comprehension to square each odd number in a list. The list is input by a sequence of comma-separated numbers.
+Suppose the following input is supplied to the program:
+1,2,3,4,5,6,7,8,9
+Then, the output should be:
+1,3,5,7,9
 
-Use dict[key]=value pattern to put entry into a dictionary.
-Use ** operator to get power of a number.
-Use range() for loops.
-Use keys() to iterate keys in the dictionary. Also we can use item() to get key/value pairs.
+<br><br>
 
-Solution
+### RU
+***
+Используйте генератор списка, чтобы выбрать каждое нечетное число в списке. Список вводится как последовательность чисел, разделенных запятыми.
+Предположим, что на вход программе подается:
+1,2,3,4,5,6,7,8,9
+Тогда вывод должен быть:
+1,3,5,7,9
+
+<br><br>
+
+<details>
+<summary>Solution/Решение</summary>
+
 ```python
-def printDict():
-	d=dict()
-	for i in range(1,21):
-		d[i]=i**2
-	for k in d.keys():	
-		print(k)
-
-printDict()
+values = input()
+numbers = [x for x in values.split(",") if int(x)%2!=0]
+print(",".join(numbers))
 ```
 
 </details>

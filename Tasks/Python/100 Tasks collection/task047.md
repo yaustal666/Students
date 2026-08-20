@@ -1,16 +1,26 @@
-### Question 47
-Write a program which can map() and filter() to make a list whose elements are square of even number in [1,2,3,4,5,6,7,8,9,10].
+### Question 30 | Level 1
 
-Hints
-Use map() to generate a list.
-Use filter() to filter elements of a list.
-Use lambda to define anonymous functions.
+### EN
+***
+Define a function that can accept two strings as input and concatenate them and then print it in console.
 
-Solution
+<br><br>
+
+### RU
+***
+Определите функцию, которая может принимать две строки в качестве входных данных, объединять их и выводить результат в консоль.
+
+<br><br>
+
+<details>
+<summary>Solution/Решение</summary>
+
 ```python
-li = [1,2,3,4,5,6,7,8,9,10]
-evenNumbers = map(lambda x: x**2, filter(lambda x: x%2==0, li))
-print(evenNumbers)
+def printValue(s1,s2):
+    print(s1+s2)
+
+printValue("3","4")
+```
 
 </details>
-```
+

@@ -1,5 +1,7 @@
-### Question 65
+### Question 65 | Level 1
 
+### EN
+***
 Write a program to compute:
 
 f(n)=f(n-1)+100 when n>0
@@ -16,15 +18,30 @@ Then, the output of the program should be:
 
 500
 
-In case of input data being supplied to the question, it should be assumed to be a console input.
+<br><br>
 
-Hints:
-We can define recursive function in Python.
+### RU
+***
+Напишите программу для вычисления:
 
-Solution:
+f(n)=f(n-1)+100 при n>0
+и f(0)=1
+
+с заданным n, введенным с консоли (n>0).
+
+Пример:
+Если на вход программе подается следующее значение n:
+
+5
+
+Тогда вывод программы должен быть:
+
+500
+
+<br><br>
+
 <details>
-
-<summary> Click to extend </summary>
+<summary>Solution/Решение</summary>
 
 ```python
 def f(n):

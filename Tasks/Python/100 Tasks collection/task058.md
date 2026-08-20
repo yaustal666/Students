@@ -1,4 +1,7 @@
-### Question 58
+### Question 58 | Level 1
+
+### EN
+***
 Assuming that we have some email addresses in the "username@companyname.com" format, please write program to print the user name of a given email address. Both user names and company names are composed of letters only.
 
 Example:
@@ -10,22 +13,31 @@ Then, the output of the program should be:
 
 john
 
-In case of input data being supplied to the question, it should be assumed to be a console input.
+<br><br>
 
-Hints:
+### RU
+***
+Предполагая, что у нас есть некоторые email-адреса в формате "username@companyname.com", напишите программу для вывода имени пользователя из заданного email-адреса. И имена пользователей, и названия компаний состоят только из букв.
 
-Use \w to match letters.
+Пример:
+Если на вход программе подается следующий email-адрес:
 
-Solution:
+john@google.com
+
+Тогда вывод программы должен быть:
+
+john
+
+<br><br>
+
 <details>
-
-<summary> Click to extend </summary>
+<summary>Solution/Решение</summary>
 
 ```python
 import re
-emailAddress = raw_input()
+emailAddress = input()
 pat2 = "(\w+)@((\w+\.)+(com))"
-r2 = re.match(pat2,emailAddress)
+r2 = re.match(pat2, emailAddress)
 print(r2.group(1))
 ```
 

@@ -1,31 +1,28 @@
-### Question 11
-Level 2
+### Question 38 | Level 1
 
-Question:
-Write a program which accepts a sequence of comma separated 4 digit binary numbers as its input and then check whether they are divisible by 5 or not. The numbers that are divisible by 5 are to be printed in a comma separated sequence.
-Example:
-0100,0011,1010,1001
-Then the output should be:
-1010
-Notes: Assume the data is input by console.
+### EN
+***
+Define a function which can generate a list where the values are square of numbers between 1 and 20 (both included). Then the function needs to print the first 5 elements in the list.
 
-Hints:
-In case of input data being supplied to the question, it should be assumed to be a console input.
+<br><br>
 
-Solution:
+### RU
+***
+Определите функцию, которая может генерировать список, где значения являются квадратами чисел от 1 до 20 (включительно). Затем функция должна вывести первые 5 элементов списка.
+
+<br><br>
+
 <details>
-
-<summary> Click to extend </summary>
+<summary>Solution/Решение</summary>
 
 ```python
-value = []
-items=[x for x in input().split(',')]
-for p in items:
-    intp = int(p, 2)
-    if not intp%5:
-        value.append(p)
+def printList():
+    li=list()
+    for i in range(1,21):
+        li.append(i**2)
+    print(li[:5])
 
-print(','.join(value))
+printList()
 ```
 
 </details>

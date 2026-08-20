@@ -1,14 +1,19 @@
-### Question 56
+### Question 56 | Level 1
+
+### EN
+***
 Write a function to compute 5/0 and use try/except to catch the exceptions.
 
-Hints:
+<br><br>
 
-Use try/except to catch exceptions.
+### RU
+***
+Напишите функцию для вычисления 5/0 и используйте try/except для перехвата исключений.
 
-Solution:
-<details>
+<br><br>
 
-<summary> Click to extend </summary>
+<details>  
+<summary>Solution/Решение</summary>
 
 ```python
 def throws():
@@ -18,7 +23,7 @@ try:
     throws()
 except ZeroDivisionError:
     print("division by zero!")
-except Exception, err:
+except Exception as err:
     print('Caught an exception')
 finally:
     print('In finally block for cleanup')

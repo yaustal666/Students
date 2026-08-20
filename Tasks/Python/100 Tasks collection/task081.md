@@ -1,13 +1,19 @@
-### Question 81
+### Question 81 | Level 1
+
+### EN
+***
 Please write a program to randomly print a integer number between 7 and 15 inclusive.
 
-Hints:
-Use random.randrange() to a random integer in a given range.
+<br><br>
 
-Solution:
+### RU
+***
+Пожалуйста, напишите программу для случайного вывода целого числа от 7 до 15 включительно.
+
+<br><br>
+
 <details>
-
-<summary> Click to extend </summary>
+<summary>Solution/Решение</summary>
 
 ```python
 import random

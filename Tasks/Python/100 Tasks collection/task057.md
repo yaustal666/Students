@@ -1,14 +1,19 @@
-### Question 57
+### Question 57 | Level 1
+
+### EN
+***
 Define a custom exception class which takes a string message as attribute.
 
-Hints:
+<br><br>
 
-To define a custom exception, we need to define a class inherited from Exception.
+### RU
+***
+Определите пользовательский класс исключения, который принимает строковое сообщение в качестве атрибута.
 
-Solution:
+<br><br>
+
 <details>
-
-<summary> Click to extend </summary>
+<summary>Solution/Решение</summary>
 
 ```python
 class MyError(Exception):

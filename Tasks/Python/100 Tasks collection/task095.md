@@ -1,13 +1,19 @@
-### Question 95
+### Question 95 | Level 1
+
+### EN
+***
 Define a class Person and its two child classes: Male and Female. All classes have a method "getGender" which can print "Male" for Male class and "Female" for Female class.
 
-Hints:
-Use Subclass(Parentclass) to define a child class.
+<br><br>
 
-Solution:
+### RU
+***
+Определите класс Person и его два дочерних класса: Male и Female. Все классы имеют метод "getGender", который может выводить "Male" для класса Male и "Female" для класса Female.
+
+<br><br>
+
 <details>
-
-<summary> Click to extend </summary>
+<summary>Solution/Решение</summary>
 
 ```python
 class Person(object):

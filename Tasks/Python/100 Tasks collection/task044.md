@@ -1,17 +1,26 @@
-### Question 44
-Write a program which accepts a string as input to print "Yes" if the string is "yes" or "YES" or "Yes", otherwise print "No". 
+### Question 27 | Level 1
 
-Hints:
+### EN
+***
+Define a function that can convert a integer into a string and print it in console.
 
-Use if statement to judge condition.
+<br><br>
 
-Solution
+### RU
+***
+Определите функцию, которая преобразует целое число в строку и выводит ее в консоль.
+
+<br><br>
+
+<details>
+<summary>Solution/Решение</summary>
+
 ```python
-s= raw_input()
-if s=="yes" or s=="YES" or s=="Yes":
-    print "Yes"
-else:
-    print "No"
+def printValue(n):
+    print(str(n))
+
+printValue(3)
+```
 
 </details>
-```
+

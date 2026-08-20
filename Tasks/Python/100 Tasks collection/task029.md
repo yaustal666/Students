@@ -1,16 +1,43 @@
-### Question 29
-Define a function that can receive two integral numbers in string form and compute their sum and then print it in console.
+### Question 9 | Level 2
 
-Hints:
+### EN
+***
+Write a program that accepts sequence of lines as input and prints the lines after making all characters in the sentence capitalized.
+Suppose the following input is supplied to the program:
+Hello world
+Practice makes perfect
+Then, the output should be:
+HELLO WORLD
+PRACTICE MAKES PERFECT
 
-Use int() to convert a string to integer.
+<br><br>
 
-Solution
+### RU
+***
+Напишите программу, которая принимает последовательность строк в качестве входных данных и выводит строки после преобразования всех символов в предложении в верхний регистр.
+Предположим, что на вход программе подается:
+Hello world
+Practice makes perfect
+Тогда вывод должен быть:
+HELLO WORLD
+PRACTICE MAKES PERFECT
+
+<br><br>
+
+<details>
+<summary>Solution/Решение</summary>
+
 ```python
-def printValue(s1,s2):
-    print(int(s1)+int(s2))
+lines = []
+while True:
+    s = input()
+    if s:
+        lines.append(s.upper())
+    else:
+        break
 
-printValue("3","4")
+for sentence in lines:
+    print(sentence)
 ```
 
 </details>

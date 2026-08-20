@@ -1,14 +1,19 @@
-### Question 53
-Define a class named Rectangle which can be constructed by a length and width. The Rectangle class has a method which can compute the area. 
+### Question 53 | Level 1
 
-Hints:
+### EN
+***
+Define a class named Rectangle which can be constructed by a length and width. The Rectangle class has a method which can compute the area.
 
-Use def methodName(self) to define a method.
+<br><br>
 
-Solution:
+### RU
+***
+Определите класс с именем Rectangle, который может быть создан с длиной и шириной. Класс Rectangle имеет метод, который может вычислить площадь.
+
+<br><br>
+
 <details>
-
-<summary> Click to extend </summary>
+<summary>Solution/Решение</summary>
 
 ```python
 class Rectangle(object):

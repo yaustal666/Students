@@ -1,13 +1,19 @@
-### Question 82
+### Question 82 | Level 1
+
+### EN
+***
 Please write a program to compress and decompress the string "hello world!hello world!hello world!hello world!".
 
-Hints:
-Use zlib.compress() and zlib.decompress() to compress and decompress a string.
+<br><br>
 
-Solution:
+### RU
+***
+Пожалуйста, напишите программу для сжатия и распаковки строки "hello world!hello world!hello world!hello world!".
+
+<br><br>
+
 <details>
-
-<summary> Click to extend </summary>
+<summary>Solution/Решение</summary>
 
 ```python
 import zlib

@@ -1,5 +1,7 @@
-### Question 68
+### Question 68 | Level 1
 
+### EN
+***
 Please write a program using generator to print the even numbers between 0 and n in comma separated form while n is input by console.
 
 Example:
@@ -11,15 +13,25 @@ Then, the output of the program should be:
 
 0,2,4,6,8,10
 
-Hints:
-Use yield to produce the next value in generator.
+<br><br>
 
-In case of input data being supplied to the question, it should be assumed to be a console input.
+### RU
+***
+Пожалуйста, напишите программу с использованием генератора для вывода четных чисел от 0 до n в формате, разделенном запятыми, где n вводится с консоли.
 
-Solution:
+Пример:
+Если на вход программе подается следующее значение n:
+
+10
+
+Тогда вывод программы должен быть:
+
+0,2,4,6,8,10
+
+<br><br>
+
 <details>
-
-<summary> Click to extend </summary>
+<summary>Solution/Решение</summary>
 
 ```python
 def EvenGenerator(n):
@@ -28,7 +40,6 @@ def EvenGenerator(n):
         if i%2==0:
             yield i
         i+=1
-
 
 n=int(input())
 values = []

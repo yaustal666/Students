@@ -1,4 +1,7 @@
-### Question 67
+### Question 67 | Level 1
+
+### EN
+***
 The Fibonacci Sequence is computed based on the following formula:
 
 f(n)=0 if n=0
@@ -16,18 +19,31 @@ Then, the output of the program should be:
 
 0,1,1,2,3,5,8,13
 
+<br><br>
 
-Hints:
-We can define recursive function in Python.
-Use list comprehension to generate a list from an existing list.
-Use string.join() to join a list of strings.
+### RU
+***
+Последовательность Фибоначчи вычисляется на основе следующей формулы:
 
-In case of input data being supplied to the question, it should be assumed to be a console input.
+f(n)=0 если n=0
+f(n)=1 если n=1
+f(n)=f(n-1)+f(n-2) если n>1
 
-Solution:
+Пожалуйста, напишите программу с использованием спискового включения для вывода последовательности Фибоначчи в формате, разделенном запятыми, с заданным n, введенным с консоли.
+
+Пример:
+Если на вход программе подается следующее значение n:
+
+7
+
+Тогда вывод программы должен быть:
+
+0,1,1,2,3,5,8,13
+
+<br><br>
+
 <details>
-
-<summary> Click to extend </summary>
+<summary>Solution/Решение</summary>
 
 ```python
 def f(n):

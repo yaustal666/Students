@@ -1,22 +1,56 @@
-### Question 39
-Define a function which can generate a list where the values are square of numbers between 1 and 20 (both included). Then the function needs to print the last 5 elements in the list.
+### Question 19 | Level 3
 
-Hints:
+### EN
+***
+You are required to write a program to sort the (name, age, height) tuples by ascending order where name is string, age and height are numbers. The tuples are input by console. The sort criteria is:
+1: Sort based on name;
+2: Then sort based on age;
+3: Then sort by score.
+The priority is that name > age > score.
+If the following tuples are given as input to the program:
+Tom,19,80
+John,20,90
+Jony,17,91
+Jony,17,93
+Json,21,85
+Then, the output of the program should be:
+[('John', '20', '90'), ('Jony', '17', '91'), ('Jony', '17', '93'), ('Json', '21', '85'), ('Tom', '19', '80')]
 
-Use ** operator to get power of a number.
-Use range() for loops.
-Use list.append() to add values into a list.
-Use [n1:n2] to slice a list
+<br><br>
 
-Solution
+### RU
+***
+Вам требуется написать программу для сортировки кортежей (имя, возраст, рост) в порядке возрастания, где имя — строка, возраст и рост — числа. Кортежи вводятся через консоль. Критерии сортировки:
+1: Сортировка по имени;
+2: Затем сортировка по возрасту;
+3: Затем сортировка по росту.
+Приоритет: имя > возраст > рост.
+Если на вход программе поданы следующие кортежи:
+Tom,19,80
+John,20,90
+Jony,17,91
+Jony,17,93
+Json,21,85
+Тогда вывод программы должен быть:
+[('John', '20', '90'), ('Jony', '17', '91'), ('Jony', '17', '93'), ('Json', '21', '85'), ('Tom', '19', '80')]
+
+<br><br>
+
+<details>
+<summary>Solution/Решение</summary>
+
 ```python
-def printList():
-	li=list()
-	for i in range(1,21):
-		li.append(i**2)
-	print(li[-5:])
+from operator import itemgetter, attrgetter
 
-printList()
+l = []
+while True:
+    s = input()
+    if not s:
+        break
+    l.append(tuple(s.split(",")))
+
+print(sorted(l, key=itemgetter(0,1,2)))
+```
 
 </details>
-```
+

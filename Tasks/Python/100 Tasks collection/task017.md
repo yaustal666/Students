@@ -1,46 +1,26 @@
-### Question 17
-Level 2
+### Question 44 | Level 1
 
-Question:
-Write a program that computes the net amount of a bank account based a transaction log from console input. The transaction log format is shown as following:
-D 100
-W 200
+### EN
+***
+Write a program which accepts a string as input to print "Yes" if the string is "yes" or "YES" or "Yes", otherwise print "No".
 
-D means deposit while W means withdrawal.
-Suppose the following input is supplied to the program:
-D 300
-D 300
-W 200
-D 100
-Then, the output should be:
-500
+<br><br>
 
-Hints:
-In case of input data being supplied to the question, it should be assumed to be a console input.
+### RU
+***
+Напишите программу, которая принимает строку в качестве входных данных и выводит "Yes", если строка равна "yes", "YES" или "Yes", в противном случае выводит "No".
 
-Solution:
+<br><br>
+
 <details>
-
-<summary> Click to extend </summary>
-
+<summary>Solution/Решение</summary>
 
 ```python
-netAmount = 0
-while True:
-    s = input()
-    if not s:
-        break
-    values = s.split(" ")
-    operation = values[0]
-    amount = int(values[1])
-    if operation=="D":
-        netAmount+=amount
-    elif operation=="W":
-        netAmount-=amount
-    else:
-        pass
-print(netAmount)
+s = input()
+if s == "yes" or s == "YES" or s == "Yes":
+    print("Yes")
+else:
+    print("No")
 ```
 
 </details>
-

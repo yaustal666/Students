@@ -1,13 +1,19 @@
-### Question 76
+### Question 76 | Level 1
+
+### EN
+***
 Please write a program to output a random even number between 0 and 10 inclusive using random module and list comprehension.
 
-Hints:
-Use random.choice() to a random element from a list.
+<br><br>
 
-Solution:
+### RU
+***
+Пожалуйста, напишите программу для вывода случайного четного числа от 0 до 10 включительно, используя модуль random и списковое включение.
+
+<br><br>
+
 <details>
-
-<summary> Click to extend </summary>
+<summary>Solution/Решение</summary>
 
 ```python
 import random

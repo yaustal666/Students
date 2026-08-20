@@ -1,23 +1,35 @@
-### Question 35
-Define a function which can generate a dictionary where the keys are numbers between 1 and 20 (both included) and the values are square of keys. The function should just print the values only.
+### Question 15 | Level 2
 
-Hints:
+### EN
+***
+Write a program that computes the value of a+aa+aaa+aaaa with a given digit as the value of a.
+Suppose the following input is supplied to the program:
+9
+Then, the output should be:
+11106
 
-Use dict[key]=value pattern to put entry into a dictionary.
-Use ** operator to get power of a number.
-Use range() for loops.
-Use keys() to iterate keys in the dictionary. Also we can use item() to get key/value pairs.
+<br><br>
 
-Solution
+### RU
+***
+Напишите программу, которая вычисляет значение a+aa+aaa+aaaa, где a — заданная цифра.
+Предположим, что на вход программе подается:
+9
+Тогда вывод должен быть:
+11106
+
+<br><br>
+
+<details>
+<summary>Solution/Решение</summary>
+
 ```python
-def printDict():
-	d=dict()
-	for i in range(1,21):
-		d[i]=i**2
-	for (k,v) in d.items():	
-		print(v)
-
-printDict()
+a = input()
+n1 = int( "%s" % a )
+n2 = int( "%s%s" % (a,a) )
+n3 = int( "%s%s%s" % (a,a,a) )
+n4 = int( "%s%s%s%s" % (a,a,a,a) )
+print(n1+n2+n3+n4)
 ```
 
 </details>

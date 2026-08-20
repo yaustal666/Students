@@ -1,13 +1,19 @@
-### Question 78
+### Question 78 | Level 1
+
+### EN
+***
 Please write a program to generate a list with 5 random numbers between 100 and 200 inclusive.
 
-Hints:
-Use random.sample() to generate a list of random values.
+<br><br>
 
-Solution:
+### RU
+***
+Пожалуйста, напишите программу для генерации списка из 5 случайных чисел от 100 до 200 включительно.
+
+<br><br>
+
 <details>
-
-<summary> Click to extend </summary>
+<summary>Solution/Решение</summary>
 
 ```python
 import random

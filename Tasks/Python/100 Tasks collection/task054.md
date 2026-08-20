@@ -1,14 +1,19 @@
-### Question 54
+### Question 54 | Level 1
+
+### EN
+***
 Define a class named Shape and its subclass Square. The Square class has an init function which takes a length as argument. Both classes have a area function which can print the area of the shape where Shape's area is 0 by default.
 
-Hints:
+<br><br>
 
-To override a method in super class, we can define a method with the same name in the super class.
+### RU
+***
+Определите класс с именем Shape и его подкласс Square. Класс Square имеет функцию init, которая принимает длину в качестве аргумента. Оба класса имеют функцию area, которая может выводить площадь фигуры, при этом площадь Shape по умолчанию равна 0.
 
-Solution:
+<br><br>
+
 <details>
-
-<summary> Click to extend </summary>
+<summary>Solution/Решение</summary>
 
 ```python
 class Shape(object):
@@ -26,7 +31,7 @@ class Square(Shape):
     def area(self):
         return self.length*self.length
 
-aSquare= Square(3)
+aSquare = Square(3)
 print(aSquare.area())
 ```
 

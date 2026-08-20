@@ -1,35 +1,37 @@
-### Question 24
-Level 1
+### Question 4 | Level 1
 
-Question:
+### EN
+***
+Write a program which accepts a sequence of comma-separated numbers from console and generate a list and a tuple which contains every number.
+Suppose the following input is supplied to the program:
+34,67,55,33,12,98
+Then, the output should be:
+['34', '67', '55', '33', '12', '98']
+('34', '67', '55', '33', '12', '98')
 
-Python has many built-in functions, and if you do not know how to use it, you can read document online or find some books. But Python has a built-in document function for every built-in functions.
+<br><br>
 
-Please write a program to print some Python built-in functions documents, such as abs(), int(), raw_input()
+### RU
+***
+Напишите программу, которая принимает последовательность чисел, разделенных запятыми, с консоли и генерирует список и кортеж, содержащие каждое число.
+Предположим, что на вход программе подается:
+34,67,55,33,12,98
+Тогда вывод должен быть:
+['34', '67', '55', '33', '12', '98']
+('34', '67', '55', '33', '12', '98')
 
-And add document for your own function
-Hints:
-The built-in document method is __doc__
+<br><br>
 
-Solution:
 <details>
-
-<summary> Click to extend </summary>
+<summary>Solution/Решение</summary>
 
 ```python
-print(abs.__doc__)
-print(int.__doc__)
-print(input.__doc__)
-
-def square(num):
-    '''Return the square value of the input number.
-    
-    The input number must be integer.
-    '''
-    return num ** 2
-
-print(square(2))
-print(square.__doc__)
+values=input()
+l=values.split(",")
+t=tuple(l)
+print(l)
+print(t)
+```
 
 </details>
-```
+

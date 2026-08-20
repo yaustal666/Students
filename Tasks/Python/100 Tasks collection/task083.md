@@ -1,13 +1,19 @@
-### Question 83
+### Question 83 | Level 1
+
+### EN
+***
 Please write a program to print the running time of execution of "1+1" for 100 times.
 
-Hints:
-Use timeit() function to measure the running time.
+<br><br>
 
-Solution:
+### RU
+***
+Пожалуйста, напишите программу для вывода времени выполнения операции "1+1" 100 раз.
+
+<br><br>
+
 <details>
-
-<summary> Click to extend </summary>
+<summary>Solution/Решение</summary>
 
 ```python
 from timeit import Timer

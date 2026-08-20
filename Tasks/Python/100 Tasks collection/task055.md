@@ -1,15 +1,19 @@
-### Question 55
+### Question 55 | Level 1
+
+### EN
+***
 Please raise a RuntimeError exception.
 
-Hints:
+<br><br>
 
-Use raise() to raise an exception.
+### RU
+***
+Пожалуйста, создайте исключение RuntimeError.
 
-Solution:
+<br><br>
+
 <details>
-
-<summary> Click to extend </summary>
-
+<summary>Solution/Решение</summary>
 
 ```python
 raise RuntimeError('something wrong')

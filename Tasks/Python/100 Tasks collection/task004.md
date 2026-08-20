@@ -1,29 +1,26 @@
-### Question 4
-Level 1
+### Question 23 | Level 1
 
-Question:
-Write a program which accepts a sequence of comma-separated numbers from console and generate a list and a tuple which contains every number.
-Suppose the following input is supplied to the program:
-34,67,55,33,12,98
-Then, the output should be:
-['34', '67', '55', '33', '12', '98']
-('34', '67', '55', '33', '12', '98')
+### EN
+***
+Write a method which can calculate square value of number
 
-Hints:
-In case of input data being supplied to the question, it should be assumed to be a console input.
-tuple() method can convert list to tuple
+<br><br>
 
-Solution:
+### RU
+***
+Напишите метод, который вычисляет квадрат числа
+
+<br><br>
+
 <details>
-
-<summary> Click to extend </summary>
+<summary>Solution/Решение</summary>
 
 ```python
-values=input()
-l=values.split(",")
-t=tuple(l)
-print(l)
-print(t)
+def square(num):
+    return num ** 2
+
+print(square(2))
+print(square(3))
 ```
 
 </details>

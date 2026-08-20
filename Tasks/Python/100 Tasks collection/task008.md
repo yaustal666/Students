@@ -1,25 +1,29 @@
-### Question 8
-Level 2
+### Question 35 | Level 1
 
-Question:
-Write a program that accepts a comma separated sequence of words as input and prints the words in a comma-separated sequence after sorting them alphabetically.
-Suppose the following input is supplied to the program:
-without,hello,bag,world
-Then, the output should be:
-bag,hello,without,world
+### EN
+***
+Define a function which can generate a dictionary where the keys are numbers between 1 and 20 (both included) and the values are square of keys. The function should just print the values only.
 
-Hints:
-In case of input data being supplied to the question, it should be assumed to be a console input.
+<br><br>
 
-Solution:
+### RU
+***
+Определите функцию, которая может генерировать словарь, где ключи являются числами от 1 до 20 (включительно), а значения - квадратами ключей. Функция должна выводить только значения.
+
+<br><br>
+
 <details>
-
-<summary> Click to extend </summary>
+<summary>Solution/Решение</summary>
 
 ```python
-items=[x for x in input().split(',')]
-items.sort()
-print(','.join(items))
+def printDict():
+    d=dict()
+    for i in range(1,21):
+        d[i]=i**2
+    for (k,v) in d.items():	
+        print(v)
+
+printDict()
 ```
 
 </details>

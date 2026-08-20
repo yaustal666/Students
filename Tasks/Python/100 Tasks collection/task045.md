@@ -1,16 +1,25 @@
-### Question 45
-Write a program which can filter even numbers in a list by using filter function. The list is: [1,2,3,4,5,6,7,8,9,10].
+### Question 28 | Level 1
 
-Hints:
+### EN
+***
+Define a function that can convert a integer into a string and print it in console.
 
-Use filter() to filter some elements in a list.
-Use lambda to define anonymous functions.
+<br><br>
 
-Solution
+### RU
+***
+Определите функцию, которая преобразует целое число в строку и выводит ее в консоль.
+
+<br><br>
+
+<details>
+<summary>Solution/Решение</summary>
+
 ```python
-li = [1,2,3,4,5,6,7,8,9,10]
-evenNumbers = filter(lambda x: x%2==0, li)
-print(evenNumbers)
+def printValue(n):
+    print(str(n))
+
+printValue(3)
 ```
 
 </details>

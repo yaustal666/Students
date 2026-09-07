@@ -1,36 +1,40 @@
 from pydantic import BaseModel
+import json
 
 class Task(BaseModel):
     name: str
     description: str
     significance: int
 
-
 class TaskManager:
     def __init__(self):
-        self.tasks = []
+        self.tasks = {}
     
-    def addTask(self, name, description, significance):
-        self.tasks.append(Task(name=name, description=description, significance=significance))
+    def addTaskByValues(self, name, description, significance):
+        self.tasks[name] = Task(name=name, description=description, significance=significance)
 
     def addTask(self, task):
-        self.tasks.append(task)
+        self.tasks[task.name] = task
+    
+    def update(self, name, description, significance):
+        task_to_update = self.tasks[name]
+        task_to_update.description = description
+        task_to_update.significance = significance
         
     def deleteTask(self, name):
-        task_to_delete = list(filter(lambda task: task.name == name, self.tasks))
-        
-        if len(task_to_delete) > 0:
-            task_to_delete = task_to_delete[0]
-            self.tasks.remove(task_to_delete)
+        self.tasks.pop(name)
 
-
-tm = TaskManager()
-
-name = input()
-desc = input()
-sig = int(input())
+    def printTasks(self):
+        print(self.tasks)
 
 task = Task(name="Name", description="Do something", significance=2)
-tm.addTask(task)
 
-tm.addTask("Name", "Do", 3)
+# save / serialization
+with open("tasks.json", "w") as file:
+    json.dump(task.model_dump_json(), file)
+
+# load / deserialization
+with open("tasks.json", "r") as file:
+    tasks = json.load(file)
+    task1 = Task.model_validate_json(tasks)
+    print(type(task1))

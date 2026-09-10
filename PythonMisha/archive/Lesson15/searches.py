@@ -1,5 +1,5 @@
 array = [10,3,5,4,6,8,9,7,0,-100]
-from sorts import bubble_sort
+from archive.Lesson15.sorts import bubble_sort
 
 array = bubble_sort(array)
 

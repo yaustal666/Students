@@ -48,7 +48,3 @@ class TaskDao:
 
     def get_tasks(self) -> list[Task]:
         pass
-
-    def get_tasks_by_significance(self, significance: int) -> list[Task]:
-        pass
-

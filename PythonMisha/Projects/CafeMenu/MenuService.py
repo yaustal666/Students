@@ -1,4 +1,4 @@
-from menuItem import MenuItem
+from MenuItem import MenuItem
 from MenuItemDao import MenuItemDao
 import sqlite3
 

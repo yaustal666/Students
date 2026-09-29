@@ -1,9 +1,11 @@
 from pydantic import BaseModel
-from models.Author import Author
+from Projects.Library.models.Author import Author
+
 
 class BookPublic(BaseModel):
     name: str
     author: Author
+
 
 class BookSchema(BaseModel):
     name: str

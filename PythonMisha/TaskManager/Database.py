@@ -7,6 +7,7 @@ cursor.execute("""
 CREATE TABLE IF NOT EXISTS tasks(
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT NOT NULL,
-    description TEXT
+    description TEXT,
+    priority INTEGER NOT NULL CHECK(priority> 0 and priority < 4)
 );
 """)

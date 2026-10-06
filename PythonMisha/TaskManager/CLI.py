@@ -1,10 +1,12 @@
 import sqlite3
+
 from TaskService import TaskService
 
 database = sqlite3.connect("Database.db")
 cursor = database.cursor()
 
 ts = TaskService(database)
+
 
 def query(request: str) -> None:
     if request == "get":
@@ -20,36 +22,37 @@ def query(request: str) -> None:
     if request == "post":
         name = input()
         description = input()
-        
+
         cursor.execute(
             """
             INSERT into tasks (name, description)
             VALUES (?, ?)
             """,
-            (name, description)
+            (name, description),
         )
         database.commit()
-        
-    if request == 'delete':
+
+    if request == "delete":
         id = int(input())
-        
+
         cursor.execute(
             """
             DELETE from tasks
             WHERE id = ? 
             """,
-            (id,)
+            (id,),
         )
         database.commit()
-        
+
+
 while True:
     req = input()
-    if req == 'exit':
+    if req == "exit":
         break
     query(req)
 
 # if request == "post":
 #     name = input()
 #     description = input()
-    
+
 #     ts.add_task(name, description)

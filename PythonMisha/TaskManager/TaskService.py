@@ -1,9 +1,7 @@
-
 class TaskService:
-    
     def __init__(self, database):
         self.database = database
-    
+
     def get_tasks(self):
         pass
 
